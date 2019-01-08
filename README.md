@@ -16,7 +16,7 @@ Tools, additional materials
 
 - [Anaconda Python](https://www.anaconda.com/)
 - [Google's colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb)
-- [Google's machine learning materials]](https://developers.google.com/machine-learning/crash-course/)
+- [Google's machine learning materials](https://developers.google.com/machine-learning/crash-course/)
 - [TensorFlow](https://www.tensorflow.org/)
 - [Getting started with conda](https://conda.io/docs/user-guide/overview.html)
 - [PyCharm](https://www.jetbrains.com/pycharm/)
