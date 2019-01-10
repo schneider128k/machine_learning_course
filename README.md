@@ -10,11 +10,13 @@ Machine learning course at UCF
 
 - Normal equation for linear regression
 
-  [Chapter 2 Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html) read entire chapter
+  [Chapter 2 Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html), read entire chapter
   
-  [Chapter 4 Numerical Computation](https://www.deeplearningbook.org/contents/numerical.html) read 4.3 Gradient-Based Optimization
+  [Chapter 4 Numerical Computation](https://www.deeplearningbook.org/contents/numerical.html), read 4.3 Gradient-Based Optimization
   
-  [Chapter 5 Machine Learning Basics](https://www.deeplearningbook.org/contents/ml.html) read 5.1.4 Example: Linear Regression
+  [Chapter 5 Machine Learning Basics](https://www.deeplearningbook.org/contents/ml.html), read 5.1.4 Example: Linear Regression
+  
+  [Additional materials](https://github.com/schneider128k/machine_learning_course/blob/master/linear_regression_additional_results.pdf)
 
 - Gradient descent
 
