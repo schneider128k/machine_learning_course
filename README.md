@@ -4,11 +4,11 @@ CAP 5610 Machine Learning
 
 Machine learning course at UCF
 
-- [1 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/1_slides.pdf)
+- [1 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/1_slides.pdf): Common ML problems, overview of (a) supervised, (b) unsupervised, and (c) reinforcement learning
 
-- [2 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/2_slides.pdf)
+- [2 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/2_slides.pdf): ML terminology, linear regression, training & loss, gradient descent, stochastic gradient descent
 
-- Normal equation for linear regression
+- Derivation of the normal equation for linear regression
 
   [Chapter 2 Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html), read entire chapter
   
@@ -24,7 +24,7 @@ Machine learning course at UCF
 
    [Figure of a run of gradient descent](https://github.com/schneider128k/machine_learning_course/blob/master/optimizing_learning_rate_example_run.png)
 
-- [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/3_slides.pdf)
+- [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/3_slides.pdf): overview of TensorFlow
 
 - TensorFlow programming exercises
 
@@ -37,7 +37,7 @@ Machine learning course at UCF
   [Synthetic features and outliers](https://colab.research.google.com/notebooks/mlcc/synthetic_features_and_outliers.ipynb):
   This exercise explores synthetic features and the effect of input outliers.
 
-- [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/4_slides.pdf)
+- [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/4_slides.pdf): generalization, overfitting, splitting data in train & test sets
 
 Tools, additional materials
 
