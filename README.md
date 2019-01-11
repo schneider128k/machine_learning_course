@@ -26,6 +26,18 @@ Machine learning course at UCF
 
 - [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/3_slides.pdf)
 
+- TensorFlow programming exercises
+
+  [Quick introduction to pandas](https://colab.research.google.com/notebooks/mlcc/intro_to_pandas.ipynb):
+  Pandas is an important library for data analysis and modeling, and is widely used in TensorFlow coding. This tutorial provides all the pandas information you need for this course.
+  
+  [First steps with TensorFlow](https://colab.research.google.com/notebooks/mlcc/first_steps_with_tensor_flow.ipynb):
+  This exercise explores linear regression.
+  
+  [Synthetic features and outliers](https://colab.research.google.com/notebooks/mlcc/synthetic_features_and_outliers.ipynb):
+  This exercise explores synthetic features and the effect of input outliers.
+
+- [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/4_slides.pdf)
 
 Tools, additional materials
 
