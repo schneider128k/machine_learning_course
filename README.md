@@ -4,9 +4,13 @@ CAP 5610 Machine Learning
 
 Machine learning course at UCF
 
-- [1 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/1_slides.pdf): Common ML problems, overview of (a) supervised, (b) unsupervised, and (c) reinforcement learning
+- Common ML problems, overview of (a) supervised, (b) unsupervised, and (c) reinforcement learning 
 
-- [2 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/2_slides.pdf): ML terminology, linear regression, training & loss, gradient descent, stochastic gradient descent
+  [1 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/1_slides.pdf)
+
+- ML terminology, linear regression, training & loss, gradient descent, stochastic gradient descent 
+
+  [2 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/2_slides.pdf)
 
 - Linear regression using the normal equation
 
@@ -16,7 +20,7 @@ Machine learning course at UCF
   
   [Chapter 5 Machine Learning Basics](https://www.deeplearningbook.org/contents/ml.html), read 5.1.4 Example: Linear Regression
   
-  [Linear regression - additional materials](https://github.com/schneider128k/machine_learning_course/blob/master/linear_regression_additional_results.pdf)
+  [Additional materials for 5.1.4 Example: Linear Regression](https://github.com/schneider128k/machine_learning_course/blob/master/linear_regression_additional_results.pdf)
 
   [Colab notebook for solving linear regression using normal equation](https://colab.research.google.com/drive/1J7yct9aGfhtfXw8n00Mq4R-xldSSM1WY)
 
@@ -32,7 +36,9 @@ Machine learning course at UCF
 
   [Colab notebook for solving linear regression using gradient descent](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
 
-- [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/3_slides.pdf): overview of TensorFlow
+- Overview of TensorFlow
+
+  [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/3_slides.pdf)
 
 - TensorFlow programming exercises
 
@@ -45,7 +51,9 @@ Machine learning course at UCF
   [Synthetic features and outliers](https://colab.research.google.com/notebooks/mlcc/synthetic_features_and_outliers.ipynb):
   This exercise explores synthetic features and the effect of input outliers.
 
-- [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/4_slides.pdf): generalization, overfitting, splitting data in train & test sets
+- Generalization, overfitting, splitting data in train & test sets
+
+  [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/4_slides.pdf): generalization, overfitting, splitting data in train & test sets
 
 Tools, additional materials
 
