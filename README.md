@@ -27,6 +27,10 @@ Machine learning course at UCF
   [Colab notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
 
    [Figure of a run of gradient descent](https://github.com/schneider128k/machine_learning_course/blob/master/optimizing_learning_rate_example_run.png)
+   
+- Linear regression using gradient descent
+
+  [Colab notebook for solving linear regression using gradient descent](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
 
 - [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/3_slides.pdf): overview of TensorFlow
 
