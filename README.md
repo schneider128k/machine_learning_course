@@ -21,6 +21,8 @@ Machine learning course at UCF
 - Gradient descent
 
   [Jupyter notebook for experimenting with different learning rates for gradient descent](https://github.com/schneider128k/machine_learning_course/blob/master/optimizing_learning_rate.ipynb)
+  
+  [Jupyter notebook for experimenting with different learning rates for gradient descent on colab](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
 
    [Figure of a run of gradient descent](https://github.com/schneider128k/machine_learning_course/blob/master/optimizing_learning_rate_example_run.png)
 
