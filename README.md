@@ -8,7 +8,7 @@ Machine learning course at UCF
 
 - [2 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/2_slides.pdf): ML terminology, linear regression, training & loss, gradient descent, stochastic gradient descent
 
-- Derivation of the normal equation for linear regression
+- Linear regression using the normal equation
 
   [Chapter 2 Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html), read entire chapter
   
@@ -16,13 +16,15 @@ Machine learning course at UCF
   
   [Chapter 5 Machine Learning Basics](https://www.deeplearningbook.org/contents/ml.html), read 5.1.4 Example: Linear Regression
   
-  [Additional materials](https://github.com/schneider128k/machine_learning_course/blob/master/linear_regression_additional_results.pdf)
+  [Linear regression - additional materials](https://github.com/schneider128k/machine_learning_course/blob/master/linear_regression_additional_results.pdf)
 
-- Gradient descent
+  [Colab notebook for solving linear regression using normal equation](https://colab.research.google.com/drive/1J7yct9aGfhtfXw8n00Mq4R-xldSSM1WY)
 
-  [Jupyter notebook for experimenting with different learning rates for gradient descent](https://github.com/schneider128k/machine_learning_course/blob/master/optimizing_learning_rate.ipynb)
+- Effect of learning rate on gradient descent
+
+  [Notebook for experimenting with different learning rates](https://github.com/schneider128k/machine_learning_course/blob/master/optimizing_learning_rate.ipynb)
   
-  [Jupyter notebook for experimenting with different learning rates for gradient descent on colab](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
+  [Notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
 
    [Figure of a run of gradient descent](https://github.com/schneider128k/machine_learning_course/blob/master/optimizing_learning_rate_example_run.png)
 
