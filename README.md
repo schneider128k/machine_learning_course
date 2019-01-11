@@ -53,7 +53,7 @@ Machine learning course at UCF
 
 - Generalization, overfitting, splitting data in train & test sets
 
-  [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/4_slides.pdf): generalization, overfitting, splitting data in train & test sets
+  [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/4_slides.pdf)
 
 Tools, additional materials
 
