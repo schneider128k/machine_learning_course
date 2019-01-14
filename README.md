@@ -20,7 +20,7 @@ Machine learning course at UCF
   
   [Chapter 5 Machine Learning Basics](https://www.deeplearningbook.org/contents/ml.html), read 5.1.4 Example: Linear Regression
   
-  [Additional materials for 5.1.4 Example: Linear Regression](https://github.com/schneider128k/machine_learning_course/blob/master/linear_regression_additional_results.pdf)
+  [Additional materials for 5.1.4 Example: Linear Regression](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression_additional_results.pdf)
 
   [Colab notebook for solving linear regression using normal equation](https://colab.research.google.com/drive/1J7yct9aGfhtfXw8n00Mq4R-xldSSM1WY)
 
