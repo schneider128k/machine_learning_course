@@ -4,21 +4,21 @@ CAP 5610 Machine Learning
 
 Machine learning course at UCF
 
-- Common ML problems, overview of (a) supervised, (b) unsupervised, and (c) reinforcement learning 
+- **Common ML problems, overview of (a) supervised, (b) unsupervised, and (c) reinforcement learning**
 
   [1 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/1_slides.pdf)
 
-- ML terminology, linear regression, training & loss, gradient descent, stochastic gradient descent 
+- **ML terminology, linear regression, training & loss, gradient descent, stochastic gradient descent** 
 
   [2 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/2_slides.pdf)
 
-- Linear regression using the normal equation -numpy implementation
+- **Linear regression using the normal equation - numpy implementation**
 
-  To understand the mathematics underlying the normal equation, read the following materials
+  To understand the mathematics underlying the normal equation, read the following materials:
 
   [Chapter 2 Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html)
   
-  [Chapter 4 Numerical Computation, Section 4.3 Gradient-Based Optimization](https://www.deeplearningbook.org/contents/numerical.html), read 4.3 Gradient-Based Optimization
+  [Chapter 4 Numerical Computation, Section 4.3 Gradient-Based Optimization](https://www.deeplearningbook.org/contents/numerical.html) 
   
   [Chapter 5 Machine Learning Basics, Subsection 5.1.4 Example: Linear Regression](https://www.deeplearningbook.org/contents/ml.html)
   
@@ -26,26 +26,27 @@ Machine learning course at UCF
 
   [Colab notebook for solving linear regression using normal equation](https://colab.research.google.com/drive/1J7yct9aGfhtfXw8n00Mq4R-xldSSM1WY)
 
-- Effect of learning rate on gradient descent
+- **Effect of learning rate on gradient descent**
 
   [Colab notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
    
-- Linear regression using gradient descent - numpy implementation
+- **Linear regression using gradient descent - numpy implementation**
 
   [Colab notebook for solving linear regression using gradient descent](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
 
-- Overview of TensorFlow and Keras
+- **Overview of TensorFlow and Keras**
 
   [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/3_slides.pdf)
 
-- Linear regression - Keras implementation
+- **Linear regression - Keras implementation**
 
   [Colab notebook for solving linear regression](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
 
-- Generalization, overfitting, splitting data in train & test sets
+- **Generalization, overfitting, splitting data in train & test sets**
 
   [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/4_slides.pdf)
 
+---
 
 Tools, additional materials
 
