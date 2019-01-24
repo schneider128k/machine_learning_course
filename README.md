@@ -30,7 +30,7 @@
 
   [Colab notebook for solving linear regression using gradient descent](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
 
-- **Overview of TensorFlow and Keras**
+- **Overview of TensorFlow and Keras** (<- under construction)
 
   [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/3_slides.pdf)
 
@@ -41,6 +41,8 @@
 - **MNIST digits data set**
 
   [Colab notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
+  
+  [Colab notebook for classifying digits with two dense layers, demonstrating overfitting, and plotting misclassified digits](https://colab.research.google.com/drive/144nj1SRtSjpIcKZgH6-GPdA9bWkg68nh)
 
 - **Generalization, overfitting, splitting data in train & test sets**
 
