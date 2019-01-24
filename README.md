@@ -1,8 +1,4 @@
-# machine_learning_course
-
-CAP 5610 Machine Learning
-
-Machine learning course at UCF
+# repo for CAP 5610 Machine Learning
 
 - **Common ML problems, overview of (a) supervised, (b) unsupervised, and (c) reinforcement learning**
 
@@ -39,6 +35,10 @@ Machine learning course at UCF
   [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/3_slides.pdf)
 
 - **Linear regression - Keras implementation**
+
+- **MNIST digits data set**
+
+  [Colab notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
 
   [Colab notebook for solving linear regression](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
 
