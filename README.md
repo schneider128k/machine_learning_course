@@ -36,11 +36,11 @@
 
 - **Linear regression - Keras implementation**
 
+  [Colab notebook for solving linear regression](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
+
 - **MNIST digits data set**
 
   [Colab notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
-
-  [Colab notebook for solving linear regression](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
 
 - **Generalization, overfitting, splitting data in train & test sets**
 
@@ -59,6 +59,8 @@ Tools, additional materials
 - [Google's machine learning materials](https://developers.google.com/machine-learning/crash-course/)
 
 - [TensorFlow](https://www.tensorflow.org/)
+
+- [Keras](https://keras.io/)
 
 - [Getting started with conda](https://conda.io/docs/user-guide/overview.html)
 
