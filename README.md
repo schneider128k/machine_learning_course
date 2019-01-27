@@ -41,9 +41,9 @@
 
   [Colab notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
   
-  [Colab notebook for classifying digits with two dense layers, demonstrating overfitting, and plotting misclassified digits](https://colab.research.google.com/drive/144nj1SRtSjpIcKZgH6-GPdA9bWkg68nh)
+  [Colab notebook for classifying MNIST digits with dense layers and analyzing model performance](https://colab.research.google.com/drive/144nj1SRtSjpIcKZgH6-GPdA9bWkg68nh)
   
-  [Colab notebook for loading and exploring the MNIST fashion data set](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
+  [Colab notebook for classifying MNIST fashion items with dense laters and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
   
   Colab notebook for classifying fashion items with dense layers (<= under construction)
 
