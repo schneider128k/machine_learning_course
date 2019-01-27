@@ -47,6 +47,10 @@
 - **MNIST fashion data set**
   
   [Colab notebook for classifying MNIST fashion items with dense laters and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
+  
+ - **CIFAR10 data set**
+ 
+   [Colab notebook for displaying CIFAR10 data set](https://colab.research.google.com/drive/1LZZviWOzvchcXRdZi2IBx3KOpQOzLalf)
 
 - **Generalization, overfitting, splitting data in train & test sets**
 
