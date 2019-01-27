@@ -19,6 +19,7 @@
   [Chapter 5 Machine Learning Basics, Subsection 5.1.4 Example: Linear Regression](https://www.deeplearningbook.org/contents/ml.html)
   
   [Additional materials: proof of convexity of MSE and computation of gradient of MSE](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression.pdf)
+  
   [Colab notebook for solving linear regression using normal equation](https://colab.research.google.com/drive/1J7yct9aGfhtfXw8n00Mq4R-xldSSM1WY)
 
 - **Effect of learning rate on gradient descent**
@@ -44,8 +45,6 @@
   [Colab notebook for classifying MNIST digits with dense layers and analyzing model performance](https://colab.research.google.com/drive/144nj1SRtSjpIcKZgH6-GPdA9bWkg68nh)
   
   [Colab notebook for classifying MNIST fashion items with dense laters and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
-  
-  Colab notebook for classifying fashion items with dense layers (<= under construction)
 
 - **Generalization, overfitting, splitting data in train & test sets**
 
