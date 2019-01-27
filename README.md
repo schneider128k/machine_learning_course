@@ -44,6 +44,8 @@
   
   [Colab notebook for classifying MNIST digits with dense layers and analyzing model performance](https://colab.research.google.com/drive/144nj1SRtSjpIcKZgH6-GPdA9bWkg68nh)
   
+- **MNIST fashion data set**
+  
   [Colab notebook for classifying MNIST fashion items with dense laters and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
 
 - **Generalization, overfitting, splitting data in train & test sets**
