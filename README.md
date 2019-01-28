@@ -36,29 +36,39 @@
 
   [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_network.md)
 
-- **Linear regression with Keras**
+  [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/4_slides.pdf)
 
-  [Colab notebook for solving linear regression](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
+- **Keras examples**
 
-- **Neural networks with dense layers**
-
-  *MNIST digits data set*
-
+  [Colab notebook for solving linear regression for artificial data set](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
+  
   [Colab notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
   
   [Colab notebook for classifying MNIST digits with dense layers and analyzing model performance](https://colab.research.google.com/drive/144nj1SRtSjpIcKZgH6-GPdA9bWkg68nh)
   
-  *MNIST fashion data set*
-  
   [Colab notebook for classifying MNIST fashion items with dense layers and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
-  
-  *CIFAR10 data set*
- 
+
    [Colab notebook for displaying CIFAR10 data set](https://colab.research.google.com/drive/1LZZviWOzvchcXRdZi2IBx3KOpQOzLalf)
+
+  Try to use dense layers to classify the CIFAR10 images.
+  
+  Colab notebook for predicting fuel efficiency using the Auto MPG data set 
 
 - **Generalization, overfitting, splitting data in train & test sets**
 
-  [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/4_slides.pdf)
+  [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/5_slides.pdf)
+  
+- **Validation**
+
+- **Mathematical formulation of neural networks, back propagation**
+
+- **More Keras examples **
+
+- **Deep learning for computer vision**
+
+- **Deep learning for text and sequences**
+
+- **Generative deep learning**
 
 ---
 
