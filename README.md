@@ -56,13 +56,13 @@
 
 - **Generalization, overfitting, splitting data in train & test sets**
 
-  [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/5_slides.pdf)
+  [5 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/5_slides.pdf)
   
 - **Validation**
 
 - **Mathematical formulation of neural networks, back propagation**
 
-- **More Keras examples **
+- **More Keras examples**
 
 - **Deep learning for computer vision**
 
