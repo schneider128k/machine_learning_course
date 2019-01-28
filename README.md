@@ -30,9 +30,11 @@
 
   [Colab notebook for solving linear regression using gradient descent](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
 
-- **Overview of TensorFlow and Keras** (<= under construction)
+- **Overview of TensorFlow and Keras** 
 
   [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/3_slides.pdf)
+
+  [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_netowrk.md)
 
 - **Linear regression with Keras**
 
