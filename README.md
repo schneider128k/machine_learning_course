@@ -40,17 +40,17 @@
 
 - **Neural networks with dense layers**
 
-  **MNIST digits data set**
+  *MNIST digits data set*
 
   [Colab notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
   
   [Colab notebook for classifying MNIST digits with dense layers and analyzing model performance](https://colab.research.google.com/drive/144nj1SRtSjpIcKZgH6-GPdA9bWkg68nh)
   
-  **MNIST fashion data set**
+  *MNIST fashion data set*
   
   [Colab notebook for classifying MNIST fashion items with dense laters and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
   
-  **CIFAR10 data set**
+  *CIFAR10 data set*
  
    [Colab notebook for displaying CIFAR10 data set](https://colab.research.google.com/drive/1LZZviWOzvchcXRdZi2IBx3KOpQOzLalf)
 
