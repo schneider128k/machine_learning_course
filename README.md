@@ -60,6 +60,8 @@
   
 - **Validation**
 
+  [6 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/6_slides.pdf)
+
 - **Mathematical formulation of neural networks, back propagation**
 
 - **More Keras examples**
