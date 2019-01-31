@@ -70,11 +70,11 @@
 
 - **More Keras examples**
 
-- **Deep learning for computer vision (CNN) **
+- **Deep learning for computer vision (CNN)**
 
-- **Deep learning for text and sequences (RNN, LSTM) **
+- **Deep learning for text and sequences (RNN, LSTM)**
 
-- **Generative deep learning (VAE, GAN) **
+- **Generative deep learning (VAE, GAN)**
 
 ---
 
