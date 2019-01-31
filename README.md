@@ -62,15 +62,19 @@
 
   [6 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/6_slides.pdf)
 
-- **Mathematical formulation of neural networks, back propagation**
+- **Logistic regression, gradients for squared error and binary cross-entropy loss functions**
+
+  [Logistic regression notes](https://github.com/schneider128k/machine_learning_course/blob/master/slides/logistic_regression.pdf)
+
+- **Mathematical formulation of artificial neural networks, back propagation**
 
 - **More Keras examples**
 
-- **Deep learning for computer vision**
+- **Deep learning for computer vision (CNN) **
 
-- **Deep learning for text and sequences**
+- **Deep learning for text and sequences (RNN, LSTM) **
 
-- **Generative deep learning**
+- **Generative deep learning (VAE, GAN) **
 
 ---
 
