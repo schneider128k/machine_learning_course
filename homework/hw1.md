@@ -2,7 +2,7 @@
 
 Train 10 classifiers that perform binary classification:
 
-- Is input image the digit i?
+- Is the input image the digit i?
 - Is it a digit different from i?
 
 Use logistic regression with 
@@ -18,7 +18,7 @@ Round the grey values of the images to 1 and 0 so you obtain a black and white i
 pixel x,y is connected to
 
  o
-o.o 
+o.o  
  o
  
 ooo
