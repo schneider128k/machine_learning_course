@@ -66,6 +66,11 @@
 
   [Logistic regression notes](https://github.com/schneider128k/machine_learning_course/blob/master/slides/logistic_regression.pdf)
 
+- **Softmax, gradients for categorical cross entropy loss with softmax**
+
+  [Softmax, categorical cross entropy]
+  https://github.com/schneider128k/machine_learning_course/blob/master/slides/softmax.pdf
+
 - **Mathematical formulation of artificial neural networks, back propagation**
 
 - **More Keras examples**
