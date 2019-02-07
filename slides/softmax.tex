@@ -19,7 +19,7 @@
 
 \newcommand{\mse}{\mathrm{MSE}}
 
-\title{Softmax and categorical cross-entropy loss}
+\title{Softmax and categorical cross entropy loss}
 
 \author{Pawel Wocjan}
 
@@ -58,7 +58,7 @@ Using the product and chain rule, we can show that
 \end{equation}
 where $\delta_{jk}$ is the so called Kronecker delta, which is equal to $1$ if $j=k$ and $0$ if $j\neq k$.
 
-\section{Cross-entropy}
+\section{Cross entropy}
 
 Let $\boldsymbol{p}=(p_1,\ldots,p_m)$ and $\boldsymbol{q}=(q_1,\ldots,q_m)$ be two probability distributions. In information theory, the cross entropy is defined by
 \begin{equation}
@@ -70,7 +70,7 @@ See \url{https://en.wikipedia.org/wiki/Cross_entropy} for a quick overview.
 
 Let $y\in[m]$ be a label. Using the so-called one-hot or categorical encoding, we construct a corresponding vector $\boldsymbol{y}=(y_1,\ldots,y_m)^T\in\R^n$ such that $m-1$ of its entries are equal to $0$ and exactly one entry is equal to $1$. The position of the entry $1$ is given by the label $y$. For instance, for $m=3$ classes, label $1$ corresponds to $(1,0,0)$, the label $2$ to $(0,1,0)$, and the label $3$ to $(0,0,1)$.
 
-Assume that the feature vector $\x$ produces the activation vector $\boldsymbol{a}=(a_1,\ldots,a_m)$ in the last layer. Assume that the correct label is $y$. Then the categorical cross-entropy loss $\mathcal{L}$ is defined by
+Assume that the feature vector $\x$ produces the activation vector $\boldsymbol{a}=(a_1,\ldots,a_m)$ in the last layer. Assume that the correct label is $y$. Then the categorical cross entropy loss $\mathcal{L}$ is defined by
 \begin{equation}
 \mathcal{L} = -\sum_{i=1}^m y_k \log a_k,
 \end{equation}
@@ -81,7 +81,7 @@ The partial derivatives of $\mathcal{L}$ with respect to $a_k$ is
 {\partial \mathcal{L} \over \partial a_k} = -\frac{y_k}{a_k}.
 \end{equation}
 
-Combining the above equation with (\ref{eq:aoverz}), we obtain
+The partial derivatives of $\mathcal{L}$ with respect to $z_j$ is
 \begin{eqnarray}
 {\partial \mathcal{L} \over \partial z_j} 
 & = &
