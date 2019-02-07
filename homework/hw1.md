@@ -1,5 +1,9 @@
 # HW 1 
 
+This homework will get you up to speed with Python programming, numpy, matplotlib, Keras, gradients, partial derivatives. Have fun!
+
+For this homework, you will create neural network with an input layer and an output layer without any hidden layers. The connections are dense: each input neuron is connected to each output neuron.
+
 Instructions for problems 1 and 2:
 - Load the training and test data using Keras, no validation set needed.
 - Train 10 classifiers that perform binary classification: *Is the input image the digit i or is it a digit different from i?* Each of the ten classifiers has an input layer consisting of 28 x 28 input neurons and an output layer consisting of a single output neuron.
