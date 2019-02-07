@@ -2,7 +2,7 @@
 
 This homework will get you up to speed with Python programming, numpy, matplotlib, Keras, gradients, partial derivatives. Have fun!
 
-For this homework, you will create neural network with an input layer and an output layer without any hidden layers. The connections are dense: each input neuron is connected to each output neuron.
+For this homework, you will create neural networks with an input layer and an output layer without any hidden layers. The connections are dense: each input neuron is connected to each output neuron.
 
 Instructions for problems 1 and 2:
 - Load the training and test data using Keras, no validation set needed.
