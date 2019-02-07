@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amsthm,amssymb,hyperref,fullpage,bm,palatino}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}{Corollary}
+\newtheorem{lem}{Lemma}
+\newtheorem{rem}{Remark}
+\newtheorem{dfn}{Definition}
+
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\x}{\boldsymbol{x}}
+\newcommand{\X}{\boldsymbol{X}}
+\newcommand{\y}{\boldsymbol{y}}
+\newcommand{\yh}{\hat{\boldsymbol{y}}}
+\newcommand{\w}{\boldsymbol{w}}
+\newcommand{\A}{\boldsymbol{A}}
+
+\newcommand{\mse}{\mathrm{MSE}}
+
+\title{Softmax and categorical cross-entropy loss}
+
+\author{Pawel Wocjan}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+We define softmax and categorical cross entropy for multiclass classification 
+\end{abstract}
+
+\section{Classification}
+
+\begin{tabular}{|c|c|c|}
+\hline
+Problem type & Last-layer activation & Loss function \\ \hline \hline
+Binary classification & \texttt{sigmoid} & \texttt{binary\_crossentropy} \\ \hline
+Multiclass, single-label classification & \texttt{softmax} & \texttt{categorical\_crossentropy} \\ \hline
+Multiclass, multi-label classification & \texttt{sigmoid} & \texttt{binary\_crossentropy} \\ \hline
+\end{tabular}
+
+\section{Softmax activation function}
+
+Let $z_1,\ldots,z_m$ be the weighted inputs of the $m$ neurons of the last layer. Each of the neurons corresponds to one of the $m$ classes of the multiclass classification problem at hand. We consider the single-label situation. We convert the weighted input vector $\boldsymbol{z}=(z_1,\ldots,z_m)^T\in\R^m$ into a probability vector $\boldsymbol{a}=(a_1,\ldots,a_m)^T\in\R^n$ by applying the so-called softmax activation function. 
+
+For $k\in [m]$, the activation $a_k$ of the $k$th neuron is defined as follows:
+\begin{equation}
+a_k = \frac{e^{z_k}}{\sum_{j=1}^n e^{z_j}}.
+\end{equation}
+It is straightforward to verify that this yields a probability distribution. The values $a_k$ are all positive because the range of the exponential function is $(0,\infty)$. They sum up to $1$ because of the normalization in the denominator.
+
+Using the product and chain rule, we can show that
+\begin{equation}\label{eq:aoverz}
+{\partial a_k \over \partial z_j} = a_k \cdot (\delta_{jk} - a_j),
+\end{equation}
+where $\delta_{jk}$ is the so called Kronecker delta, which is equal to $1$ if $j=k$ and $0$ if $j\neq k$.
+
+\section{Cross-entropy}
+
+Let $\boldsymbol{p}=(p_1,\ldots,p_m)$ and $\boldsymbol{q}=(q_1,\ldots,q_m)$ be two probability distributions. In information theory, the cross entropy is defined by
+\begin{equation}
+H(\boldsymbol{p},\boldsymbol{q}) = - \sum_{k=1}^m p_k \log q_k.
+\end{equation}
+See \url{https://en.wikipedia.org/wiki/Cross_entropy} for a quick overview.
+
+\section{Categorical cross entropy loss function}
+
+Let $y\in[m]$ be a label. Using the so-called one-hot or categorical encoding, we construct a corresponding vector $\boldsymbol{y}=(y_1,\ldots,y_m)^T\in\R^n$ such that $m-1$ of its entries are equal to $0$ and exactly one entry is equal to $1$. The position of the entry $1$ is given by the label $y$. For instance, for $m=3$ classes, label $1$ corresponds to $(1,0,0)$, the label $2$ to $(0,1,0)$, and the label $3$ to $(0,0,1)$.
+
+Assume that the feature vector $\x$ produces the activation vector $\boldsymbol{a}=(a_1,\ldots,a_m)$ in the last layer. Assume that the correct label is $y$. Then the categorical cross-entropy loss $\mathcal{L}$ is defined by
+\begin{equation}
+\mathcal{L} = -\sum_{i=1}^m y_k \log a_k,
+\end{equation}
+where $\y=(y_1,\ldots,y_m)$ is the categorical encoding of $y$. Observe that $\mathcal{L}=H(\y,\boldsymbol{a})$.
+
+The partial derivatives of $\mathcal{L}$ with respect to $a_k$ is
+\begin{equation}
+{\partial \mathcal{L} \over \partial a_k} = -\frac{y_k}{a_k}.
+\end{equation}
+
+Combining the above equation with (\ref{eq:aoverz}), we obtain
+\begin{eqnarray}
+{\partial \mathcal{L} \over \partial z_j} 
+& = &
+\sum_{k=1}^m {\partial \mathcal{L} \over \partial a_k} \cdot {\partial a_k \over \partial z_j} \\
+& = &
+\sum_{i=1}^m -\frac{y_k}{a_k} \cdot a_k \cdot (\delta_{kj} - a_j)  \\
+& = &
+\sum_{i=1}^m y_k \cdot (a_j - \delta_{kj})
+\end{eqnarray}
+
+\section{Simple neural network with softmax activation and categorical cross entropy}
+
+Let us consider a network that takes feature vectors of the form $\x=(x_1,\ldots,x_n)^T\in \R^n$ as input and has $m$ output neurons with softmax activation.  Then for $j\in[m]$, the weighted input of the $j$th neuron is given by
+\begin{equation}
+z_j = \sum_{i=1}^n w_{ji} x_i + b_j.
+\end{equation}
+The weights and the bias of $j$th neuron are $(w_{j1},\ldots,w_{jn})$ and $b_j$, respectively.  The weighted inputs $z_j$ are transformed into probabilities by the softmax activation.
+
+\medskip
+\noindent
+Let us compute the partial derivatives of the categorical cross entropy loss function the weights and biases. You will need these to implement stochastic gradient descent for the homework.
+
+\end{document}
