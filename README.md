@@ -69,6 +69,8 @@
 - **Softmax, categorical cross entropy loss, gradients**
 
   [Softmax, categorical cross entropy](https://github.com/schneider128k/machine_learning_course/blob/master/slides/softmax.pdf)
+  
+  [Verification of partial derivatives with symbolic differentiation](https://colab.research.google.com/drive/1G8u6w3FFhZyb0nWfparVvn77DSjHyxEW)
 
 - **Mathematical formulation of artificial neural networks, back propagation**
 
