@@ -72,7 +72,7 @@ Let $y\in[m]$ be a label. Using the so-called one-hot or categorical encoding, w
 
 Assume that the feature vector $\x$ produces the activation vector $\boldsymbol{a}=(a_1,\ldots,a_m)$ in the last layer. Assume that the correct label is $y$. Then the categorical cross entropy loss $\mathcal{L}$ is defined by
 \begin{equation}
-\mathcal{L} = -\sum_{i=1}^m y_k \log a_k,
+\mathcal{L} = -\sum_{k=1}^m y_k \log a_k,
 \end{equation}
 where $\y=(y_1,\ldots,y_m)$ is the categorical encoding of $y$. Observe that $\mathcal{L}=H(\y,\boldsymbol{a})$.
 
@@ -87,9 +87,9 @@ The partial derivatives of $\mathcal{L}$ with respect to $z_j$ is
 & = &
 \sum_{k=1}^m {\partial \mathcal{L} \over \partial a_k} \cdot {\partial a_k \over \partial z_j} \\
 & = &
-\sum_{i=1}^m -\frac{y_k}{a_k} \cdot a_k \cdot (\delta_{kj} - a_j)  \\
+\sum_{k=1}^m -\frac{y_k}{a_k} \cdot a_k \cdot (\delta_{kj} - a_j)  \\
 & = &
-\sum_{i=1}^m y_k \cdot (a_j - \delta_{kj})
+\sum_{k=1}^m y_k \cdot (a_j - \delta_{kj})
 \end{eqnarray}
 
 \section{Simple neural network with softmax activation and categorical cross entropy}
@@ -102,6 +102,6 @@ The weights and the bias of $j$th neuron are $(w_{j1},\ldots,w_{jn})$ and $b_j$,
 
 \medskip
 \noindent
-Let us compute the partial derivatives of the categorical cross entropy loss function the weights and biases. You will need these to implement stochastic gradient descent for the homework.
+Compute the partial derivatives of the categorical cross entropy loss function the weights and biases. You will need these to implement stochastic gradient descent for the homework. This should be very easy. The more difficult part was computing the partial derivatives of the categorical entropy loss function with respect to the weighted inputs.  
 
 \end{document}
