@@ -129,7 +129,7 @@ I will explain the intuition behind the cross-entropy loss in class in detail. F
 
 \section{Gradient of squared error and binary cross-entropy loss functions}
 
-We have compute the partial derivatives of the loss functions with respect to $w_j$ and $b$ to be able to apply stochastic gradient descent. This is done by applying the chain rule multiple times according to the following computational graph: 
+We have to compute the partial derivatives of the loss functions with respect to $w_j$ and $b$ to be able to apply stochastic gradient descent. This is done by applying the chain rule multiple times according to the following computational graph: 
 \begin{equation}
 w_1,\ldots,w_n, b \rightarrow z \rightarrow a \rightarrow \mathcal{L},
 \end{equation}
@@ -168,12 +168,12 @@ The partial derivatives of the cross entropy loss $\mathcal{L}_\mathrm{ce}$ are 
 (a - y) \cdot x_j \\
 %
 & \notag \\
-{\partial \mathcal{L}_\mathrm{be} \over \partial b} 
+{\partial \mathcal{L}_\mathrm{ce} \over \partial b} 
 &=
 {\mathrm{d} \mathcal{L}_\mathrm{ce} \over \mathrm{d}a} \cdot {\partial a \over \partial z} \cdot {\partial z \over \partial b} = 
 a - y.
 \end{align}
-Here it is essential that we expand $a'$ as $a \cdot (1-a)$ to cancel $a$ and $1-a$ is the denominators.
+Here it is essential that we expand $a'$ as $a \cdot (1-a)$ to cancel out the denominators $a$ and $1-a$.
 \end{itemize}
 
 \end{document}
