@@ -129,8 +129,13 @@ I will explain the intuition behind the cross-entropy loss in class in detail. F
 
 \section{Gradient of squared error and binary cross-entropy loss functions}
 
-We have compute the partial derivatives of the loss functions with respect to $w_j$ and $b$ to be able to apply stochastic gradient descent. This is done by applying the chain rule multiple times. 
-The derivative of the activation function $a$ is $a' = (1-a)$ because the sigmoid function is used as the activation for logistic regression.
+We have compute the partial derivatives of the loss functions with respect to $w_j$ and $b$ to be able to apply stochastic gradient descent. This is done by applying the chain rule multiple times according to the following computational graph: 
+\begin{equation}
+w_1,\ldots,w_n, b \rightarrow z \rightarrow a \rightarrow \mathcal{L},
+\end{equation}
+where $\rightarrow$ indicates that the variables on the LHS influence those on the RHS.
+
+Recall that derivative of the activation function $a$ is $a' = (1-a)$ because the sigmoid function is used as the activation function for logistic regression.
 \begin{itemize}
 \item 
 The partial derivatives of the squared error loss $\mathcal{L}_\mathrm{se}$ are derived as follows:
@@ -168,7 +173,7 @@ The partial derivatives of the cross entropy loss $\mathcal{L}_\mathrm{ce}$ are 
 {\mathrm{d} \mathcal{L}_\mathrm{ce} \over \mathrm{d}a} \cdot {\partial a \over \partial z} \cdot {\partial z \over \partial b} = 
 a - y.
 \end{align}
-Here it is essential that we expand $a'$ as $a \cdot (1-a)$ to cancel $a$ and $1-a$ is the numerators.
+Here it is essential that we expand $a'$ as $a \cdot (1-a)$ to cancel $a$ and $1-a$ is the denominators.
 \end{itemize}
 
 \end{document}
