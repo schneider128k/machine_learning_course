@@ -72,7 +72,12 @@
   
   [Colab notebook for verifying formulas for partial derivatives with symbolic differentiation](https://colab.research.google.com/drive/1G8u6w3FFhZyb0nWfparVvn77DSjHyxEW)
 
-- **Mathematical formulation of artificial neural networks, back propagation**
+- **Artificial neural networks: mathematical formulation and code**
+
+  Notes (preparing)
+  
+  [Code for building dense neural networks from scratch](https://github.com/schneider128k/machine_learning_course/blob/master/code/neural_network.py)
+  Currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.
 
 - **More Keras examples**
 
