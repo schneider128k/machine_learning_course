@@ -1,0 +1,22 @@
+Using TensorFlow backend.
+Initialize Network...
+|--- DenseLayer
+  |-- dimensions: (784, 100)
+|-- ActivationLayer
+  |-- dimensions: (100 100)
+|--- DenseLayer
+  |-- dimensions: (100, 10)
+|-- ActivationLayer
+  |-- dimensions: (10 10)
+Epoch 0: 7515 / 10000
+Epoch 1: 7953 / 10000
+Epoch 2: 8574 / 10000
+Epoch 3: 8595 / 10000
+Epoch 4: 8622 / 10000
+Epoch 5: 8654 / 10000
+Epoch 6: 8670 / 10000
+Epoch 7: 8692 / 10000
+Epoch 8: 9586 / 10000
+Epoch 9: 9598 / 10000
+
+Process finished with exit code 0
