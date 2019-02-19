@@ -77,6 +77,7 @@
   Notes (preparing)
   
   [Code for building dense neural networks from scratch](https://github.com/schneider128k/machine_learning_course/blob/master/code/neural_network.py)
+  
   Currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.
 
 - **More Keras examples**
