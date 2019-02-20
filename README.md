@@ -80,8 +80,6 @@
   
   Currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.
 
-- **More Keras examples**
-
 - **Deep learning for computer vision (CNN)**
 
 - **Deep learning for text and sequences (RNN, LSTM)**
@@ -92,7 +90,13 @@
 
 Tools, additional materials
 
-- [Deep learning book](https://www.deeplearningbook.org/)
+- [Neural networks and deep learning](http://neuralnetworksanddeeplearning.com/), Michael Nielsen
+
+- Deep learning with Python, Francois Chollet, Manning 
+
+- Deep learning and the game of Go, Max Pumperla and Kevin Ferguson, Mannin
+
+- [Deep learning book](https://www.deeplearningbook.org/), Ian Goodfellow and Yoshua Bengio and Aaron Courville, MIT Press
 
 - [Google's machine learning materials](https://developers.google.com/machine-learning/crash-course/)
 
