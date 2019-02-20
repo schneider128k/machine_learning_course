@@ -74,9 +74,9 @@
 
 - **Sequential neural networks with dense layers**
 
-  [Notes on forward propagation, backpropation algorithm for computing partial derivatives wrt weights and biases](https://github.com/schneider128k/machine_learning_course/blob/master/slides/neural_networks.pdf)
+  [Notes on forward propagation, backpropagation algorithm for computing partial derivatives wrt weights and biases](https://github.com/schneider128k/machine_learning_course/blob/master/slides/neural_networks.pdf)
   
-  [Code for building and training neural networks from scratch](https://github.com/schneider128k/machine_learning_course/blob/master/code/neural_network.py)
+  [Code for creating sequential neural networks with dense layers and training them with backprop and mini-batch SGD](https://github.com/schneider128k/machine_learning_course/blob/master/code/neural_network.py)
   
   Currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.
 
