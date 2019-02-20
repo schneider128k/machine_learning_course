@@ -72,9 +72,9 @@
   
   [Colab notebook for verifying formulas for partial derivatives with symbolic differentiation](https://colab.research.google.com/drive/1G8u6w3FFhZyb0nWfparVvn77DSjHyxEW)
 
-- **Artificial neural networks: mathematical formulation and code**
+- **Sequential neural networks with dense layers: forward propagation, backward propagation algorithm for training, and implementation**
 
-  Notes (preparing)
+  [Notes](https://github.com/schneider128k/machine_learning_course/blob/master/slides/neural_networks.pdf)
   
   [Code for building dense neural networks from scratch](https://github.com/schneider128k/machine_learning_course/blob/master/code/neural_network.py)
   
