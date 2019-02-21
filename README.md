@@ -72,11 +72,11 @@
   
   [Colab notebook for verifying formulas for partial derivatives with symbolic differentiation](https://colab.research.google.com/drive/1G8u6w3FFhZyb0nWfparVvn77DSjHyxEW)
 
-- **Artificial neural networks: mathematical formulation and code**
+- **Sequential neural networks with dense layers**
 
-  Notes (preparing)
+  [Notes on forward propagation, backpropagation algorithm for computing partial derivatives wrt weights and biases](https://github.com/schneider128k/machine_learning_course/blob/master/slides/neural_networks.pdf)
   
-  [Code for building dense neural networks from scratch](https://github.com/schneider128k/machine_learning_course/blob/master/code/neural_network.py)
+  [Code for creating sequential neural networks with dense layers and training them with backprop and mini-batch SGD](https://github.com/schneider128k/machine_learning_course/blob/master/code/neural_network.py)
   
   Currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.
 
