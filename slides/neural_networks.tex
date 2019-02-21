@@ -23,6 +23,7 @@
 \newcommand{\yh}{\hat{\boldsymbol{y}}}
 \newcommand{\w}{\boldsymbol{w}}
 \newcommand{\A}{\boldsymbol{A}}
+\newcommand{\bdelta}{\boldsymbol{\delta}}
 
 \newcommand{\mse}{\mathrm{MSE}}
 
@@ -41,11 +42,11 @@ We introduce neural networks with densely connected layers and describe the back
 \end{abstract}
 
 \section{Forward propagation}
-We consider a sequential neural netowork consiting of the $L$ densely connected layers of sizes $n^{[\ell]}$, where $\ell\in\{0,\ldots,L-1\}$ is used to enumerate the layers.
+We consider a sequential neural netowork consiting of the $L$ densely connected layers of sizes $n^\ell$, where $\ell\in\{0,\ldots,L-1\}$ is used to enumerate the layers.
 
 For $\ell \ge 1$, we denote the weight of the connection from the $k$th neuron in the $(\ell - 1)$th layer to the $j$th neuron in the $\ell$th layer by
 \begin{equation}
-w^{[\ell]}_{jk}
+w^\ell_{jk}
 \end{equation}
 The diagram below shows two examples. The considered connections are drawn thicker.
 
@@ -108,7 +109,7 @@ The diagram below shows two examples. The considered connections are drawn thick
 
 We use a similar notation for the network's biases and activations. Let
 \begin{equation}
-b^{[\ell]}_j, \quad z^{[\ell]}_j, \quad a^{[\ell]}_j
+b^\ell_j, \quad z^\ell_j, \quad a^\ell_j
 \end{equation}
 denote the bias, weighted input, and activation of the $j$th neuron in the $\ell$th layer, respectively.
 
@@ -154,37 +155,122 @@ The forward propagation is described by the following formulas in index notation
 \end{equation}
 where the value $x_k$ is the $k$th entry of feature vector $\x\in\R^{n^{[0]}}$ that is input the network. (Obviously, the input neurons do not have any weights, biases, or weighted inputs.)
 
-We use $j\in\{0,\ldots,n^{[\ell]}-1\}$ to enumerate all neurons of the $\ell$ layer, where $\ell\ge 1$. For each neuron of the layer $\ell$, we have
+We use $j\in\{0,\ldots,n^\ell-1\}$ to enumerate all neurons of the $\ell$ layer, where $\ell\ge 1$. For each neuron of the layer $\ell$, we have
 \begin{align}
-z^{[\ell]}_j &= \sum_{k=0}^{n^{[\ell]}-1} w^{[\ell]}_{jk} \cdot a^{[\ell-1]}_k + b^{[\ell]}_j \\
-a^{[\ell]}_j &= f^{[\ell]}(z^{[\ell]}_j)
+z^\ell_j &= \sum_{k=0}^{n^\ell-1} w^\ell_{jk} \cdot a^{\ell-1}_k + b^\ell_j \\
+a^\ell_j &= f^\ell(z^\ell_j)
 \end{align}
 where the sum is taken over all neurons in the $(\ell-1)$th layer. 
 
 To rewrite the above formulas in a matrix form we define a weight matrix
 \begin{equation}
-W^{[\ell]} = \Big( w^{[\ell]}_{jk} \Big) \in \R^{n^{[\ell-1]} \times n^{[\ell]}}
+W^\ell = \Big( w^\ell_{jk} \Big) \in \R^{n^{\ell-1} \times n^\ell}
 \end{equation}
-for each layer $\ell$. Similarily, we define the bias vector $\b^{[\ell]}\in\R^{[\ell]}$ and the activation vector $\a^{[\ell]}\in\R^{[\ell]}$ for each layer $\ell$.
+for each layer $\ell$. Similarily, we define the bias vector $\b^\ell\in\R^\ell$ and the activation vector $\a^\ell\in\R^\ell$ for each layer $\ell$.
 
-The forward propagation is matrix notation is as follows. For the input layer, we set
+The forward propagation in  matrix notation is as follows. For the input layer, we set
 \begin{equation}
-\a^{[0]} = \x 
+\a^{0} = \x 
 \end{equation}
 For the $\ell$th layer, where $\ell\ge 1$, we have
 \begin{align}
-\z^{[\ell]} &= W^{[\ell]} \a^{[\ell-1]} + \b^{[\ell]} \\
-\a^{[\ell]} &= f^{[\ell]} (\z^{[\ell]})
+\z^\ell &= W^\ell \a^{\ell-1} + \b^\ell \\
+\a^\ell &= f^\ell (\z^\ell)
 \end{align}
 
 \section{Loss function}
 The goal of backpropagation is to compute the partial derivatives
 \begin{equation}
-{\partial \cL \over \partial w^{[\ell]}_{jk}}  \quad\mbox{and} \quad {\partial \cL \over \partial b^{[\ell]}_j}
+{\partial \cL \over \partial w^\ell_{jk}}  \quad\mbox{and} \quad {\partial \cL \over \partial b^\ell_j}
 \end{equation}
 with respect to any weight and bias of the network. We need these partial derivatives to be able to apply stochastic gradient descent.
 
-Let $\x\in\R^{n^{[0]}}$ be an feature vector and $\y\in\R^{n^{[L-1]}}$ its corresponding target vector.\footnote{For instance, this could be the the one-hot-encoding vector.} 
-For obvious reasons, we need to assume that the loss function $\cL$ is a function of the target vector $\y$ and the output of the neural network $\a^{[L-1]}$ that is produced when $\x$ isthe input. Also, we assume that the loss for a mini-batch is given by the mean of the losses for the individual examples of the mini-batch.
+Let $\x\in\R^{n^{0}}$ be a feature vector and $\y\in\R^{n^{L-1}}$ its corresponding target vector.\footnote{For instance, this could be the the one-hot-encoding vector.} 
+For obvious reasons, we need to assume that the loss function $\cL$ is a function of the target vector $\y$ and the output of the neural network $\a^{L-1}$ that is produced when $\x$ isthe input. Also, we assume that the loss for a mini-batch is given by the mean of the losses for the individual examples of the mini-batch.
+
+\section{Backpropagation}
+
+Assume that a friendly demon sits in the $j$th neuron in layer $\ell$. As the weighted input $\z^\ell_j$ is formed, the demon messes with the neuron's operation. It adds a little change $\Delta \z^\ell_j$ to $\z^\ell_j$, so the neuron outputs $f^\ell(\z^\ell_j + \Delta \z^\ell_j)$ instead of $f^\ell(\z^{\ell}_j)$. This changes is propagated through the subsequent layers, finally causing the loss to change by an amount
+\begin{equation}
+{\partial \cL \over \partial z^\ell_j} \cdot \Delta z^\ell_j.
+\end{equation}
+
+This demon is good, and it is trying to decrease the loss, that is, to find a $\Delta z^\ell_j$ that makes the loss smaller. 
+\begin{itemize}
+\item Suppose the partial derivative ${\partial \cL / \partial z^\ell_j}$ is a large value (either positive or negative). Then the demon can decrease the lost substantially by choosing $\Delta z_j^\ell$ to have the opposite sign to ${\partial \cL / \partial z^\ell_j}$.
+\item In contrast, suppose that the partial derivative ${\partial \cL / \partial z^\ell_j}$ is close to zero. Then the demon cannot decrease the loss much by perturbing the weighted input $z^\ell_j$. So far the helpful demon can tell, the neuron is already pretty near optimal. So there is a heuristic sense in which the partial derivative ${\partial \cL / \partial z^\ell_j}$ is a measure for the error in the neuron.
+\end{itemize}
+
+We define the delta (error) $\delta^\ell_j$ of the $j$th neuron in the $\ell$th layer by
+\begin{equation}
+\delta^\ell_j = {\partial \cL \over \partial z^\ell_j}.
+\end{equation}
+We also define $\bdelta^\ell$ the vector of all errors associated with layer $\ell$ by
+\begin{equation}
+\bdelta^\ell = \nabla_{\z^\ell} \cL.
+\end{equation}
+
+We will see backpropagation gives us an efficient way of calculating $\bdelta^\ell$ for every layer. 
+
+\subsection{Pawel's derivation}
+
+We want to show that 
+\begin{equation}
+\bdelta^{\ell-1} = (W^{\ell})^T \bdelta^\ell \circ g^{\ell-1}(z^{\ell-1})
+\end{equation}
+where $\circ$ denotes the Hadamard product and $g^{\ell-1}$ denotes the derivative of $f^{\ell-1}$. Note that $g^{\ell-1}$ is applied elementwise.
+
+First, we have
+\begin{align}
+{\partial \cL \over \partial a^{\ell-1}_k} 
+&=
+\sum_j {\partial \cL \over \partial z^\ell_j} \cdot {\partial z^\ell_j \over \partial a^{\ell-1}_k} \\
+&=
+\sum_j {\delta^\ell_j} \cdot w^\ell_{jk}
+\end{align}
+and in matrix notation
+\begin{align}
+\nabla_{\a^{\ell-1}} \cL 
+&=
+(W^\ell)^T \cdot \nabla_{\z^\ell} \cL \\
+&= 
+(W^\ell)^T \cdot \bdelta^\ell.
+\end{align}
+Second, we have 
+\begin{align}
+{\partial L \over \partial z^{\ell-1}_k} = {\partial \cL \over \partial a^{\ell-1}_k} \cdot {\partial a^{\ell-1}_k \over \partial z^{\ell-1}_k}
+\end{align}
+and in matrix notation
+\begin{equation}
+\bdelta^{\ell-1} = \nabla_{\a^{\ell-1}} \cL \circ g^{\ell-1}(\z^{\ell-1})
+\end{equation}
+
+
+
+\newpage
+
+\subsection{An equation for the delta in the output layer}
+
+The components of $\bdelta^{L-1}$ are given by
+\begin{align}
+\delta^{L-1}_j 
+&= 
+{\partial \cL \over \partial a^{L-1}_j} \cdot {\partial a^{L-1}_j \over \partial z^{L-1}_j} \\
+&= 
+{\partial \cL \over \partial a^{L-1}_j} \cdot g^{L-1}(z^{L-1}_j),
+\end{align}
+where $g^{L-1}$ denotes the derivative of the activation function $f^{L-1}$.
+
+Note that everything is easily computed. In particular, we compute the weighted input $z^{L-1}_j$ during forward propagation, and it's only a small additional cost to compute $g^{L-1}(z^\ell_j)$.
+The exact form of ${\partial \cL / \partial a^{L-1}_j}$ depends on the particular loss function used. However, since the loss function is known, it should be easy to compute ${\partial \cL / \partial a^{L-1}_j}$.  
+
+The above equation is in index notation. However, it is easy to rewrite the equation in matrix form as follows
+\begin{equation}
+\bdelta^{L-1} = \nabla_{\a^{L-1}} \cL \circ g(\z^{L-1}),
+\end{equation}
+where $\nabla_{\a^{L-1}} \cL$ is defined to the vector whose entries are the partial derivatives ${\partial \cL / \partial a^{L-1}_j}$
+and $\circ$ denotes the Hadamard product\footnote{The Hadamard product (also called Schur product) is the entrywise product.} of two vectors.
+
+\subsection{An equation for the delta in terms of the successor's delta}
 
 \end{document}
