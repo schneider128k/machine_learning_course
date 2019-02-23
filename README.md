@@ -82,7 +82,7 @@
 
 - **Deep learning for computer vision (convolutional neural networks)**
 
-  [Colab notebook for classifying MNIST digits with dense layers and analyzing model performance](https://colab.research.google.com/drive/1HA-PoWkxgYa37McvUrA_n609jkKT5F7m)
+  [Colab notebook for classifying MNIST digits with convolutional layers and analyzing model performance](https://colab.research.google.com/drive/1HA-PoWkxgYa37McvUrA_n609jkKT5F7m)
 
 - **Deep learning for text and sequences (RNN, LSTM)**
 
