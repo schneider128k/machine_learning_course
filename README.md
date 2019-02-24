@@ -80,15 +80,15 @@
   
   Currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.
 
-- **Deep learning for computer vision (convolutional neural networks)**
+## Deep learning for computer vision (convolutional neural networks)
 
-  [Colab notebook for classifying MNIST digits with convolutional layers and analyzing model performance](https://colab.research.google.com/drive/1HA-PoWkxgYa37McvUrA_n609jkKT5F7m)
+  - [Colab notebook for classifying MNIST digits with convolutional layers and analyzing model performance](https://colab.research.google.com/drive/1HA-PoWkxgYa37McvUrA_n609jkKT5F7m)
   
-  [Colab notebook for classifying MNIST fashion items with convolutional layers and anlyzing model performance](https://colab.research.google.com/drive/1eI47U0vW_5ok6rVvNuenXS2EkTbqxcCV)
+  - [Colab notebook for classifying MNIST fashion items with convolutional layers and anlyzing model performance](https://colab.research.google.com/drive/1eI47U0vW_5ok6rVvNuenXS2EkTbqxcCV)
 
-- **Deep learning for text and sequences (RNN, LSTM)**
+## Deep learning for text and sequences (RNN, LSTM)
 
-- **Generative deep learning (VAE, GAN)**
+## Generative deep learning (VAE, GAN)
 
 ---
 
