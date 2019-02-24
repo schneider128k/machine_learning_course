@@ -1,14 +1,14 @@
 # repo for CAP 5610 Machine Learning
 
-## Common ML problems, overview of (a) supervised, (b) unsupervised, and (c) reinforcement learning
+### Common ML problems, overview of (a) supervised, (b) unsupervised, and (c) reinforcement learning
 
   [1 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_slides.pdf)
 
-## ML terminology, linear regression, training & loss, gradient descent, stochastic gradient descent
+### ML terminology, linear regression, training & loss, gradient descent, stochastic gradient descent
 
   [2 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_slides.pdf)
 
-## Linear regression using the normal equation - numpy implementation 
+### Linear regression using the normal equation - numpy implementation 
 
   To understand the mathematics underlying the normal equation, read the following materials:
 
@@ -22,15 +22,15 @@
   
   [Colab notebook for solving linear regression using normal equation](https://colab.research.google.com/drive/1J7yct9aGfhtfXw8n00Mq4R-xldSSM1WY)
 
-## Effect of learning rate on gradient descent
+### Effect of learning rate on gradient descent
 
   [Colab notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
    
-## Linear regression using gradient descent - numpy implementation
+### Linear regression using gradient descent - numpy implementation
 
   [Colab notebook for solving linear regression using gradient descent](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
 
-## Overview of TensorFlow and Keras
+### Overview of TensorFlow and Keras
 
   [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/3_slides.pdf)
 
@@ -38,7 +38,7 @@
 
   [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/4_slides.pdf)
 
-## Keras examples
+### Keras examples
 
   [Colab notebook for solving linear regression for artificial data set](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
   
@@ -54,25 +54,25 @@
   
   Colab notebook for predicting fuel efficiency using the Auto MPG data set 
 
-## Generalization, overfitting, splitting data in train & test sets
+### Generalization, overfitting, splitting data in train & test sets
 
   [5 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/5_slides.pdf)
   
-## Validation
+### Validation
 
   [6 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/6_slides.pdf)
 
-## Logistic regression, gradients for squared error and binary cross-entropy loss functions
+### Logistic regression, gradients for squared error and binary cross-entropy loss functions
 
   [Logistic regression notes](https://github.com/schneider128k/machine_learning_course/blob/master/slides/logistic_regression.pdf)
 
-## Softmax, categorical cross entropy loss, gradients
+### Softmax, categorical cross entropy loss, gradients
 
   [Softmax, categorical cross entropy](https://github.com/schneider128k/machine_learning_course/blob/master/slides/softmax.pdf)
   
   [Colab notebook for verifying formulas for partial derivatives with symbolic differentiation](https://colab.research.google.com/drive/1G8u6w3FFhZyb0nWfparVvn77DSjHyxEW)
 
-## Sequential neural networks with dense layers
+### Sequential neural networks with dense layers
 
   [Notes on forward propagation, backpropagation algorithm for computing partial derivatives wrt weights and biases](https://github.com/schneider128k/machine_learning_course/blob/master/slides/neural_networks.pdf)
   
@@ -80,15 +80,15 @@
   
   Currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.
 
-## Deep learning for computer vision (convolutional neural networks)
+### Deep learning for computer vision (convolutional neural networks)
 
   - [Colab notebook for classifying MNIST digits with convolutional layers and analyzing model performance](https://colab.research.google.com/drive/1HA-PoWkxgYa37McvUrA_n609jkKT5F7m)
   
   - [Colab notebook for classifying MNIST fashion items with convolutional layers and anlyzing model performance](https://colab.research.google.com/drive/1eI47U0vW_5ok6rVvNuenXS2EkTbqxcCV)
 
-## Deep learning for text and sequences (RNN, LSTM)
+### Deep learning for text and sequences (RNN, LSTM)
 
-## Generative deep learning (VAE, GAN)
+### Generative deep learning (VAE, GAN)
 
 ---
 
