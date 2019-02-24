@@ -147,13 +147,13 @@ denote the bias, weighted input, and activation of the $j$th neuron in the $\ell
 \end{tikzpicture}
 \end{center}
 
-To keep the discuss genearl, we use $f^{[(\ell)]}$ to denote the activation function of the neurons in the $\ell$th layer. This is because the activation functions for different layers do not always have to be equal.\footnote{We exlude the softmax activation function for now. We only consider activation functions that are applied by each neuron independently. These include sigmoid, tangent hyperbolicus, relu activation functions. We treat the softmax activation function later.}
+To keep the discuss genearl, we use $f^{\ell}$ to denote the activation function of the neurons in the $\ell$th layer. This is because the activation functions for different layers do not always have to be equal.\footnote{We exlude the softmax activation function for now. We only consider activation functions that are applied by each neuron independently. These include sigmoid, tangent hyperbolicus, relu activation functions. We treat the softmax activation function later.} We use $g^\ell$ to denote the derivative of $f^\ell$.
 
-The forward propagation is described by the following formulas in index notation. We use $k\in\{0,\ldots,n^{[(0)]}-1\}$ to enumerate all neurons the $0$th layer, which is the input layer. For each neuron $k$ of the input layer, we set its activation to
+The forward propagation is described by the following formulas in index notation. We use $k\in\{0,\ldots,n^{0}-1\}$ to enumerate all neurons the $0$th layer, which is the input layer. For each neuron $k$ of the input layer, we set its activation to
 \begin{equation}
-  a^{[0]}_k = x_k
+  a^0_k = x_k
 \end{equation}
-where the value $x_k$ is the $k$th entry of feature vector $\x\in\R^{n^{[0]}}$ that is input the network. (Obviously, the input neurons do not have any weights, biases, or weighted inputs.)
+where the value $x_k$ is the $k$th entry of feature vector $\x\in\R^{n^0}$ that is input the network. (Obviously, the input neurons do not have any weights, biases, or weighted inputs.)
 
 We use $j\in\{0,\ldots,n^\ell-1\}$ to enumerate all neurons of the $\ell$ layer, where $\ell\ge 1$. For each neuron of the layer $\ell$, we have
 \begin{align}
@@ -207,19 +207,35 @@ We define the delta (error) $\delta^\ell_j$ of the $j$th neuron in the $\ell$th 
 \end{equation}
 We also define $\bdelta^\ell$ the vector of all errors associated with layer $\ell$ by
 \begin{equation}
-\bdelta^\ell = \nabla_{\z^\ell} \cL.
+\bdelta^\ell = \nabla_{\z^\ell} \cL,
 \end{equation}
+where $\nabla_{\z^\ell} \cL$ the vector whose entries are the partial derivatives $\partial \cL / \partial z^\ell_j$.
 
-We will see backpropagation gives us an efficient way of calculating $\bdelta^\ell$ for every layer. 
+We will see backpropagation gives us an efficient way of calculating $\bdelta^\ell$ for every layer. We use the following notation. The symbol $\odot$ denotes the Hadamard product\footnote{The Hadamard product (also called Schur product) is the entrywise product.} of two vectors. We use $\nabla_{\a^\ell} \cL$ is defined to the vector whose entries are the partial derivatives $\partial \cL / \partial a^\ell_j$. Similarly, we define $\nabla_{\b^\ell} \cL$ and $\nabla_{W^\ell} \cL$. Note that the former is a vector of the same shape as $\b$ and the latter a matrix of the same shape as $W^\ell$. We use $(W^\ell)^T$ to denote the transpose of the weight matrix $W^\ell$.
 
-\subsection{Pawel's derivation}
+\subsubsection*{(BP1) equation for the error in the output layer}
 
-We want to show that 
+We show that the error $\bdelta^{L-1}$ in the output layer is given by 
 \begin{equation}
-\bdelta^{\ell-1} = (W^{\ell})^T \bdelta^\ell \circ g^{\ell-1}(z^{\ell-1})
+\bdelta^{L-1} = g(\z^{L-1}) \, \odot \, \nabla_{\a^{L-1}} \cL,
 \end{equation}
-where $\circ$ denotes the Hadamard product and $g^{\ell-1}$ denotes the derivative of $f^{\ell-1}$. Note that $g^{\ell-1}$ is applied elementwise.
+vectors and
+To see this, we compute the components of $\bdelta^{L-1}$ as follows
+\begin{align}
+\delta^{L-1}_j 
+&= 
+{\partial \cL \over \partial a^{L-1}_j} \cdot {\partial a^{L-1}_j \over \partial z^{L-1}_j} \\
+&= 
+{\partial \cL \over \partial a^{L-1}_j} \cdot g^{L-1}(z^{L-1}_j).
+\end{align}
+Note that everything is easily computed. In particular, we compute the weighted input $z^{L-1}_j$ during forward propagation, and it's only a small additional cost to compute $g^{L-1}(z^\ell_j)$.
+The exact form of ${\partial \cL / \partial a^{L-1}_j}$ depends on the particular loss function used. However, since the loss function is known, it should be easy to compute ${\partial \cL / \partial a^{L-1}_j}$.  
 
+\subsubsection*{(BP2) equation for the error in terms of the error of the successor layer}
+We show that 
+\begin{equation}
+\bdelta^{\ell-1} = g^{\ell-1}(\z^{\ell-1}) \odot (W^{\ell})^T \bdelta^\ell.
+\end{equation}
 First, we have
 \begin{align}
 {\partial \cL \over \partial a^{\ell-1}_k} 
@@ -232,9 +248,9 @@ and in matrix notation
 \begin{align}
 \nabla_{\a^{\ell-1}} \cL 
 &=
-(W^\ell)^T \cdot \nabla_{\z^\ell} \cL \\
+(W^\ell)^T \nabla_{\z^\ell} \cL \\
 &= 
-(W^\ell)^T \cdot \bdelta^\ell.
+(W^\ell)^T \bdelta^\ell.
 \end{align}
 Second, we have 
 \begin{align}
@@ -242,35 +258,38 @@ Second, we have
 \end{align}
 and in matrix notation
 \begin{equation}
-\bdelta^{\ell-1} = \nabla_{\a^{\ell-1}} \cL \circ g^{\ell-1}(\z^{\ell-1})
+\bdelta^{\ell-1} = g^{\ell-1}(\z^{\ell-1}) \, \odot \, (W^\ell)^T \bdelta^\ell.
 \end{equation}
 
+\subsubsection*{(BP3) equation for the rate of change of loss wrt to any bias}
 
-
-\newpage
-
-\subsection{An equation for the delta in the output layer}
-
-The components of $\bdelta^{L-1}$ are given by
-\begin{align}
-\delta^{L-1}_j 
-&= 
-{\partial \cL \over \partial a^{L-1}_j} \cdot {\partial a^{L-1}_j \over \partial z^{L-1}_j} \\
-&= 
-{\partial \cL \over \partial a^{L-1}_j} \cdot g^{L-1}(z^{L-1}_j),
-\end{align}
-where $g^{L-1}$ denotes the derivative of the activation function $f^{L-1}$.
-
-Note that everything is easily computed. In particular, we compute the weighted input $z^{L-1}_j$ during forward propagation, and it's only a small additional cost to compute $g^{L-1}(z^\ell_j)$.
-The exact form of ${\partial \cL / \partial a^{L-1}_j}$ depends on the particular loss function used. However, since the loss function is known, it should be easy to compute ${\partial \cL / \partial a^{L-1}_j}$.  
-
-The above equation is in index notation. However, it is easy to rewrite the equation in matrix form as follows
+We show that
 \begin{equation}
-\bdelta^{L-1} = \nabla_{\a^{L-1}} \cL \circ g(\z^{L-1}),
+\nabla_{\b^\ell} \cL = \bdelta^\ell.
 \end{equation}
-where $\nabla_{\a^{L-1}} \cL$ is defined to the vector whose entries are the partial derivatives ${\partial \cL / \partial a^{L-1}_j}$
-and $\circ$ denotes the Hadamard product\footnote{The Hadamard product (also called Schur product) is the entrywise product.} of two vectors.
+To see this, compute the entries of $\nabla_{\b^\ell}$ as follows
+\begin{align}
+{\partial \cL \over \partial b^\ell_j} 
+&=
+{\partial \cL \over \partial z^\ell_j} \cdot {\partial z^\ell_j \over b^\ell_j} \\
+&=
+\delta^\ell_j \cdot 1. 
+\end{align}
 
-\subsection{An equation for the delta in terms of the successor's delta}
+\subsubsection*{(BP4) equation for the rate of change of loss wrt to any weight}
+
+We show that 
+\begin{equation}
+\nabla_{\b^\ell} \cL = \bdelta^\ell (\a^{\ell-1})^T.
+\end{equation}
+Note that $\bdelta^\ell$ is a column vector and $(\a^{\ell-1})^T$ is a row vector so that $\bdelta^\ell (\a^{\ell-1})^T$ is a matrix.
+To prove the above equation, compute the entry of $\nabla_{\w^\ell}$ as follows
+\begin{align}
+{\partial \cL \over \partial w^\ell_{jk}} 
+&=
+{\partial \cL \over \partial z^\ell_j} \cdot {\partial z^\ell_j \over w^\ell_{jk}} \\
+&=
+\delta^\ell_j \cdot a^{\ell-1}_k.
+\end{align}
 
 \end{document}
