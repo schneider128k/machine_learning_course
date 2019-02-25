@@ -76,13 +76,19 @@
 
 ### Deep learning for computer vision (convolutional neural networks)
 
-  - [CNN slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/CNN_slides.pdf)
+  - [CNN slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/CNN_slides.pdf); TO DO: add notes of preventing overfitting with data augmentation (also, add L2/L1 regularization and dropout earlier!)
 
   - [Colab notebook for classifying MNIST digits with convolutional layers and analyzing model performance](https://colab.research.google.com/drive/1HA-PoWkxgYa37McvUrA_n609jkKT5F7m)
   
   - [Colab notebook for classifying MNIST fashion items with convolutional layers and anlyzing model performance](https://colab.research.google.com/drive/1eI47U0vW_5ok6rVvNuenXS2EkTbqxcCV)
   
-  [Colab notebook for training a convolutional neural network from scratch](https://colab.research.google.com/drive/1GCz7d32nfYTlY1paDk7-2oVw6E7HFK80)
+  - [Colab notebook for training a convolutional neural network from scratch](https://colab.research.google.com/drive/1GCz7d32nfYTlY1paDk7-2oVw6E7HFK80)
+  
+  - Colab notebook for training a CNN from stratch with data augmentation and dropout regularization.
+  
+  - Colab notebook for fine-tuning Google's Inception v3 model
+  
+  - more examples
   
 ### Deep learning for text and sequences (RNN, LSTM)
 
