@@ -101,9 +101,9 @@ The diagram below shows two examples. The considered connections are drawn thick
 \foreach \l [count=\x from 0] in {layer 0, layer 1, layer 2}
   \node [align=center] at (\x*2,2) {\l};
   
-\draw [->, thick] (hidden-4) -- (output-2) node[midway, below]{$w^2_{24}$};
+\draw [->, thick] (hidden-4) -- (output-2) node[midway, below]{$w^2_{13}$};
 
-\draw [->, thick] (input-1) -- (hidden-2) node[midway, above]{\!\!\!\!\!\!\!\!$w^1_{21}$};
+\draw [->, thick] (input-1) -- (hidden-2) node[midway, above]{\!\!\!\!\!\!\!\!$w^1_{10}$};
 \end{tikzpicture}
 \end{center}
 
@@ -139,11 +139,11 @@ denote the bias, weighted input, and activation of the $j$th neuron in the $\ell
 \foreach \l [count=\x from 0] in {layer 0, layer 1, layer 2}
   \node [align=center] at (\x*2,2) {\l};
   
-\node[] at (hidden-3) {$b^1_3$};
+\node[] at (hidden-3) {$b^1_2$};
 
-\node[] at (hidden-2) {$z^1_2$};
+\node[] at (hidden-2) {$z^1_1$};
 
-\node[] at (output-1) {$a^2_1$};
+\node[] at (output-1) {$a^2_0$};
 \end{tikzpicture}
 \end{center}
 
