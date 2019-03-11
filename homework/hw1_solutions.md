@@ -6,6 +6,6 @@
 
 ## Problem 2
 
-Note that the code for Problem 1 and Problem 2 is almost identical. You only have to delete ```sigma_prime(z)``` in the line where you compute ```grad_weights``` and ```grad_bias``` in the method ```fit``` of the class ```Model```. The advantage of the binary crossentropy function is that neurons learn faster.  
+Note that there is only minimal difference between the code for Problem 1 and the code for Problem 2. You only have to delete ```sigma_prime(z)``` in the lines where you compute ```grad_weights``` and ```grad_bias``` in the method ```fit``` of the class ```Model```. The advantage of the binary crossentropy function is that neurons learn faster.  I have commented out the corresponding lines and add the lines without ```sigma_prime(z)```.
 
 [hw_1_problem_2_binary_crossentropy.ipynb](https://colab.research.google.com/drive/1s0WCKT7baDk1-WSStYgqRw6LWlcTvzSu)
