@@ -12,10 +12,20 @@ Note that there is only minimal difference between the code for Problem 1 and th
 
 ## Problem 3
 
+under construction
+
 ## Problem 4
 
-It should be better to increase ```batch_size``` and ```epochs```. Increasing ```batch_size``` makes training faster because the GPU can process an batch faster, then processing the training examples individually. Increasing ```batch_size``` decreases the number of times the gradient is updated. Therefore, ```epochs``` should be increased as well.
+It should be better to increase ```batch_size``` and ```epochs```. Increasing ```batch_size``` makes training faster because the GPU can process a batch faster, then processing the training examples seperately. Increasing ```batch_size``` decreases the number of times the gradient is updated. Therefore, ```epochs``` should be increased as well.
 
 I have left the hyperparameters the same so we can better compare with the other problems.
 
 [hw_1_problem_4_softmax_keras.ipynb](https://colab.research.google.com/drive/1RwhFCd6Oaw9fq57MVnMJR-fke7bdvUK8)
+
+## Problem 5 (only compute number of connected components)
+
+[hw_1_problem_5_only_connected_components.ipynb](https://colab.research.google.com/drive/1RSeZXKBIRMCSK4XPIjJY1ziWb1IjIfx_)
+
+## Problem 5 
+
+under construction
