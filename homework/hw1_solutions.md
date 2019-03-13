@@ -24,9 +24,9 @@ I have left the hyperparameters the same so we can better compare with the other
 
 ## Problem 5 (only compute number of connected components and download num_cc arrays to local file system)
 
-[hw_1_problem_5_only_connected_components.ipynb](https://colab.research.google.com/drive/1RSeZXKBIRMCSK4XPIjJY1ziWb1IjIfx_)
+It takes a few minutes to compute the number of connected regions (number of white regions) for the train and test images. I decided to compute it only once and download the num_cc arrays to the local file system.
 
-It takes a few minutes to compute the number of connected regions (number of white regions) for the train and test images. I decided to compute it only once and download the num_cc array to my local file system.)
+[hw_1_problem_5_only_connected_components.ipynb](https://colab.research.google.com/drive/1RSeZXKBIRMCSK4XPIjJY1ziWb1IjIfx_)
 
 ## Problem 5 (uploads num_arrays from local file system)
 
