@@ -22,10 +22,14 @@ I have left the hyperparameters the same so we can better compare with the other
 
 [hw_1_problem_4_softmax_keras.ipynb](https://colab.research.google.com/drive/1RwhFCd6Oaw9fq57MVnMJR-fke7bdvUK8)
 
-## Problem 5 (only compute number of connected components)
+## Problem 5 (only compute number of connected components and download num_cc arrays to local file system)
 
 [hw_1_problem_5_only_connected_components.ipynb](https://colab.research.google.com/drive/1RSeZXKBIRMCSK4XPIjJY1ziWb1IjIfx_)
 
-## Problem 5 
+It takes a few minutes to compute the number of connected regions (number of white regions) for the train and test images. I decided to compute it only once and download the num_cc array to my local file system.)
 
-under construction
+## Problem 5 (uploads num_arrays from local file system)
+
+Observe that the accuracy is better compared to the previous solution in Problem 4 that does not use the additional information about the number of white regions. You can see this by comparing the diagonals of the confusion matrices in Problems 4 and 5. You will see that the diagonal entries in Problem 5 are larger.
+
+[hw_1_problem_5.ipynb](https://colab.research.google.com/drive/1VEWtPJP_iuY4UvTPt6NxRAsjC8SqJd12)
