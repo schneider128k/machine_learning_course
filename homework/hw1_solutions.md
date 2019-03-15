@@ -12,7 +12,15 @@ Note that there is only minimal difference between the code for Problem 1 and th
 
 ## Problem 3
 
-under construction
+This is an implementation of softmax with categorical crossentropy from scratch. The code is fully-vectorized code, that is, there is no for loop to iterate over the elements of a mini-batch. To achieve this, I used ```np.tensordot```.
+
+[numpy docs: np.tensordot](https://docs.scipy.org/doc/numpy-1.16.0/reference/generated/numpy.tensordot.html)
+
+[TensorFlow docs: tf.tensordot](https://www.tensorflow.org/api_docs/python/tf/tensordot)
+
+[hw_1_problem_3_softmax.ipynb](https://colab.research.google.com/drive/1O7W_t_WMT796Q9FgStxt6PXd7pJAJ621)
+
+I want to clean up the code some more. 
 
 ## Problem 4
 
