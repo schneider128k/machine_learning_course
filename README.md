@@ -62,6 +62,8 @@
 
   - [Logistic regression notes](https://github.com/schneider128k/machine_learning_course/blob/master/slides/logistic_regression.pdf)
 
+  TO DO: Further simplify (d L / d z_j) by using that sum y_k = 1 (because categorical encoding)
+
 ### Softmax, categorical cross entropy loss, gradients
 
   - [Softmax, categorical cross entropy](https://github.com/schneider128k/machine_learning_course/blob/master/slides/softmax.pdf)
