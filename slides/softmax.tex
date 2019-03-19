@@ -82,15 +82,25 @@ The partial derivatives of $\mathcal{L}$ with respect to $a_k$ is
 \end{equation}
 
 The partial derivatives of $\mathcal{L}$ with respect to $z_j$ is
-\begin{eqnarray}
+\begin{align}
 {\partial \mathcal{L} \over \partial z_j} 
-& = &
+&=
 \sum_{k=1}^m {\partial \mathcal{L} \over \partial a_k} \cdot {\partial a_k \over \partial z_j} \\
-& = &
+&= 
 \sum_{k=1}^m -\frac{y_k}{a_k} \cdot a_k \cdot (\delta_{kj} - a_j)  \\
-& = &
-\sum_{k=1}^m y_k \cdot (a_j - \delta_{kj})
-\end{eqnarray}
+&= 
+\sum_{k=1}^m y_k \cdot (a_j - \delta_{kj}) \\
+&=
+\Big(\sum_{k=1}^m  y_k \Big) \cdot a_j - \sum_{k=1}^m  y_k \cdot \delta_{kj} \\
+&=
+a_j - y_j
+\end{align}
+since $\sum_{k=1}^m  y_k = 1$. Recall that the $y_k$ are the entries of the one-hot-encoding.
+
+In matrix notation, this is given by
+\begin{equation}
+\nabla_{\boldsymbol{z}} \mathcal{L} = \boldsymbol{a} - \boldsymbol{y}
+\end{equation}
 
 \section{Simple neural network with softmax activation and categorical cross entropy}
 
@@ -98,10 +108,18 @@ Let us consider a network that takes feature vectors of the form $\x=(x_1,\ldots
 \begin{equation}
 z_j = \sum_{i=1}^n w_{ji} x_i + b_j.
 \end{equation}
-The weights and the bias of $j$th neuron are $(w_{j1},\ldots,w_{jn})$ and $b_j$, respectively.  The weighted inputs $z_j$ are transformed into probabilities by the softmax activation.
+The weights and the bias of $j$th neuron are $(w_{j1},\ldots,w_{jn})$ and $b_j$, respectively.  The weighted inputs $z_j$ are transformed into probabilities by the softmax activation as discussed above.
 
-\medskip
-\noindent
-Compute the partial derivatives of the categorical cross entropy loss function the weights and biases. You will need these to implement stochastic gradient descent for the homework. This should be very easy. The more difficult part was computing the partial derivatives of the categorical entropy loss function with respect to the weighted inputs.  
+The loss function changes as follows with respect to the weights and biases:
+\begin{align}
+{\partial \mathcal{L} \over \partial w_{ji}} 
+&=
+{\partial \mathcal{L} \over \partial z_j} \cdot x_i \\
+%%
+{\partial \mathcal{L} \over \partial b_j} 
+&=
+{\partial \mathcal{L} \over \partial z_j}
+\end{align}
+
 
 \end{document}
