@@ -62,8 +62,6 @@
 
   - [Logistic regression notes](https://github.com/schneider128k/machine_learning_course/blob/master/slides/logistic_regression.pdf)
 
-  TO DO: Further simplify (d L / d z_j) by using that sum y_k = 1 (because categorical encoding)
-
 ### Softmax, categorical cross entropy loss, gradients
 
   - [Softmax, categorical cross entropy](https://github.com/schneider128k/machine_learning_course/blob/master/slides/softmax.pdf)
@@ -94,6 +92,8 @@
    
    - [Colab notebook for training a convolutional neural network from scratch](https://colab.research.google.com/drive/1Jem-Kw-1z3TyFpgVfkxmfapPkH7wxh00)
    
+   - [Colab notebook for training convnet with data augmentation and dropout](https://colab.research.google.com/drive/1bOov0VTMHNP_zasrSVPrDdzI3MBMcxgW)
+   
    -
    
    -
@@ -104,11 +104,11 @@
   
   - [Colab notebook for training a convolutional neural network from scratch](https://colab.research.google.com/drive/1GCz7d32nfYTlY1paDk7-2oVw6E7HFK80)
   
-  - Colab notebook for training a CNN from scratch with data augmentation and dropout regularization.
+  TO DO: execute the two notebooks below
   
-  - Colab notebook for fine-tuning Google's Inception v3 model
+  - [Colab notebook for training a CNN from scratch with data augmentation and dropout](https://colab.research.google.com/drive/1R67uzd5n_v2qnQh6klVCyBFCHTBRWZnF)
   
-  - more examples
+  - [Colab notebook for fine-tuning Google's Inception v3 model](https://colab.research.google.com/drive/1uVLIUWdT7--b59vM7NaSHkB-qFcu30jU)
   
 ### Deep learning for text and sequences (RNN, LSTM)
 
