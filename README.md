@@ -89,6 +89,18 @@
   - [Colab notebook for classifying MNIST fashion items with convolutional layers and anlyzing model performance](https://colab.research.google.com/drive/1eI47U0vW_5ok6rVvNuenXS2EkTbqxcCV)
   
    **Classification of cats and dogs**
+   
+   based on Chapter 5 *Deep learning for computer vision* of the book *Deep learning with Python* by F. Chollet
+   
+   - [Colab notebook for training a convolutional neural network from scratch](https://colab.research.google.com/drive/1Jem-Kw-1z3TyFpgVfkxmfapPkH7wxh00)
+   
+   -
+   
+   -
+   
+   ---
+  
+    based on [Google ML Practicum: Image Classification](https://developers.google.com/machine-learning/practica/image-classification/)
   
   - [Colab notebook for training a convolutional neural network from scratch](https://colab.research.google.com/drive/1GCz7d32nfYTlY1paDk7-2oVw6E7HFK80)
   
