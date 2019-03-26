@@ -94,9 +94,11 @@
    
    - [Colab notebook for training convnet with data augmentation and dropout](https://colab.research.google.com/drive/1bOov0VTMHNP_zasrSVPrDdzI3MBMcxgW)
    
-   -
+   - [Colab notebook for using VGG16 convolutional base for feature extraction without data augmentation](https://colab.research.google.com/drive/1Vame3KCI2KtnTLXnTXK0ZRaT8YjRErGz)
    
-   -
+   - Colab notebook for using VGG16 convolutional base for feature extraction with data augmentation
+   
+   - Colab notebook for using VGG16 convolutional base with fine-tuning
     
   --- 
     
