@@ -103,9 +103,7 @@
  based on [Google ML Practicum: Image Classification](https://developers.google.com/machine-learning/practica/image-classification/)
     
   - [Colab notebook for training a convolutional neural network from scratch](https://colab.research.google.com/drive/1GCz7d32nfYTlY1paDk7-2oVw6E7HFK80)
-  
-  TO DO: execute the two notebooks below
-  
+   
   - [Colab notebook for training a CNN from scratch with data augmentation and dropout](https://colab.research.google.com/drive/1R67uzd5n_v2qnQh6klVCyBFCHTBRWZnF)
   
   - [Colab notebook for fine-tuning Google's Inception v3 model](https://colab.research.google.com/drive/1uVLIUWdT7--b59vM7NaSHkB-qFcu30jU)
