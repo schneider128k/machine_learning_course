@@ -96,10 +96,12 @@
    
    - [Colab notebook for using VGG16 convolutional base for feature extraction without data augmentation](https://colab.research.google.com/drive/1Vame3KCI2KtnTLXnTXK0ZRaT8YjRErGz)
    
-   - [feature extraction with VGG16 conv base, data augmentation]()
+   - [feature extraction with VGG16 conv base, data augmentation](https://colab.research.google.com/drive/1pRyVUWTWGVBsJUYiR8rGgBAMva2ICdmi)
    
    - [feature extraction with VGG16 conv base, data augmentation, fine-tuning](https://colab.research.google.com/drive/1F-RWvoxH8MmT7c1UmNy41iuOp-ejiLoF)
-    
+  
+  TO DO: run fine-tuning
+  
   --- 
     
  based on [Google ML Practicum: Image Classification](https://developers.google.com/machine-learning/practica/image-classification/)
@@ -109,8 +111,6 @@
   - [Colab notebook for training a CNN from scratch with data augmentation and dropout](https://colab.research.google.com/drive/1R67uzd5n_v2qnQh6klVCyBFCHTBRWZnF)
   
   - [Colab notebook for fine-tuning Google's Inception v3 model](https://colab.research.google.com/drive/1uVLIUWdT7--b59vM7NaSHkB-qFcu30jU)
-  
-  TO DO: run fine-tuning
   
  ---
   
