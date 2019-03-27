@@ -100,10 +100,8 @@
    
    - [using VGG16 conv base for feature extraction, using data augmentation, not using dropout, fine-tuning](https://colab.research.google.com/drive/1F-RWvoxH8MmT7c1UmNy41iuOp-ejiLoF)
   
-  TO DO: execute fine-tuning!
+  ---
   
-  --- 
-    
  based on [Google ML Practicum: Image Classification](https://developers.google.com/machine-learning/practica/image-classification/)
     
   - [Colab notebook for training a convolutional neural network from scratch](https://colab.research.google.com/drive/1GCz7d32nfYTlY1paDk7-2oVw6E7HFK80)
@@ -114,7 +112,21 @@
   
  ---
   
+  **Visualizing what convnets learn**
+  
+  based on section 4 of chapter 5 of the book *Deep learning with Python* by F. Chollet
+  
+  - Visualizing intermediate activations
+  
+  - Visualizing convnet filters
+  
+  - Visualizing heatmaps of class activations
+  
+  ---
+  
 ### Deep learning for text and sequences (RNN, LSTM)
+
+---
 
 ### Generative deep learning (VAE, GAN)
 
