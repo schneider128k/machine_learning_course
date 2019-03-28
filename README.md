@@ -116,7 +116,9 @@
   
   based on section 4 of chapter 5 of the book *Deep learning with Python* by F. Chollet
   
-  - Visualizing intermediate activations
+  - [Visualizing intermediate activations](https://colab.research.google.com/drive/12Y80BfKlSI8PU0-KNwcSvmxb6z2shZEl)
+  
+  TO DO: finish it
   
   - Visualizing convnet filters
   
