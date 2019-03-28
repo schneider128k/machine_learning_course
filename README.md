@@ -118,8 +118,6 @@
   
   - [Visualizing intermediate activations](https://colab.research.google.com/drive/12Y80BfKlSI8PU0-KNwcSvmxb6z2shZEl)
   
-  TO DO: finish it
-  
   - Visualizing convnet filters
   
   - Visualizing heatmaps of class activations
