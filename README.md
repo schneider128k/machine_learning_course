@@ -114,11 +114,11 @@
   
   **Visualizing what convnets learn**
   
-  based on section 4 of chapter 5 of the book *Deep learning with Python* by F. Chollet
+  based on chapter 5 *Deep learning for computer vision* of the book *Deep learning with Python* by F. Chollet
   
   - [Visualizing intermediate activations](https://colab.research.google.com/drive/12Y80BfKlSI8PU0-KNwcSvmxb6z2shZEl)
   
-  - [Visualizing convnet filters](https://colab.research.google.com/drive/1Q8Iu_DvKnvvowNOuse0H-jl5gLFzTqaC), TO DO: finish it
+  - [Visualizing convnet filters](https://colab.research.google.com/drive/1Q8Iu_DvKnvvowNOuse0H-jl5gLFzTqaC), the convnet filter visualization at the bottom of the notebook look pretty cool!
   
   - Visualizing heatmaps of class activations
   
