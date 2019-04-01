@@ -124,6 +124,8 @@
   
   ---
   
+  [Deep dream](https://colab.research.google.com/drive/1AYaS92Da6xEPxQkMToAnqM5ThSzTf4E7)
+  
 ### Deep learning for text and sequences (RNN, LSTM)
 
 ---
