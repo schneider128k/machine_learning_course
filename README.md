@@ -126,6 +126,8 @@
   
   **Some cool looking stuff**
   
+  Based on Section 8.2 *DeepDream* and Section 8.3 *Neural style transfer* of the book *Deep learning with Python* by F. Chollet. I am not going to explain in detail how deep dream and neural style transfer work. I just wanted to include these notebooks to show you two cool examples of what can be done with deep neural networks.
+  
   - [Deep dream](https://colab.research.google.com/drive/1AYaS92Da6xEPxQkMToAnqM5ThSzTf4E7)
   
   - [Neural style transfer](https://colab.research.google.com/drive/1OJGyFUsIImZ8nEN6A4zfaTXGzM6C_SIB)
