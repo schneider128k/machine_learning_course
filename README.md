@@ -124,7 +124,13 @@
   
   ---
   
-  [Deep dream](https://colab.research.google.com/drive/1AYaS92Da6xEPxQkMToAnqM5ThSzTf4E7)
+  **Some cool looking stuff**
+  
+  - [Deep dream](https://colab.research.google.com/drive/1AYaS92Da6xEPxQkMToAnqM5ThSzTf4E7)
+  
+  - Neural style transfer
+  
+ ---
   
 ### Deep learning for text and sequences (RNN, LSTM)
 
