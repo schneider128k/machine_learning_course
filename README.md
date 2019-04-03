@@ -133,6 +133,14 @@
   - [Neural style transfer](https://colab.research.google.com/drive/1OJGyFUsIImZ8nEN6A4zfaTXGzM6C_SIB)
   
  ---
+ 
+### Deep learning for computer vision (residual networks)
+
+- [Resnet for CIFAR10 - train/val/test]()
+
+- [Resnet for CIFAR10- train/test]()
+
+---
   
 ### Deep learning for text and sequences (RNN, LSTM)
 
