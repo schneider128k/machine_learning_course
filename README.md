@@ -136,9 +136,20 @@
  
 ### Deep learning for computer vision (residual networks)
 
-The goal is to introduce more advanced architectures and concepts. 
+The goal is to introduce more advanced architectures and concepts. This is based onthe Keras documentation: 
+[CIFAR-10 ResNet](https://keras.io/examples/cifar10_resnet/).
+
+The relevant research papers are:
+
+- [Deep residual learning for image recognition](https://arxiv.org/pdf/1512.03385.pdf)
+
+- [Identity mappings in deep residual networks](https://arxiv.org/pdf/1603.05027.pdf)
+
+**Notebooks**
 
 - [Resnet for CIFAR10 - train/val/test](https://colab.research.google.com/drive/13Pw71ozcGqF4QyRpTApe7J8sJS0JEQmt)
+
+I have made several changes to the code from the Keras documentation. In the above notebook, I had to change the number of epochs and the learning rate schedule because the model is only trained on 40k and validated on 10k, whereas the model in the Keras documentation is trained on 50k and not validated at all. I wanted to have a situation that is similar to the situation in HW 2 so we can better compare the performance of the ResNet and the (normal) CNN.
 
 - Resnet for CIFAR10- train/test
 
