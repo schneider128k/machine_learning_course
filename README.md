@@ -136,7 +136,7 @@
  
 ### Deep learning for computer vision (residual networks)
 
-The goal is to introduce more advanced architectures (resnets) and concepts (callbacks and batch normalization). 
+The goal is to introduce more advanced architectures and concepts. 
 
 - [Resnet for CIFAR10 - train/val/test](https://colab.research.google.com/drive/13Pw71ozcGqF4QyRpTApe7J8sJS0JEQmt)
 
