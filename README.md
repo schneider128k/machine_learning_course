@@ -151,7 +151,7 @@ The relevant research papers are:
 
 I have made several changes to the code from the Keras documentation. In the above notebook, I had to change the number of epochs and the learning rate schedule because the model is only trained on 40k and validated on 10k, whereas the model in the Keras documentation is trained on 50k and not validated at all. I wanted to have a situation that is similar to the situation in HW 2 so we can better compare the performance of the ResNet and the (normal) CNN.
 
-- Resnet for CIFAR10- train/test
+- [Resnet for CIFAR10- train/test](https://colab.research.google.com/drive/1qpQc0senOmJZvVEBbOFcR8uoSP58L-5T)
 
 ---
   
