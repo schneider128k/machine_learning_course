@@ -154,6 +154,12 @@ I have made several changes to the code from the Keras documentation. In the abo
 - [Resnet for CIFAR10- train/test](https://colab.research.google.com/drive/1qpQc0senOmJZvVEBbOFcR8uoSP58L-5T)
 
 ---
+
+### Visualizing high-dimensional data using t-SNE
+
+[t-SNE visualization of MNIST fashion data set](https://colab.research.google.com/drive/1_PTPUXoWbtLhzluJeMT-eb_aPmC1uZlC)
+
+---
   
 ### Deep learning for text and sequences (RNN, LSTM)
 
