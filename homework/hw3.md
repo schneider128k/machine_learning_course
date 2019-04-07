@@ -21,4 +21,4 @@ Visualize heatmaps of class activation for the the model obtained in Problem 2.
 
 ## Problem 4
 
-Build an activation model that takes as input an image and produces as output the activation of the last conv layer of the model obtained in Problem 2. Using this activation model obtain the activations for the validation images. Apply t-SNE visualization to see how the convnet separates cats from dogs.
+Build an activation model that takes as input an image and produces as output the activation of the last conv layer of the model obtained in Problem 2. Using this activation model obtain the corresponding activations for the validation images. Apply t-SNE visualization to these activations to see how well the convnet separates cats from dogs.
