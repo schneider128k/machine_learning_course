@@ -157,6 +157,8 @@ I have made several changes to the code from the Keras documentation. In the abo
 
 ### Visualizing high-dimensional data using t-SNE
 
+- [How to use t-SNE effectively?](https://distill.pub/2016/misread-tsne/)
+
 - [PCA and t-SNE visualizations of MNIST fashion data set](https://colab.research.google.com/drive/1_PTPUXoWbtLhzluJeMT-eb_aPmC1uZlC)
 
 ---
