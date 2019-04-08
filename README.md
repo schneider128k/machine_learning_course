@@ -161,6 +161,7 @@ I have made several changes to the code from the Keras documentation. In the abo
 
 - [PCA and t-SNE visualizations of MNIST fashion data set](https://colab.research.google.com/drive/1_PTPUXoWbtLhzluJeMT-eb_aPmC1uZlC)
 
+- [t-SNE visualization of feature vectors for MNIST fashion data set](https://colab.research.google.com/drive/1WXIcE5ye6Vhm78RRDFfr9udu1bwijATl)
 ---
   
 ### Deep learning for text and sequences (RNN, LSTM)
