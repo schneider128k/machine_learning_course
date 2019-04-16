@@ -166,6 +166,8 @@ I have made several changes to the code from the Keras documentation. In the abo
   
 ### One-shot learning ###
 
+- [Exploring the omniglot dataset](https://colab.research.google.com/drive/1exJ-qNWj_m5Q-dcUesoL_fyBPyncfa0n)
+
 ---
 
 [Tools, additional materials](https://github.com/schneider128k/machine_learning_course/blob/master/tools_additional_materials.md)
