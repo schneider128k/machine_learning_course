@@ -168,6 +168,8 @@ I have made several changes to the code from the Keras documentation. In the abo
 
 - [Exploring the omniglot dataset](https://colab.research.google.com/drive/1exJ-qNWj_m5Q-dcUesoL_fyBPyncfa0n)
 
+- [One-shot learning for image recognition with the omniglot dataset](https://colab.research.google.com/drive/1q3vixnXSkolYz0kGv5nZiav6TRPTY5oJ)
+
 ---
 
 [Tools, additional materials](https://github.com/schneider128k/machine_learning_course/blob/master/tools_additional_materials.md)
