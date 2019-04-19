@@ -17,7 +17,7 @@ Do fine-tuning with data augmentation.
 
 ## Problem 3
 
-Visualize heatmaps of class activation for the the model obtained in Problem 2.
+Visualize heatmaps of class activation for the VGG19 model. 
 
 ## Problem 4
 
