@@ -122,6 +122,8 @@
   
   - [Visualizing heatmaps of class activations](https://colab.research.google.com/drive/1Cg2Qy2JGc4XNJzkcaoDPc2hiFejGKdUd)
   
+  - [Visualizing heatmaps of class activations, modified version](https://colab.research.google.com/drive/1KDdxUlvHsEAUmSHfiTh9kSkm9ceOz3tw), changes softmax to linear activation in last layer
+  
   ---
   
   **Some cool looking stuff**
