@@ -174,5 +174,11 @@ I have made several changes to the code from the Keras documentation. In the abo
 
 ---
 
+### Variational Autoencoder
+
+- [VAE for MNIST digits](https://colab.research.google.com/drive/1mU7A6OTm4N19Zc13ewzrpmIgMaOXPiyD)
+
+---
+
 [Tools, additional materials](https://github.com/schneider128k/machine_learning_course/blob/master/tools_additional_materials.md)
 
