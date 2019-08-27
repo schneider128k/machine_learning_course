@@ -1,4 +1,6 @@
-# repo for CAP 5610 Machine Learning
+# CAP 4630 Artificial Intelligence 
+
+Undergraduate course on ML/AI at the University of Central Florida.
 
 ### Common ML problems, overview of (a) supervised, (b) unsupervised, and (c) reinforcement learning
 
