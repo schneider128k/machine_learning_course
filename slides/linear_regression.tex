@@ -1,0 +1,297 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amsthm,amssymb,hyperref,fullpage,bm,palatino}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}{Corollary}
+\newtheorem{lem}{Lemma}
+\newtheorem{rem}{Remark}
+\newtheorem{dfn}{Definition}
+
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\x}{\boldsymbol{x}}
+\newcommand{\X}{\boldsymbol{X}}
+\newcommand{\y}{\boldsymbol{y}}
+\newcommand{\yh}{\hat{\boldsymbol{y}}}
+\newcommand{\w}{\boldsymbol{w}}
+\newcommand{\A}{\boldsymbol{A}}
+
+\newcommand{\mse}{\mathrm{MSE}}
+
+\title{Derivation of normal equation and some additional results for linear regression}
+\author{Pawel Wocjan}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+We derive the normal equation for linear regression and show that the mean-squared-error is a convex function.
+\end{abstract}
+
+\section{Notation}
+
+Let $(\x^{(1)}, y^{(1)}),\ldots,(\x^{(m)},y^{(m)})\in\R^n\times\R$ denote the collection of training examples, where
+\[
+\x^{(i)} = 
+\left(
+\begin{array}{c}
+x^{(i)}_1 \\
+x^{(i)}_2 \\
+\vdots \\
+x^{(i)}_n
+\end{array}
+\right)
+\in\R^n
+\]
+is the $i$th the feature vector of the $i$th training example and $y^{(i)}\in\R$ is label.
+
+Let 
+\[
+\w=
+\left(
+\begin{array}{c}
+w_1 \\
+w_2 \\
+\vdots \\
+w_n
+\end{array}
+\right)\in\R^n
+\] 
+be the weight vector and $b\in\R$ the bias of the linear regression model. It predicts the value
+\[
+\hat{y}^{(i)}= \sum_{j=1}^n w_j x_j^{(i)} + b
+\] 
+when given the $i$th feature vector $\x^{(i)}$.  Note that $\hat{y}^{(i)} = \w^T \x^{(i)} + b$, that is, the inner (dot) product of the weight vector and feature vector plus the bias. 
+
+The mean squared error (MSE) on the training set is equal to
+\[
+\mse (\w) = \frac{1}{m} \sum_{i=1}^m (\hat{y}^{(i)} - y^{(i)})^2 \,.
+\]
+
+We now introduce additional notation to express the MSE in a linear-algebraic way. Define the vectors
+\[
+\yh = \left(
+\begin{array}{c}
+\hat{y}^{(1)} \\
+\hat{y}^{(2)} \\
+\vdots \\
+\hat{y}^{(m)}
+\end{array}
+\right)\,,
+\quad
+\y = \left(
+\begin{array}{c}
+    y^{(1)} \\
+    y^{(2)} \\
+    \vdots  \\
+    y^{(m)}
+\end{array}
+\right) \in \R^m.
+\]
+
+Observe that the MSE is equal to
+\[
+\mse (\w) 
+= \frac{1}{m} (\yh - \y)^T (\yh - \y) =
+\frac{1}{m} \| \yh - \y \|^2_2\,,
+\]
+so the error increases whenever the Euclidean distance between the predictions and the targets (labels) increases. 
+
+Define the so-called design matrix by
+\[
+\X = 
+\left(
+\begin{array}{c}
+{\x^{(1)}}^T \\
+{\x^{(2)}}^T \\
+\vdots \\
+{\x^{(m)}}^T 
+\end{array}
+\right)
+=
+\left(
+\begin{array}{ccc}
+    x^{(1)}_1 & \ldots & x^{(1)}_n \\
+    x^{(2)} & \ldots & x^{(2)}_n \\
+    \vdots   & \ddots & \vdots \\
+    x^{(m)} & \ldots & x^{(m)}_n
+\end{array}
+\right) \in \R^{m \times n}
+\]
+
+To simplify the presentation, we assume that the bias $b$ is set to $0$, that is, only the weight vector $\w$ has to be determined. We will see later that this is not a restriction.
+Observe that
+\[
+\hat{\y} = \X \w
+\]
+due to the symmetry of the inner (dot) product $\hat{y}^{(i)} = {\x^{(i)}}^T \w = \w^T \x^{(i)}$.
+
+%
+%
+%
+
+\section{Normal equation}
+
+Recall that the bias of the linear regression model is assumed to $0$, that is, only the weight vector $\w=(w_1,\ldots,w_n)^T\in\R^n$ needs to be determined.
+
+\begin{thm}[Normal equation]
+The optimal weight vector $\w=(w_1,\ldots,w_n)^T\in\R^n$, that is, the one that minimizes the mean squared error is given by the formula
+\[
+\w = (\X^T \X)^{-1} \X^T \y. 
+\]
+\end{thm}
+This is proved in 5.1.4 Example: Linear Regression in \cite{DL}. I have included this proof with additional results so you can understand every step of the proof. 
+
+\section{Additional results on gradients}
+
+We introduce some abbreviations. Let $[n]=\{1,\ldots,n\}$. Let $\partial w_r$ denote the partial derivative operator 
+\[
+\frac{\partial}{\partial w_r}.
+\]
+
+\begin{lem}[Gradient of quadratic form]\label{lem:grad_1}
+Let $\A=(a_{rs})\in\R^{n\times n}$ be an arbitrary symmetric matrix and $\w=(w_1,\ldots,w_n)^T\in\R^n$ an arbitrary column vector.
+Define the quadratic form $f(\w)=\w^T \A \w$. Its gradient is given by
+\[
+\nabla_{\w} f(\w) = 2 \A \w\,.
+\]
+\end{lem}
+\proof{
+The right hand side is the column vector whose entries are given by
+\[
+2\sum_{s=1}^n a_{r s} w_s.
+\]
+for $r\in[n]$. This follows simply by carrying out the matrix-vector-multiplication.
+ 
+The left hand side of the above equation is the column vector whose entries are the partial derivatives
+\[
+\partial w_r f(\w)
+\]
+for $r\in[n]$. This follows from the definition of the nabla operator
+\[
+\nabla_{\w} = 
+\left(
+\begin{array}{c}
+\partial w_1 \\
+\vdots \\
+\partial w_n
+\end{array}
+\right)\,.
+\]
+We have
+\begin{eqnarray*}
+\partial w_r f(\w) & = & 
+\partial w_r \left( \sum_{t,s} w_t a_{ts} w_s \right) \\
+& = &
+\partial w_r \left( w_r^2 a_{rr} + 2 \sum_{s \neq r} w_r a_{rs} w_s \right) \\
+& = &
+2 w_r a_{rr} + 2 \sum_{s \neq r} a_{rs} w_s \\
+& = &
+2 \sum_{s} a_{rs} w_s.
+\end{eqnarray*}
+We use that either $t=r$ and $s=r$ or $t=r$ and $s\neq r$. Otherwise the partial derivative $\partial w_r (w_t a_{ts} w_s)$ is equal to $0$.  We also use that $\A$ is symmetric, that is, $a_{rs}=a_{sr}$.
+}
+
+\begin{lem}\label{lem:grad_2}
+Let $\w=(w_1,\ldots,w_n)^T\in\R^n$ and $\boldsymbol{v}=(v_1,\ldots,v_n)^T\in\R^n$ be arbitrary column vectors.
+Define the function $g(\w)=\w^T \boldsymbol{v}$. Its gradient  is given by
+\[
+\nabla_{\w} g(\w) = \boldsymbol{v}\,.
+\]
+\end{lem}
+\proof{This is easy. Prove it yourself.}
+
+%
+%
+%
+
+\section{Proof of normal equation}
+
+To minimize the $\mse$, we compute its gradient and determine where it is equal to $\boldsymbol{0}$:
+\begin{eqnarray}
+\nabla_{\w} \mse (\w) 
+& = & 
+\nabla_{\w}  \frac{1}{m} \| \yh - \y \|^2_2 \\ 
+& = & 
+\frac{1}{m} \nabla_{\w}  (\yh - \y)^T (\yh - \y) \\
+& = & 
+\frac{1}{m} \nabla_{\w}  (\X \w - \yh)^T (\X \w - \yh) \\
+& = &
+\frac{1}{m} \nabla_{\w} ( \w^T \X^T \X \w - 2 \w^T \X^T \y + \y^T \y) \label{eq:use_additional_results} \\ 
+& = &
+\frac{2}{m} (\X^T \X \w - \X^T \y)  \\
+& \Longrightarrow & 
+\w = (\X^T \X \w)^{-1} \X^T \y \label{eq:normal_form}
+\end{eqnarray}
+In eq.~(\ref{eq:use_additional_results}), we use Lemma~\ref{lem:grad_1} with $\A = \X^T \X$ and Lemma~\ref{lem:grad_2} with $\boldsymbol{v}=\X^T \y$ to compute the
+gradient. We also use that the term $\y^T \y$ does not depend on $\w$. The solution given by eq.~\ref{eq:normal_form} is known as the normal equation.
+
+\section{Proof of convexity of MSE}
+
+\begin{thm}
+The MSE
+\[
+\mse(\w) 
+ = 
+\frac{1}{m} \| \X \w - \y \|_2^2
+\]
+is convex.
+\end{thm}
+
+To prove this theorem, we will rely on the following two simple lemmata.
+
+\begin{lem}
+Suppose $\phi : [0,\infty) \rightarrow \R$ is non-decreasing and convex and $f : \R^n \rightarrow [0,\infty)$ is convex. 
+Then, $\phi\circ f$ is convex.
+\end{lem}
+\begin{proof}
+For $p\in [0,1]$ and $\boldsymbol{r},\boldsymbol{s}\in\R^n$, we have
+\begin{eqnarray*}
+\phi( f(p \boldsymbol{r} + (1-p) \boldsymbol{s})) & \le & \phi( f(p \boldsymbol{r}) + (1-p) f(\boldsymbol{s})) \\
+& \le & 
+p \phi( f(\boldsymbol{r})) + (1-p) \phi(f(\boldsymbol{s})).
+\end{eqnarray*}
+\end{proof}
+
+\begin{lem}
+The function $f(\w)=\|\X\w - \y \|_2$ is convex.
+\end{lem}
+\begin{proof}
+Let $\w, \tilde{\w}\in\R^n$ be two arbitrary weight vectors. We have
+\begin{eqnarray*}
+f(p \w + (1-p)\tilde{\w})) & = & \| \X (p \w + (1-p)\tilde{\w}) - \y \|_2 \\
+& \le &
+\| p (\X \w - \y) + (1-p)(\X \tilde{\w} - \y) \|_2 \\
+& \le &
+p \| \X \w - \y \|_2 + (1-p) \| \X \tilde{\w} - \y \|_2 \\
+& = & p f(\w) + (1-p) f(\tilde{\w}).
+\end{eqnarray*}
+In the above derivation, we have used the triangle inequality $\| \boldsymbol{r} + \boldsymbol{s} \| \le \| \boldsymbol{r} \| + \| \boldsymbol{s}\|$ and $\| \lambda \boldsymbol{r} \| = |\lambda | \| \boldsymbol{r}\|$, which hold for arbitrary $\lambda\in \R$ and $\boldsymbol{r},\boldsymbol{s}\in\R^n$.
+\end{proof}
+
+\begin{proof}
+We can write
+\[
+\mse(\w) = \phi( \| \X \w - \y \|_2 )\,,
+\]
+where $\phi : [0,\infty) \rightarrow \R, \phi(x)=\frac{1}{m} x^2$.  It is important that $\phi$ is non-decreasing and convex. The theorem follows now by applying the above two lemmata.
+\end{proof}
+
+\section{General case of linear regression with non-zero bias}
+
+The general case of linear regression with non-zero bias $b$ can also be solved with the help of the normal equation. Define the augmented weight vector $\w_b = (b,w_1,\ldots,w_n)^T\in\R^{n+1}$ and the augmented feature vectors $\x^{(i)}_b=(1,x^{(i)}_1,\ldots,x^{(i)}_n)^T\in\R^{n+1}$.  We have
+\[
+\hat{y}^{(i)} = \w_b^T \x^{(i)}_b = \w^T \x^{(i)} + b.
+\]
+
+\begin{thebibliography}{}
+\bibitem{DL}
+I.~Goodfellow, Y.~Bengio, and A.~Courville, \emph{Deep learning}, MIT Press, 2006\\
+\url{http://www.deeplearningbook.org}
+\end{thebibliography}
+
+
+\end{document}
