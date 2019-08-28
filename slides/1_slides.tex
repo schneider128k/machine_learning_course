@@ -1,0 +1,437 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{crane} % or try albatross, beaver, crane, ...
+  \usefonttheme{structurebold}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+
+\title[ML]{Machine Learning}
+\author{Pawel Wocjan}
+\institute{University of Central Florida}
+\date{Spring 2019}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Sources for Slides}
+
+\begin{itemize}
+\item I have extensively used the machine learning materials that have been prepared by Google. 
+
+{\small 
+\url{https://developers.google.com/machine-learning/problem-framing/cases}
+}
+
+\item Google has licensed these materials under the Creative Commons Attribution 3.0 License.
+
+{\small 
+\url{https://creativecommons.org/licenses/by/3.0/}
+}
+\end{itemize}
+\end{frame}
+
+% Uncomment these lines for an automatically generated outline.
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+\section{Common ML Problems}
+
+\begin{frame}{Common ML Problems}
+
+\begin{itemize}
+
+\item In basic terms, ML is the process of training a piece of software, called a model, to make useful predictions using a data set. 
+
+\item This predictive model can then serve up predictions about previously unseen data. 
+
+\item We use these predictions to take action in a product; for example, the system predicts that a user will like a certain video, so the system recommends that video to the user.
+
+\item Often, people talk about ML as having two paradigms, supervised and unsupervised learning. 
+
+\item However, it is more accurate to describe ML problems as falling along a spectrum of supervision between supervised and unsupervised learning.
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\section{Supervised Learning -- overview}
+
+\begin{frame}{Supervised Learning}
+
+\begin{itemize}
+\item Supervised learning is a type of ML where the model is provided with labeled training data. But what does that mean?
+
+\item For example, suppose you are an amateur botanist determined to differentiate between two species of the Lilliputian plant genus (a completely made-up plant). 
+
+\item The two species look pretty similar. Fortunately, a botanist has put together a data set of Lilliputian plants she found in the wild along with their species name.
+
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Supervised Learning}
+
+\begin{itemize}
+\item Here's a snippet of that data set:
+
+\bigskip
+\begin{tabular}{lll}
+Leaf Width & Leaf Length & Species \\ \hline
+2.7	& 4.9 & small-leaf \\
+3.2	& 5.5 & big-leaf \\
+2.9	& 5.1 & small-leaf \\
+3.4	& 6.8 & big-leaf 
+\end{tabular}
+
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Supervised Learning}
+
+\begin{itemize}
+
+\item Leaf width and leaf length are the features, while the species is the label. 
+
+\item A real life botanical data set would probably contain far more features (including descriptions of flowers, blooming times, arrangement of leaves) but still have only one label. 
+
+\item Features are measurements or descriptions; the label is essentially the ``answer.'' 
+
+\item For example, the goal of the data set is to help other botanists answer the question, ``Which species is this plant?''
+
+\item This data set consists of only four examples. A real life data set would likely contain vastly more examples.
+
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Supervised Learning}
+
+\begin{itemize}
+\item Suppose we graph the leaf width and leaf length and then color-code the species.
+\end{itemize}
+
+\bigskip
+
+\includegraphics[width=\textwidth]{images/Graph1.png}
+
+\end{frame}
+
+%%
+
+\begin{frame}{Supervised Learning}
+
+\begin{itemize}
+\item In supervised machine learning, you feed the features and their corresponding labels into an algorithm in a process called training. 
+
+\item During training, the algorithm gradually determines the relationship between features and their corresponding labels. This relationship is called the model. 
+
+\item Often times in machine learning, the model is very complex. 
+
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Supervised Learning}
+
+\begin{itemize}
+
+\item However, suppose that this model can be represented as a line that separates big-leaf from small-leaf:
+
+\end{itemize}
+
+\bigskip
+
+\includegraphics[width=\textwidth]{images/Graph2.png}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Supervised Learning}
+
+\begin{itemize}
+\item Now that a model exists, you can use that model to classify new plants that you find in the jungle. For example:
+\end{itemize}
+
+\bigskip
+
+\includegraphics[width=\textwidth]{images/Graph3.png}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Supervised Learning}
+
+\begin{itemize}
+\item To tie it all together, supervised machine learning finds patterns between data and labels that can be expressed mathematically as functions. 
+
+\item Given an input feature, you are telling the system what the expected output label is, thus you are supervising the training. The ML system will learn patterns on this labeled data. 
+
+\item In the future, the ML system will use these patterns to make predictions on data that it did not see during training.
+
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Supervised Learning}
+
+\begin{itemize}
+
+\item An exciting real-world example of supervised learning is a study from Stanford University that used a model to detect skin cancer in images. 
+
+\medskip
+\url{https://news.stanford.edu/2017/01/25/artificial-intelligence-used-identify-skin-cancer/}
+
+\item In this case, the training set contained images of skin labeled by dermatologists as having one of several diseases. The ML system found signals that indicate each disease from its training set, and used those signals to make predictions on new, unlabeled images.
+
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\section{Unsupervised Learning -- overview}
+
+\begin{frame}{Unsupervised Learning}
+
+\begin{itemize}
+
+\item In unsupervised learning, the goal is to identify meaningful patterns in the data. 
+
+\item To accomplish this, the machine must learn from an unlabeled data set. 
+
+\item In other words, the model has no hints how to categorize each piece of data and must infer its own rules for doing so.
+
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Unsupervised Learning}
+
+\begin{itemize}
+\item All the examples are the same shape because we don't have labels to differentiate between examples of one type or another here:
+\end{itemize}
+
+\medskip
+
+\includegraphics[width=0.8\textwidth]{images/Graph4.png}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Unsupervised Learning}
+
+\begin{itemize}
+\item Fitting a line to unlabeled points isn't helpful. We still end up with examples of the same shape on both sides of the line. 
+\end{itemize}
+
+\includegraphics[width=0.8\textwidth]{images/Graph5.png}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Unsupervised Learning}
+
+\begin{itemize}
+\item Here, we have two clusters. What do these clusters represent? It can be difficult to say. Sometimes the model finds patterns in the data that you don't want it to learn, such as stereotypes or bias.
+
+\end{itemize}
+
+\includegraphics[width=0.8\textwidth]{images/Graph6.png}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Unsupervised Learning}
+
+\begin{itemize}
+\item However, when new data arrives, we can categorize it pretty easily, assuming it fits into a known cluster. 
+
+\end{itemize}
+
+\includegraphics[width=0.8\textwidth]{images/Graph7.png}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Unsupervised Learning}
+
+\begin{itemize}
+\item But what if your photo clustering model has never seen a pangolin before? 
+
+\url{https://en.wikipedia.org/wiki/Pangolin}
+
+\item Will the system cluster the new photo with armadillos or maybe hedgehogs? 
+
+\url{https://en.wikipedia.org/wiki/Armadillo}
+
+\url{https://en.wikipedia.org/wiki/Hedgehog}
+
+\item This course will talk more about the difficulties of unlabeled data and clustering later on.
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\section{Reinforcement Learning -- overview}
+
+\begin{frame}{Reinforcement Learning}
+
+\begin{itemize}
+\item An additional branch of machine learning is reinforcement learning (RL). Reinforcement learning differs from other types of machine learning. 
+
+\item In RL you don't collect examples with labels. Imagine you want to teach a machine to play a very basic video game and never lose. You set up the model (often called an agent in RL) with the game, and you tell the model not to get a "game over" screen. 
+
+\item During training, the agent receives a reward when it performs this task, which is called a reward function. With reinforcement learning, the agent can learn very quickly how to outperform humans.
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Reinforcement Learning}
+
+\begin{itemize} 
+\item Designing a good reward function is difficult, and RL models are less stable and predictable than supervised approaches. 
+
+\item You also need to provide a way for the agent to interact with the game to produce data, which means either building a physical agent that can interact with the real world or a virtual agent and a virtual world, either of which is a big challenge. 
+\item Reinforcement learning is an active field of ML research, but in this course we'll not cover it. I cover RL in the course Advanced Artificial Intelligence.
+
+\item To learn more about RL, check out the following links:
+
+\url{https://gym.openai.com/}
+
+\url{http://incompleteideas.net/book/the-book-2nd.html}
+
+\url{https://www.alexirpan.com/2018/02/14/rl-hard.html}
+
+\end{itemize}
+
+\end{frame}
+
+\end{document}
+
+%%%
+
+\begin{frame}{}
+
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{}
+
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{}
+
+\begin{itemize}
+    \item 
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Introduction}
+
+\begin{itemize}
+  \item Your introduction goes here!
+  \item Use \texttt{itemize} to organize your main points.
+\end{itemize}
+
+\vskip 1cm
+
+\begin{block}{Examples}
+Some examples of commonly used commands and features are included, to help you get started.
+\end{block}
+
+\end{frame}
+
+\section{Some \LaTeX{} Examples}
+
+\subsection{Tables and Figures}
+
+\begin{frame}{Tables and Figures}
+
+\begin{itemize}
+\item Use \texttt{tabular} for basic tables --- see Table~\ref{tab:widgets}, for example.
+\item You can upload a figure (JPEG, PNG or PDF) using the files menu. 
+\item To include it in your document, use the \texttt{includegraphics} command (see the comment below in the source code).
+\end{itemize}
+
+% Commands to include a figure:
+%\begin{figure}
+%\includegraphics[width=\textwidth]{your-figure's-file-name}
+%\caption{\label{fig:your-figure}Caption goes here.}
+%\end{figure}
+
+\begin{table}
+\centering
+\begin{tabular}{l|r}
+Item & Quantity \\\hline
+Widgets & 42 \\
+Gadgets & 13
+\end{tabular}
+\caption{\label{tab:widgets}An example table.}
+\end{table}
+
+\end{frame}
+
+\subsection{Mathematics}
+
+\begin{frame}{Readable Mathematics}
+
+Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
+$$S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+      = \frac{1}{n}\sum_{i}^{n} X_i$$
+denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
+
+\end{frame}
+
+\end{document}
