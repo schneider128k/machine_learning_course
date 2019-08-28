@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 627 99" style="enable-background:new 0 0 627 99;" xml:space="preserve">
+<desc>A horizontal bar divided into two pieces: 80% of which is the training set and 20% the test set.</desc>
+<style type="text/css">
+	.p-st0{fill-rule:evenodd;clip-rule:evenodd;fill:#4285F4;}
+	.p-st1{fill-rule:evenodd;clip-rule:evenodd;fill:#F4B400;}
+	.p-st2{fill:#424242;}
+	.p-st3{font-family:'Arial-BoldMT';}
+	.p-st4{font-size:18px;}
+</style>
+<rect x="3.8" y="3.9" class="p-st0" width="535.9" height="63.3"/>
+<rect x="539.7" y="3.9" class="p-st1" width="83" height="63.3"/>
+<text transform="matrix(1 0 0 1 219.7082 89.6104)" class="p-st2 p-st3 p-st4">Training Set</text>
+<text transform="matrix(1 0 0 1 546.1618 89.6104)" class="p-st2 p-st3 p-st4">Test Set</text>
+</svg>
