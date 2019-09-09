@@ -17,10 +17,10 @@
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 
-\title[ML]{Machine Learning}
+\title[AI]{Deep Learning/Machine Learning/Artificial Intelligence}
 \author{Pawel Wocjan}
 \institute{University of Central Florida}
-\date{Spring 2019}
+\date{Fall 2019}
 
 \begin{document}
 
@@ -31,17 +31,19 @@
 \begin{frame}{Sources for Slides}
 
 \begin{itemize}
-\item I have extensively used the machine learning materials that have been prepared by Google. 
+\item I have used the machine learning materials from Google
 
 {\small 
 \url{https://developers.google.com/machine-learning/problem-framing/cases}
 }
 
-\item Google has licensed these materials under the Creative Commons Attribution 3.0 License.
+for the overview of machine learning.
 
-{\small 
-\url{https://creativecommons.org/licenses/by/3.0/}
-}
+\item  I have used materials from 
+
+\url{https://skymind.ai/wiki/ai-vs-machine-learning-vs-deep-learning} 
+
+for the overview of artificial intelligence.
 \end{itemize}
 \end{frame}
 
@@ -50,7 +52,129 @@
   \tableofcontents
 \end{frame}
 
-\section{Common ML Problems}
+\section{Artificial intelligence/machine learning/deep learning}
+
+\begin{frame}{DL/ML/AI}
+\begin{itemize}
+\item You can think of deep learning, machine learning and artificial intelligence as a set of Russian dolls nested within each other. 
+\item Deep learning is a subset of machine learning, and machine learning is a subset of AI, which is an umbrella term for any computer program that does something smart. \item In other words, all machine learning is AI, but not all AI is machine learning, and so forth.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Artificial intelligence}
+\begin{itemize}
+\item John McCarthy, one of the founders of artificial intelligence, defined it as ``the science and engineering of making intelligent machines.''
+
+\url{https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)}
+
+\item Here are a few other definitions of artificial intelligence:
+
+\item A branch of computer science dealing with the simulation of intelligent behavior in computers.
+
+\item The capability of a machine to imitate intelligent human behavior.
+
+\item A computer system able to perform tasks that normally require human intelligence, such as visual perception, speech recognition, decision-making, and translation between languages.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Symbolic AI/GOFAI}
+\begin{itemize}
+\item Symbolic artificial intelligence is the term for the collection of all methods in artificial intelligence research that are based on high-level "symbolic" (human-readable) representations of problems, logic and search.
+
+\item Symbolic artificial intelligence is often called GOFAI (``Good Old-Fashioned Artificial Intelligence'').
+
+\item The programming language Prolog is an example of symbolic artificial intelligence \url{https://en.wikipedia.org/wiki/Prolog}.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Symbolic AI/GOFAI}
+Roughly speaking, symbolic AI operates like this:
+\begin{verbatim}
+                    
+Input ------->  +---------+
+                |         |-------> Output
+Rules ------->  +---------+
+
+\end{verbatim}
+\end{frame}
+
+\begin{frame}{Machine learning}
+\begin{itemize}
+\item In 1959, Arthur Samuel, coined the machine learning and defined it as a ``field of study that gives computers the ability to learn without being explicitly programmed.''
+
+\url{https://en.wikipedia.org/wiki/Arthur_Samuel}
+
+\item That is, machine-learning programs have not been explicitly entered into a computer, like the if-then statements above. 
+
+\item Machine-learning programs, in a sense, adjust themselves in response to the data they’re exposed to (like a child that is born knowing nothing adjusts its understanding of the world in response to experience).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Machine learning}
+
+\begin{itemize}
+\item Machine learning is dynamic and does not require human intervention to make certain changes. 
+
+\item That makes it less brittle, and less reliant on human experts.
+
+\item Tom Mitchell provided a widely quoated, more formal definition of the algorithms studies in the machine learning field:
+
+\medskip
+\begin{quote}
+A computer program is said to learn from experience $E$ with respect to some class of tasks $T$ and performance measure $P$ if its performance at tasks in $T$, as measured by $P$, improves with experience $E$.
+\end{quote}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Machine learning}
+\begin{itemize}
+\item One aspect that separates machine learning from symbolic AI is its ability to modify itself when exposed to more data.
+
+\item Instead of coding up rules that transform the input to output, a machine learning system comes up with the rules itself.
+
+\begin{verbatim}
+
+Input ------->  +---------+
+                |         |-------> Rules
+Output ------>  +---------+
+
+\end{verbatim}
+\item The learned rules can then be used to predict outputs for new unseen inputs.
+
+\item We will make this more precise, especially in the context of supervised learning.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Combining two AI approaches}
+\begin{itemize}
+\item One may think that symbolic AI (GOFAI) is somewhat ``boring'', while machine learning (in particular, deep learning) is ``cool.''
+
+\item This is not the case. For instance, the recent research paperstries to combine both approaches:
+
+\medskip
+\url{https://arxiv.org/pdf/1904.12584.pdf}
+
+\medskip
+Here is a short description of the main ideas in MIT  Technology Review:
+
+{\tiny \url{https://www.technologyreview.com/s/613270/two-rival-ai-approaches-combine-to-let-machines-learn-about-the-world-like-a-child/}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Overview}
+\begin{itemize}
+\item This concludes the high-level overview of artificial intelligence.
+
+\item Let's look at machine learning in more details.
+\end{itemize}
+\end{frame}
+
+%
+%
+%
+
+\section{Machine learning}
 
 \begin{frame}{Common ML Problems}
 
@@ -71,7 +195,7 @@
 
 %%%
 
-\section{Supervised Learning -- overview}
+\subsection{Supervised learning}
 
 \begin{frame}{Supervised Learning}
 
@@ -204,12 +328,14 @@ Leaf Width & Leaf Length & Species \\ \hline
 
 \begin{itemize}
 
-\item An exciting real-world example of supervised learning is a study from Stanford University that used a model to detect skin cancer in images. 
+\item A real-world example of supervised learning is a study from Stanford University that used a model to detect skin cancer in images. 
 
 \medskip
 \url{https://news.stanford.edu/2017/01/25/artificial-intelligence-used-identify-skin-cancer/}
 
-\item In this case, the training set contained images of skin labeled by dermatologists as having one of several diseases. The ML system found signals that indicate each disease from its training set, and used those signals to make predictions on new, unlabeled images.
+\item In this case, the training set contained images of skin labeled by dermatologists as having one of several diseases. 
+
+\item The ML system found signals that indicate each disease from its training set, and used those signals to make predictions on new, unlabeled images.
 
 \end{itemize}
 
@@ -217,7 +343,7 @@ Leaf Width & Leaf Length & Species \\ \hline
 
 %%%
 
-\section{Unsupervised Learning -- overview}
+\subsection{Unsupervised learning}
 
 \begin{frame}{Unsupervised Learning}
 
@@ -299,24 +425,34 @@ Leaf Width & Leaf Length & Species \\ \hline
 \url{https://en.wikipedia.org/wiki/Armadillo}
 
 \url{https://en.wikipedia.org/wiki/Hedgehog}
-
-\item This course will talk more about the difficulties of unlabeled data and clustering later on.
 \end{itemize}
 
 \end{frame}
 
 %%%
 
-\section{Reinforcement Learning -- overview}
+\subsection{Reinforcement learning}
 
 \begin{frame}{Reinforcement Learning}
 
 \begin{itemize}
 \item An additional branch of machine learning is reinforcement learning (RL). Reinforcement learning differs from other types of machine learning. 
 
-\item In RL you don't collect examples with labels. Imagine you want to teach a machine to play a very basic video game and never lose. You set up the model (often called an agent in RL) with the game, and you tell the model not to get a "game over" screen. 
+\item In RL you don't collect examples with labels. Imagine you want to teach a machine to play a very basic video game and never lose. You set up the model (often called an agent in RL) with the game, and you tell the model not to get a ``game over'' screen. 
+\end{itemize}
+\end{frame}
 
-\item During training, the agent receives a reward when it performs this task, which is called a reward function. With reinforcement learning, the agent can learn very quickly how to outperform humans.
+\begin{frame}{Reinforcement Learning}
+
+\begin{itemize}
+
+\item At time step $t$, the agent is in state $s_t$, takes action $a_t$, receives reward $r_t$, and transitions into state $s_{t+1}$.
+
+\includegraphics[width=0.75\textwidth]{images/rl_diagram_transparent_bg.png}
+
+\item The state $S_t$ describes the agent's knowledge of the world. For instance, the visual input from a camera and the positions of the joints of a robot.
+
+\item The agent has to learn which actions to take so as to maximize the total reward.  For instance, a robot has to learn how to grasp and manipulate an object as fast as possible.
 \end{itemize}
 
 \end{frame}
@@ -325,113 +461,27 @@ Leaf Width & Leaf Length & Species \\ \hline
 
 \begin{frame}{Reinforcement Learning}
 
-\begin{itemize} 
-\item Designing a good reward function is difficult, and RL models are less stable and predictable than supervised approaches. 
+Look at the videos at \url{https://spinningup.openai.com/en/latest/spinningup/rl\_intro.html}
 
+\end{frame}
+
+\begin{frame}{Reinforcement Learning}
+
+\begin{itemize} 
 \item You also need to provide a way for the agent to interact with the game to produce data, which means either building a physical agent that can interact with the real world or a virtual agent and a virtual world, either of which is a big challenge. 
-\item Reinforcement learning is an active field of ML research, but in this course we'll not cover it. I cover RL in the course Advanced Artificial Intelligence.
+
+\item Reinforcement learning is an active field of ML research, but in this course we'll not cover it.
 
 \item To learn more about RL, check out the following links:
 
 \url{https://gym.openai.com/}
 
+\url{https://unity3d.com/machine-learning}
+
 \url{http://incompleteideas.net/book/the-book-2nd.html}
-
-\url{https://www.alexirpan.com/2018/02/14/rl-hard.html}
-
 \end{itemize}
 
 \end{frame}
 
 \end{document}
 
-%%%
-
-\begin{frame}{}
-
-\begin{itemize}
-    \item 
-\end{itemize}
-
-\end{frame}
-
-%%%
-
-\begin{frame}{}
-
-\begin{itemize}
-    \item 
-\end{itemize}
-
-\end{frame}
-
-%%%
-
-\begin{frame}{}
-
-\begin{itemize}
-    \item 
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}{Introduction}
-
-\begin{itemize}
-  \item Your introduction goes here!
-  \item Use \texttt{itemize} to organize your main points.
-\end{itemize}
-
-\vskip 1cm
-
-\begin{block}{Examples}
-Some examples of commonly used commands and features are included, to help you get started.
-\end{block}
-
-\end{frame}
-
-\section{Some \LaTeX{} Examples}
-
-\subsection{Tables and Figures}
-
-\begin{frame}{Tables and Figures}
-
-\begin{itemize}
-\item Use \texttt{tabular} for basic tables --- see Table~\ref{tab:widgets}, for example.
-\item You can upload a figure (JPEG, PNG or PDF) using the files menu. 
-\item To include it in your document, use the \texttt{includegraphics} command (see the comment below in the source code).
-\end{itemize}
-
-% Commands to include a figure:
-%\begin{figure}
-%\includegraphics[width=\textwidth]{your-figure's-file-name}
-%\caption{\label{fig:your-figure}Caption goes here.}
-%\end{figure}
-
-\begin{table}
-\centering
-\begin{tabular}{l|r}
-Item & Quantity \\\hline
-Widgets & 42 \\
-Gadgets & 13
-\end{tabular}
-\caption{\label{tab:widgets}An example table.}
-\end{table}
-
-\end{frame}
-
-\subsection{Mathematics}
-
-\begin{frame}{Readable Mathematics}
-
-Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with $\text{E}[X_i] = \mu$ and $\text{Var}[X_i] = \sigma^2 < \infty$, and let
-$$S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
-      = \frac{1}{n}\sum_{i}^{n} X_i$$
-denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $\mathcal{N}(0, \sigma^2)$.
-
-\end{frame}
-
-\end{document}
