@@ -20,17 +20,21 @@ Let's look what could go wrong when applying gradient descent. We could fail to 
 
 ### Linear regression using gradient descent - numpy implementation
 
-- [Gradient for linear regression (simplest case)](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression_simple.pdf)
+To get started, let's consider the simple case of linear regression: n=1, that is, there is only one feature and one weight.
+
+- [Mathematical derivation of gradient for linear regression](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression_simple.pdf)
 
 In the first implementation, we consider the weight and bias separately.
 
 - [Notebook for solving linear regression using stochastic gradient descent](https://colab.research.google.com/drive/1ZKa5sIiSgS8P1RuNyH6yYcZ6F9S7Yiwu)
 
-In the second implementation, we combine the weight and bias into a vector.
+In the second implementation, we combine the weight and bias into one vector. We also consider three versions of gradient descent: batch, stochastic, and mini-batch gradient descent.
 
  - [Notebook for solving linear regression using gradient descent (batch, stochastic, mini-batch)](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
 
 ### Linear regression - Keras implementation
+
+Let's see how we can solve linear regression in Keras.
 
   - [Colab notebook for solving linear regression for artificial data set](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
 
@@ -57,6 +61,8 @@ In the second implementation, we combine the weight and bias into a vector.
   - [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/4_slides.pdf)
 
 ### Keras examples
+
+Let's now see how we can solve more interesting problems with Keras.
   
   - [Colab notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
   
