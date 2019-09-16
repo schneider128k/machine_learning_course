@@ -10,4 +10,4 @@ Come up with handcrafted features for the MNIST digit classificiation problem an
 
 The features could be: width and height of the digit, number of white regions (a typical 8 has three, a typical 6 has two components, and 2 has 1), average intensity, etc. 
 
-Look at under [Keras example in the README file](https://github.com/schneider128k/machine_learning_course/blob/master/README.md). There is a notebook showing how to load the MNIST data set etc.
+Look  under [Keras examples in the README file](https://github.com/schneider128k/machine_learning_course/blob/master/README.md). There is a notebook showing how to load the MNIST data set etc.
