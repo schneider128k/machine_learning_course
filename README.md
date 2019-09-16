@@ -20,6 +20,8 @@ Let's look what could go wrong when applying gradient descent. We could fail to 
 
 ### Linear regression using gradient descent - numpy implementation
 
+- [Gradient for linear regression (simplest case)](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression_simple.pdf)
+
 In the first implementation, we consider the weight and bias separately.
 
 - [Notebook for solving linear regression using stochastic gradient descent](https://colab.research.google.com/drive/1ZKa5sIiSgS8P1RuNyH6yYcZ6F9S7Yiwu)
