@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath,amsthm,amssymb,hyperref,fullpage,bm,palatino}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}{Corollary}
+\newtheorem{lem}{Lemma}
+\newtheorem{rem}{Remark}
+\newtheorem{dfn}{Definition}
+
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\x}{\boldsymbol{x}}
+\newcommand{\X}{\boldsymbol{X}}
+\newcommand{\y}{\boldsymbol{y}}
+\newcommand{\yh}{\hat{\boldsymbol{y}}}
+\newcommand{\w}{\boldsymbol{w}}
+\newcommand{\A}{\boldsymbol{A}}
+
+\newcommand{\mse}{\mathrm{MSE}}
+
+\title{Gradient for linear regression}
+\author{Pawel Wocjan}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+We consider the gradient for linear regression for the simplest case.
+\end{abstract}
+
+\section{Gradient}
+
+Let $w\in\R$ and $b\in\R$ be the weight and bias for linear regression.  Given $x\in\R$, the predicted value is
+\begin{equation}
+\hat{y} = w x + b.
+\end{equation}
+Assume that the correct value for $x$ is $y\in \R$.  Then the squared error loss is given by
+\begin{equation}
+\mathcal{L} = \frac{1}{2}(\hat{y}-y)^2.
+\end{equation}
+The gradient of the loss function is 
+\begin{equation}
+\nabla\mathcal{L} = \left(
+\begin{array}{c}
+\dfrac{\partial \mathcal{L}}{\partial w}  \\
+\\
+\dfrac{\partial \mathcal{L}}{\partial b} 
+\end{array}
+\right)
+\end{equation}
+Using the chain rule, we obtain the weight component of the gradient
+\begin{equation}
+\dfrac{\partial \mathcal{L}}{\partial w} =
+\dfrac{\partial \mathcal{L}}{\partial\hat{y}} \cdot \dfrac{\partial \hat{y}}{\partial w} =
+(\hat{y} - y) \cdot w.
+\end{equation}
+The expression for the bias component of the gradient is even simpler
+\begin{equation}
+\dfrac{\partial \mathcal{L}}{\partial w} =
+\dfrac{\partial \mathcal{L}}{\partial\hat{y}} \cdot \dfrac{\partial \hat{y}}{\partial b} =
+(\hat{y} - y).
+\end{equation}
+
+\end{document}
