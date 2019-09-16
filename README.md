@@ -10,7 +10,11 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
   - [2 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_slides.pdf)
 
+  - [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_network.md)
+
 ### Effect of learning rate on gradient descent
+
+Let's look what could go wrong when applying gradient descent. We could fail to find any solution due to divergence or we could get stuck in a bad local minimum. 
 
   - [Colab notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
 
@@ -41,8 +45,6 @@ Undergraduate course on ML/AI at the University of Central Florida.
 ### TensorFlow/Keras overview
 
   - [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/3_slides.pdf)
-
-  - [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_network.md)
 
   - [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/4_slides.pdf)
 
