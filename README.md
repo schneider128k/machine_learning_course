@@ -10,6 +10,10 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
   - [2 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_slides.pdf)
 
+### Effect of learning rate on gradient descent
+
+  - [Colab notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
+
 ### Linear regression using the normal equation - numpy implementation 
 
   To understand the mathematics underlying the normal equation, read the following materials:
@@ -23,10 +27,6 @@ Undergraduate course on ML/AI at the University of Central Florida.
   - [Additional materials: proof of convexity of MSE and computation of gradient of MSE](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression.pdf)
   
   - [Colab notebook for solving linear regression using normal equation](https://colab.research.google.com/drive/1J7yct9aGfhtfXw8n00Mq4R-xldSSM1WY)
-
-### Effect of learning rate on gradient descent
-
-  - [Colab notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
    
 ### Linear regression using gradient descent - numpy implementation
 
