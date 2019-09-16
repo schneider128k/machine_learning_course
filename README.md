@@ -16,7 +16,17 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 Let's look what could go wrong when applying gradient descent. We could fail to find any solution due to divergence or we could get stuck in a bad local minimum. 
 
-  - [Colab notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
+  - [Notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
+
+### Linear regression using gradient descent - numpy implementation
+
+- [Notebook for solving linear regression using gradient descent](https://colab.research.google.com/drive/1ZKa5sIiSgS8P1RuNyH6yYcZ6F9S7Yiwu)
+
+  - [Notebook for solving linear regression using gradient descent](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
+
+### Linear regression - Keras implementation
+
+  - [Colab notebook for solving linear regression for artificial data set](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
 
 ### Linear regression using the normal equation - numpy implementation 
 
@@ -34,14 +44,6 @@ Let's look what could go wrong when applying gradient descent. We could fail to 
   
   - [Additional materials: proof of convexity of MSE and computation of gradient of MSE](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression.pdf)
  
-### Linear regression using gradient descent - numpy implementation
-
-  - [Colab notebook for solving linear regression using gradient descent](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
-
-### Linear regression - Keras implementation
-
-  - [Colab notebook for solving linear regression for artificial data set](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
-
 ### TensorFlow/Keras overview
 
   - [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/3_slides.pdf)
