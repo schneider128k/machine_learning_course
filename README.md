@@ -34,11 +34,11 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
   - [Colab notebook for solving linear regression using gradient descent](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
 
-### Linear regression -- Keras implementation
+### Linear regression - Keras implementation
 
   - [Colab notebook for solving linear regression for artificial data set](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
 
-### Overview of TensorFlow and Keras
+### TensorFlow/Keras overview
 
   - [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/3_slides.pdf)
 
