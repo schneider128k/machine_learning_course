@@ -16,7 +16,11 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 ### Linear regression using the normal equation - numpy implementation 
 
-  To understand the mathematics underlying the normal equation, read the following materials:
+ There is a closed-form solution for choosing the best weights and bias for linear regression. The optimal solution achieves the smallest squared error loss.
+ 
+  - [Colab notebook for solving linear regression using normal equation](https://colab.research.google.com/drive/1J7yct9aGfhtfXw8n00Mq4R-xldSSM1WY)
+ 
+  To understand the mathematics underlying the normal equation, read the following materials. I will not cover the derivation of the normal equation.
 
   - [Chapter 2 Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html)
   
@@ -25,12 +29,14 @@ Undergraduate course on ML/AI at the University of Central Florida.
   - [Chapter 5 Machine Learning Basics, Subsection 5.1.4 Example: Linear Regression](https://www.deeplearningbook.org/contents/ml.html)
   
   - [Additional materials: proof of convexity of MSE and computation of gradient of MSE](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression.pdf)
-  
-  - [Colab notebook for solving linear regression using normal equation](https://colab.research.google.com/drive/1J7yct9aGfhtfXw8n00Mq4R-xldSSM1WY)
-   
+ 
 ### Linear regression using gradient descent - numpy implementation
 
   - [Colab notebook for solving linear regression using gradient descent](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
+
+### Linear regression -- Keras implementation
+
+  - [Colab notebook for solving linear regression for artificial data set](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
 
 ### Overview of TensorFlow and Keras
 
@@ -41,8 +47,6 @@ Undergraduate course on ML/AI at the University of Central Florida.
   - [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/4_slides.pdf)
 
 ### Keras examples
-
-  - [Colab notebook for solving linear regression for artificial data set](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
   
   - [Colab notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
   
