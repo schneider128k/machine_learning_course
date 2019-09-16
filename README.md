@@ -20,9 +20,13 @@ Let's look what could go wrong when applying gradient descent. We could fail to 
 
 ### Linear regression using gradient descent - numpy implementation
 
-- [Notebook for solving linear regression using gradient descent](https://colab.research.google.com/drive/1ZKa5sIiSgS8P1RuNyH6yYcZ6F9S7Yiwu)
+In the first implementation, we consider the weight and bias separately.
 
-  - [Notebook for solving linear regression using gradient descent](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
+- [Notebook for solving linear regression using stochastic gradient descent](https://colab.research.google.com/drive/1ZKa5sIiSgS8P1RuNyH6yYcZ6F9S7Yiwu)
+
+- In the second implementation, we combine the weight and bias into a vector.
+
+ - [Notebook for solving linear regression using gradient descent (batch, stochastic, mini-batch)](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
 
 ### Linear regression - Keras implementation
 
