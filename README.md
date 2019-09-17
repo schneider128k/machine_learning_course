@@ -12,6 +12,12 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
   - [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_network.md)
 
+### numpy and matplotlib
+
+- [numpy](https://docs.scipy.org/doc/numpy/user/quickstart.html)
+
+- [matplotlib](https://matplotlib.org/tutorials/index.html#introductory)
+
 ### Effect of learning rate on gradient descent
 
 Let's look what could go wrong when applying gradient descent. We could fail to find any solution due to divergence or we could get stuck in a bad local minimum. The following notebook allows us to look at functions that maps real numbers to real numbers.
@@ -37,6 +43,13 @@ In the first implementation, we consider the weight and bias separately.
 In the second implementation, we combine the weight and bias into one vector. We also consider three versions of gradient descent: batch, stochastic, and mini-batch gradient descent.
 
  - [Notebook for solving linear regression using gradient descent (batch, stochastic, mini-batch)](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
+
+### TensorFlow and Keras
+
+We will use almost exclusively Keras to build all deep learning models. Roughtly speaking, TensorFlow is a back-end for deep learning, whereas Keras is a front-front end relies on TensorFlow or other backend.  Keras is now part of the latest version of TensorFlow 2.0 so it is available automatically when you import tensorflow.  Previously (TensorFlow 1.x) you had to import Keras seperately.  I may need to do some minor tweaks to the notebooks so that everything is perfectly adapted to TensorFlow 2.0.
+
+- [TensorFlow](https://www.tensorflow.org/tutorials/)
+- [Keras](https://keras.io/)
 
 ### Linear regression - Keras implementation
 
