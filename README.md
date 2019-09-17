@@ -14,9 +14,15 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 ### Effect of learning rate on gradient descent
 
-Let's look what could go wrong when applying gradient descent. We could fail to find any solution due to divergence or we could get stuck in a bad local minimum. 
+Let's look what could go wrong when applying gradient descent. We could fail to find any solution due to divergence or we could get stuck in a bad local minimum. The following notebook allows us to look at functions that maps real numbers to real numbers.
 
   - [Notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
+  
+The loss function for a deep neural network depends on millions of parameters, that is, maps a high-dimensional real vectors to real numbers. It is no longer possible to visualize the shape of the function.  The following notebooks show you how to visualize functions that map two-dimensional real vectors to real numbers.
+
+- [Notebook for creating density and contour plots](https://colab.research.google.com/drive/1pcvtvK6jITbp1Sf2nD2uEaDGpwUOA3IL)
+
+- [Notebook for creating three dimensional plots](https://colab.research.google.com/drive/1btvbObh-nZ4MSC7QkjpS3RGpefN_msth)
 
 ### Linear regression using gradient descent - numpy implementation
 
