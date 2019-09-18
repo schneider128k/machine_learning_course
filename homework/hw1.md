@@ -18,7 +18,7 @@ Extra work: Extend [the notebook for experimenting with different learning rate]
 
 **Problem 2**
 
-Extend (the notebook for solving linear regression using stochastic gradient descent)[https://colab.research.google.com/drive/1ZKa5sIiSgS8P1RuNyH6yYcZ6F9S7Yiwu] to the case that there are two weights w1 and w2 and one bias term b.  
+Extend [the notebook for solving linear regression using stochastic gradient descent](https://colab.research.google.com/drive/1ZKa5sIiSgS8P1RuNyH6yYcZ6F9S7Yiwu) to the case where there are two weights w1 and w2 and one bias term b.  
 
 **Problem 3** 
 
