@@ -2,7 +2,7 @@
 
 **Problem 1**
 
-Find simple three functions from R^2 to R and suitable points that are:
+Find three simple functions from $R^2$ to R and suitable points that are:
 
 (i) a local minimum
 (ii) a local maximum
