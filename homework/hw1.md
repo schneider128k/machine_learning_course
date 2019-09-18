@@ -16,7 +16,11 @@ Draw the gradients for your functions using quiver.
 
 Extra work: Extend [the notebook for experimenting with different learning rate](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD) to functions from R^2 to R.
 
-**Problem 2** 
+**Problem 2**
+
+Extend (the notebook for solving linear regression using stochastic gradient descent)[https://colab.research.google.com/drive/1ZKa5sIiSgS8P1RuNyH6yYcZ6F9S7Yiwu] to the case that there are two weights w1 and w2 and one bias term b.  
+
+**Problem 3** 
 
 What does an average MNIST digit look like? For each i=0,1,...,9, compute the average of digit i and display it.
 
