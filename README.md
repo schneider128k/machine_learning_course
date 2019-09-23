@@ -44,18 +44,11 @@ In the second implementation, we combine the weight and bias into one vector. We
 
  - [Notebook for solving linear regression using gradient descent (batch, stochastic, mini-batch)](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
 
-### TensorFlow and Keras
-
-We will use almost exclusively Keras to build all deep learning models. Roughtly speaking, TensorFlow is a back-end for deep learning, whereas Keras is a front-front end relies on TensorFlow or other backend.  Keras is now part of the latest version of TensorFlow 2.0 so it is available automatically when you import tensorflow.  Previously (TensorFlow 1.x) you had to import Keras seperately.  I may need to do some minor tweaks to the notebooks so that everything is perfectly adapted to TensorFlow 2.0.
-
-- [TensorFlow](https://www.tensorflow.org/tutorials/)
-- [Keras](https://keras.io/)
-
 ### Linear regression - Keras implementation
 
-Let's see how we can solve linear regression in Keras.
+Let's see how we can solve the simplest case of linear regression in Keras.
 
-  - [Colab notebook for solving linear regression for artificial data set](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
+  - [Notebook for solving linear regression](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
 
 ### Linear regression using the normal equation - numpy implementation 
 
@@ -72,8 +65,16 @@ Let's see how we can solve linear regression in Keras.
   - [Chapter 5 Machine Learning Basics, Subsection 5.1.4 Example: Linear Regression](https://www.deeplearningbook.org/contents/ml.html)
   
   - [Additional materials: proof of convexity of MSE and computation of gradient of MSE](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression.pdf)
- 
-### TensorFlow/Keras overview
+
+### TensorFlow and Keras
+
+We will use Keras to build (almost) all deep learning models. Roughtly speaking, TensorFlow is a back-end for deep learning, whereas Keras is a front-front.  Keras can use TensorFlow or other backends.  
+
+Keras is now part of the latest version of TensorFlow 2.0 so it is available automatically when you import tensorflow.  Previously (TensorFlow 1.x) you had to import Keras seperately.  I may need to do some minor tweaks to the notebooks so that everything is perfectly adapted to TensorFlow 2.0.
+
+  - [TensorFlow](https://www.tensorflow.org/tutorials/)
+  
+  - [Keras](https://keras.io/)
 
   - [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/3_slides.pdf)
 
@@ -81,15 +82,17 @@ Let's see how we can solve linear regression in Keras.
 
 ### Keras examples
 
-Let's now see how we can solve more interesting problems with Keras.
-  
-  - [Colab notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
-  
-  - [Colab notebook for classifying MNIST digits with dense layers and analyzing model performance](https://colab.research.google.com/drive/144nj1SRtSjpIcKZgH6-GPdA9bWkg68nh)
-  
-  - [Colab notebook for classifying MNIST fashion items with dense layers and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
+Let's now see how we can solve more interesting problems with Keras.  We consider the problems of classifying images from the MNIST digits, MNIST fashion items, and CIFAR10 datasets.  
 
-  - [Colab notebook for displaying CIFAR10 data set](https://colab.research.google.com/drive/1LZZviWOzvchcXRdZi2IBx3KOpQOzLalf)
+These examples use some new concepts such as logistic regression, binary cross entropy loss, softmax, and categorical cross entropy loss, which will be all explained in more detail later.  
+  
+  - [Notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
+  
+  - [Notebook for classifying MNIST digits with dense layers and analyzing model performance](https://colab.research.google.com/drive/144nj1SRtSjpIcKZgH6-GPdA9bWkg68nh)
+  
+  - [Notebook for classifying MNIST fashion items with dense layers and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
+
+  - [Notebook for displaying CIFAR10 data set](https://colab.research.google.com/drive/1LZZviWOzvchcXRdZi2IBx3KOpQOzLalf)
 
 ### Generalization, overfitting, splitting data in train & test sets
 
@@ -99,15 +102,15 @@ Let's now see how we can solve more interesting problems with Keras.
 
   - [6 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/6_slides.pdf)
 
-### Logistic regression, gradients for squared error and binary cross-entropy loss functions
+### Logistic regression, gradient for squared error loss, and gradient for binary cross entropy loss
 
   - [Logistic regression notes](https://github.com/schneider128k/machine_learning_course/blob/master/slides/logistic_regression.pdf)
 
-### Softmax, categorical cross entropy loss, gradients
+### Softmax, gradient for categorical cross entropy loss
 
   - [Softmax, categorical cross entropy](https://github.com/schneider128k/machine_learning_course/blob/master/slides/softmax.pdf)
   
-  - [Colab notebook for verifying formulas for partial derivatives with symbolic differentiation](https://colab.research.google.com/drive/1G8u6w3FFhZyb0nWfparVvn77DSjHyxEW)
+  - [Notebook for verifying formulas for partial derivatives with symbolic differentiation](https://colab.research.google.com/drive/1G8u6w3FFhZyb0nWfparVvn77DSjHyxEW)
 
 ### Sequential neural networks with dense layers
 
