@@ -84,9 +84,9 @@ Keras is now part of the latest version of TensorFlow 2.0 so it is available aut
 
 Let's now see how we can solve more interesting problems with Keras.  We consider the problems of classifying images from the MNIST digits, MNIST fashion items, and CIFAR10 datasets.  
 
-The classifications problems are all multi-class, single-label classifications problems.  Multi-class means that there are several classes. For instance, T-shirt, pullover or bag in fashion items.  Single-label means that classes are mutually exclusive. For instance, a image is either the digit 0, or the digit 1, etc.
+The classifications problems are all multi-class, single-label classifications problems.  *Multi-class* means that there are several classes. For instance, T-shirt, pullover or bag in the MNIST fashion items dataset.  *Single-label* means that classes are mutually exclusive. For instance, an image is either the digit 0, or the digit 1, etc. in the MNIST digits dataset.
 
-In the multi-class, single-label classification problem, the activation in the last layer is *softmax* and the loss function is *categorical cross entropy*.
+In the multi-class, single-label classification problem, the activation in the last layer is *softmax* and the loss function is *categorical cross entropy*.  
 
 The examples below use the so-called *relu activation* function for the hidden layer.
   
@@ -107,6 +107,10 @@ The examples below use the so-called *relu activation* function for the hidden l
   - [6 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/6_slides.pdf)
 
 ### Logistic regression, gradient for squared error loss, and gradient for binary cross entropy loss
+
+Logistic regression is used for binary classification problems. *Binary* means that there are only two classes.  For instance, an image has to be classified as either a cat or a dog.  There is only one output neuron whose indicates the class.  It is best to use the *binary cross entropy loss* instead of the *squared error loss*. 
+
+*Sigmoid activation* is used in multi-class, multi-label classification problems. The number of output neurons is equal to the number of classes, and each neuron uses the sigmoid activation function.  We use the binary cross entropy loss for each output neuron.
 
   - [Logistic regression notes](https://github.com/schneider128k/machine_learning_course/blob/master/slides/logistic_regression.pdf)
 
