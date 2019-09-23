@@ -100,6 +100,8 @@ The examples below use the so-called *relu activation* function for the hidden l
 
 ### Generalization, overfitting, splitting data in train & test sets
 
+The goal of machine learning is to obtain models that perform well on new unseen data, that is.  For instance, it can happen that a model performs perfectly on the training data, but fails on new data.  This is called *overfitting*.  The following notes explain briefly how to deal with this important issue.
+
   - [5 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/5_slides.pdf)
   
 ### Validation
@@ -108,9 +110,9 @@ The examples below use the so-called *relu activation* function for the hidden l
 
 ### Logistic regression, gradient for squared error loss, and gradient for binary cross entropy loss
 
-Logistic regression is used for binary classification problems. *Binary* means that there are only two classes.  For instance, an image has to be classified as either a cat or a dog.  There is only one output neuron whose indicates the class.  It is best to use the *binary cross entropy loss* instead of the *squared error loss*. 
+Logistic regression is used for binary classification problems. *Binary* means that there are only two classes.  For instance, an image has to be classified as either a cat or a dog.  There is only one output neuron whose activation indicates the class (say, 1=dog, 0=cat).  It is best to use the *binary cross entropy loss* instead of the *squared error loss*. 
 
-*Sigmoid activation* is used in multi-class, multi-label classification problems. The number of output neurons is equal to the number of classes, and each neuron uses the sigmoid activation function.  We use the binary cross entropy loss for each output neuron.
+*Sigmoid activation* functions are used in multi-class, multi-label classification problems. The number of output neurons is equal to the number of classes, and each neuron uses the sigmoid activation function.  The binary cross entropy loss is used for each output neuron.
 
   - [Logistic regression notes](https://github.com/schneider128k/machine_learning_course/blob/master/slides/logistic_regression.pdf)
 
@@ -121,6 +123,8 @@ Logistic regression is used for binary classification problems. *Binary* means t
   - [Notebook for verifying formulas for partial derivatives with symbolic differentiation](https://colab.research.google.com/drive/1G8u6w3FFhZyb0nWfparVvn77DSjHyxEW)
 
 ### Sequential neural networks with dense layers
+
+These notes explain how to compute the gradients for neural networks consisting of multiple dense layers.  I will not go over the mathematical derivation of the backpropagation algorithm.  Fortunately, the gradients are computed automatically in Keras.
 
   - [Notes on forward propagation, backpropagation algorithm for computing partial derivatives wrt weights and biases](https://github.com/schneider128k/machine_learning_course/blob/master/slides/neural_networks.pdf)
   
