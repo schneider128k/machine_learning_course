@@ -84,7 +84,11 @@ Keras is now part of the latest version of TensorFlow 2.0 so it is available aut
 
 Let's now see how we can solve more interesting problems with Keras.  We consider the problems of classifying images from the MNIST digits, MNIST fashion items, and CIFAR10 datasets.  
 
-These examples use some new concepts such as logistic regression, binary cross entropy loss, softmax, and categorical cross entropy loss, which will be all explained in more detail later.  
+The classifications problems are all multi-class, single-label classifications problems.  Multi-class means that there are several classes. For instance, T-shirt, pullover or bag in fashion items.  Single-label means that classes are mutually exclusive. For instance, a image is either the digit 0, or the digit 1, etc.
+
+In the multi-class, single-label classification problem, the activation in the last layer is *softmax* and the loss function is *categorical cross entropy*.
+
+The examples below use the so-called *relu activation* function for the hidden layer.
   
   - [Notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
   
