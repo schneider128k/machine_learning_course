@@ -2,11 +2,11 @@
 
 **Problem 1**
 
-Come up with handcrafted features for the MNIST digit classificiation problem and use them in a **linear** model with softmax output. 
+Come up with handcrafted features for the MNIST digit classificiation problem and use them in a simple model consisting of a single dense layer with softmax activation. 
 
 Let *x* be the matrix representing a image of a MNIST digit.  Let vec(*x*) denote the flattened matrix *x*.
 
-That is, instead of feeding in the pixel values into the neural network, you feed in your handcrafted features.
+Your baseline model is a linear model that takes only vec(*x*) as input. The goal is to improve the accuracy of the simple model by augmenting the input vec(*x*) with hand-crafted features.  Say, *f1, f2, ..., fm* are your hand-crafted features. The augmented input vector is then obtained by stacking vec(*x*) and the vector *(f1, f2, ..., fm)*.
 
 The features could be: width and height of the digit, number of white regions (a typical 8 has three, a typical 6 has two components, and 2 has 1), average intensity, etc. 
 
