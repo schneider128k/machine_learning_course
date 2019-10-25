@@ -2,7 +2,11 @@
 
 **Problem 1**
 
-Come up with handcrafted features for the MNIST digit classificiation problem and use them in a **linear** model with softmax output. That is, instead of feeding in the pixel values into the neural network, you feed in your handcrafted features.
+Come up with handcrafted features for the MNIST digit classificiation problem and use them in a **linear** model with softmax output. 
+
+Let *x* be the matrix representing a image of a MNIST digit.  Let vec(*x*) denote the flattened matrix *x*.
+
+That is, instead of feeding in the pixel values into the neural network, you feed in your handcrafted features.
 
 The features could be: width and height of the digit, number of white regions (a typical 8 has three, a typical 6 has two components, and 2 has 1), average intensity, etc. 
 
