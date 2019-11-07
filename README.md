@@ -180,8 +180,8 @@ These notes explain how to compute the gradients for neural networks consisting 
   
   - [Visualizing heatmaps of class activations, modified version](https://colab.research.google.com/drive/1KDdxUlvHsEAUmSHfiTh9kSkm9ceOz3tw), changes softmax to linear activation in last layer
   
-  -[keras-vis](https://github.com/raghakot/keras-vis)
-  This is a package for producing cool looking visualizations.  I had problems using it on colab. 
+  - [keras-vis](https://github.com/raghakot/keras-vis)
+  This is a package for producing cool looking visualizations.  I had problems using it on colab.  
   
   ---
   
