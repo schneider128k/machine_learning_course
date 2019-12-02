@@ -225,6 +225,13 @@ I have made several changes to the code from the Keras documentation. In the abo
 - [t-SNE visualization of feature vectors for MNIST fashion data set](https://colab.research.google.com/drive/1WXIcE5ye6Vhm78RRDFfr9udu1bwijATl)
 ---
   
+## Text
+  
+- [Word embeddings](https://colab.research.google.com/drive/1N3_B7Qz3Z5gC8uGHjoEYBhDGK1-EM-gC)
+- Text classification with an RNN
+
+---
+  
 ### One-shot learning ###
 
 - [Exploring the omniglot dataset](https://colab.research.google.com/drive/1exJ-qNWj_m5Q-dcUesoL_fyBPyncfa0n)
