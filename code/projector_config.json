@@ -7,7 +7,7 @@
         16
       ],
       "tensorPath": "https://raw.githubusercontent.com/schneider128k/machine_learning_course/master/code/vecs.tsv",
-      "metadataPath": "https://github.com/schneider128k/machine_learning_course/blob/master/code/meta.tsv"
+      "metadataPath": "https://raw.githubusercontent.com/schneider128k/machine_learning_course/master/code/meta.tsv"
     }
   ]
 }
