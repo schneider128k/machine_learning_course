@@ -3,8 +3,8 @@
     {
       "tensorName": "My tensor",
       "tensorShape": [
-        1000,
-        50
+        7928,
+        16
       ],
       "tensorPath": "https://raw.githubusercontent.com/schneider128k/machine_learning_course/master/code/vecs.tsv",
       "metadataPath": "https://github.com/schneider128k/machine_learning_course/blob/master/code/meta.tsv"
