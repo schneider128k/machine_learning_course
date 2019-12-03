@@ -227,6 +227,8 @@ I have made several changes to the code from the Keras documentation. In the abo
   
 ### Text
   
+There are a lot of datasets that are available in Tensorflow 2.0.  Check out the documentation [tensorflow_datasets](https://www.tensorflow.org/datasets).
+  
 - [Word embeddings](https://colab.research.google.com/drive/1N3_B7Qz3Z5gC8uGHjoEYBhDGK1-EM-gC)
 - Text classification with an RNN
 
