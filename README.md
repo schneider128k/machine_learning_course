@@ -248,5 +248,11 @@ There are a lot of datasets that are available in Tensorflow 2.0.  Check out the
 
 ---
 
+### Sequence-to-sequence models
+
+- [Arguments ```return_sequences``` and and ```return_sequences```for LSTM cells in Keras](https://colab.research.google.com/drive/1xjndR7H9l6ICNBM0LqU-kfNheNt36tER)
+
+---
+
 [Tools, additional materials](https://github.com/schneider128k/machine_learning_course/blob/master/tools_additional_materials.md)
 
