@@ -229,8 +229,9 @@ I have made several changes to the code from the Keras documentation. In the abo
   
 There are a lot of datasets that are available in Tensorflow 2.0.  Check out the documentation [tensorflow_datasets](https://www.tensorflow.org/datasets).
   
-- [Word embeddings](https://colab.research.google.com/drive/1N3_B7Qz3Z5gC8uGHjoEYBhDGK1-EM-gC)
-- Text classification with an RNN
+- [Word embeddings](https://colab.research.google.com/drive/1N3_B7Qz3Z5gC8uGHjoEYBhDGK1-EM-gC) (TO DO: change notebook)
+- Newsgroup classification with convolutional model using pretrained Glove embeddings
+- IMDB sentiment classification with LSTM model
 
 ---
   
@@ -251,6 +252,7 @@ There are a lot of datasets that are available in Tensorflow 2.0.  Check out the
 ### Sequence-to-sequence models
 
 - [Arguments ```return_sequences``` and and ```return_sequences```for LSTM cells in Keras](https://colab.research.google.com/drive/1xjndR7H9l6ICNBM0LqU-kfNheNt36tER)
+- Character-based sequence-to-sequence model for translating French to English
 
 ---
 
