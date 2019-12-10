@@ -227,11 +227,18 @@ I have made several changes to the code from the Keras documentation. In the abo
   
 ### Text
   
-There are a lot of datasets that are available in Tensorflow 2.0.  Check out the documentation [tensorflow_datasets](https://www.tensorflow.org/datasets).
+  Character-based
   
-- [Word embeddings](https://colab.research.google.com/drive/1N3_B7Qz3Z5gC8uGHjoEYBhDGK1-EM-gC) (TO DO: change notebook)
-- Newsgroup classification with convolutional model using pretrained Glove embeddings
-- IMDB sentiment classification with LSTM model
+- [Understanding LSTM networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
+- [LSTM for text generation](https://colab.research.google.com/drive/1lo-zx2RVTFfaDaGu6R_VKnzgpZnzYAfi)
+  
+  Word-based
+  
+- [Word embeddings](https://colah.github.io/posts/2014-07-NLP-RNNs-Representations/)
+- Using 1D convnets (TO D)
+- [Word embeddings](https://colab.research.google.com/drive/1N3_B7Qz3Z5gC8uGHjoEYBhDGK1-EM-gC) (TO DO: change notebook !!!)
+- Newsgroup classification with convolutional model using pretrained Glove embeddings (TO DO)
+- IMDB sentiment classification with LSTM model (TO DO)
 - ...
 
 ---
