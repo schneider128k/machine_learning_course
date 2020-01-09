@@ -20,7 +20,7 @@
 \title[ML]{Machine Learning}
 \author{Pawel Wocjan}
 \institute{University of Central Florida}
-\date{Spring 2019}
+\date{Fall 2020}
 
 \begin{document}
 
@@ -74,10 +74,10 @@
 
 \begin{itemize}
 \item 
-A {\bf label} is the thing we're predicting -- the $y$ variable in simple linear regression. The label could be the future price of wheat, the kind of animal shown in a picture, the meaning of an audio clip, or just about anything.
+A {\bf label} is the thing we're predicting -- the $y$ variable in simple linear regression. The label could be the future price of a stock, the kind of animal shown in a picture, the meaning of an audio clip, or just about anything.
 
 \item 
-A {\bf feature} is an input variable — the $x$ variable in simple linear regression. 
+A {\bf feature} is an input variable -- the $x$ variable in simple linear regression. 
 
 \item A simple machine learning project might use a single feature, while a more sophisticated machine learning project could use millions of features, specified as:   
 \[
@@ -97,7 +97,7 @@ x_1,x_2,\ldots,x_n
 \item words in the email text
 \item sender's address
 \item time of day the email was sent
-\item email contains the phrase "one weird trick."
+\item email contains the phrase ``one weird trick.''
 \end{itemize}
 
 \item An {\bf example} is a particular instance of data, $x$. We break examples into two categories:
@@ -476,14 +476,14 @@ An {\bf unlabeled example} contains features but not the label. That is:
 \begin{itemize}
     \item The gradient always points in the direction of steepest increase in the loss function. The gradient descent algorithm takes a step in the direction of the negative gradient in order to reduce loss as quickly as possible.
 \end{itemize}
-\includegraphics[width=0.9\textwidth]{GradientDescentNegativeGradient.png}
+\includegraphics[width=0.9\textwidth]{images/GradientDescentNegativeGradient.png}
 \end{frame}
 
 \begin{frame}{Gradient Descent}
 \begin{itemize}
     \item To determine the next point along the loss function curve, the gradient descent algorithm adds some fraction of the gradient's magnitude to the starting point as shown in the following figure:
 \end{itemize}
-\includegraphics[width=0.9\textwidth]{GradientDescentGradientStep.png}
+\includegraphics[width=0.9\textwidth]{images/GradientDescentGradientStep.png}
 \end{frame}
 
 
@@ -522,7 +522,7 @@ An {\bf unlabeled example} contains features but not the label. That is:
 \begin{itemize}
     \item {\bf Hyperparameters} are the knobs that programmers tweak in machine learning algorithms. Most machine learning programmers spend a fair amount of time tuning the learning rate. If you pick a learning rate that is too small, learning will take too long:
 \end{itemize}
-\includegraphics[width=0.9\textwidth]{LearningRateTooSmall.png}
+\includegraphics[width=0.9\textwidth]{images/LearningRateTooSmall.png}
 \end{frame}
 
 
@@ -530,14 +530,14 @@ An {\bf unlabeled example} contains features but not the label. That is:
 \begin{itemize}
     \item Conversely, if you specify a learning rate that is too large, the next point will perpetually bounce haphazardly across the bottom of the well:
 \end{itemize}
-\includegraphics[width=0.9\textwidth]{LearningRateTooLarge.png}
+\includegraphics[width=0.9\textwidth]{images/LearningRateTooLarge.png}
 \end{frame}
 
 \begin{frame}{Learning Rate}
 \begin{itemize}
     \item There's a Goldilocks learning rate for every regression problem. The Goldilocks value is related to how flat the loss function is. If you know the gradient of the loss function is small then you can safely try a larger learning rate, which compensates for the small gradient and results in a larger step size.
 \end{itemize}
-\includegraphics[width=0.9\textwidth]{LearningRateJustRight.png}
+\includegraphics[width=0.9\textwidth]{images/LearningRateJustRight.png}
 \end{frame}
 
 \begin{frame}{Key Terms}
