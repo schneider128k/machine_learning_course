@@ -2,9 +2,13 @@
 
 Undergraduate course on ML/AI at the University of Central Florida.
 
-### Common ML problems, overview of (a) supervised, (b) unsupervised, and (c) reinforcement learning
+### Artificial intelligence/machine learning/deep learning
 
-  - [1 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_slides.pdf)
+- [1_a_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_a_slides.pdf)
+
+### Overview of supervised, unsupervised, and reinforcement learning
+
+  - [1 b_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_b_slides.pdf)
 
 ### ML terminology, linear regression, training & loss, gradient descent, stochastic gradient descent
 
