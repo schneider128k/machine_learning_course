@@ -20,7 +20,7 @@
 \title[AI]{Deep Learning/Machine Learning/Artificial Intelligence}
 \author{Pawel Wocjan}
 \institute{University of Central Florida}
-\date{Fall 2019}
+\date{Spring 2020}
 
 \begin{document}
 
@@ -38,64 +38,12 @@
 }
 
 for the overview of machine learning.
-
-\item  I have used materials from 
-
-\url{https://skymind.ai/wiki/ai-vs-machine-learning-vs-deep-learning} 
-
-for the overview of artificial intelligence.
 \end{itemize}
 \end{frame}
 
 % Uncomment these lines for an automatically generated outline.
 \begin{frame}{Outline}
   \tableofcontents
-\end{frame}
-
-\section{Artificial intelligence/machine learning/deep learning}
-
-\begin{frame}{DL/ML/AI}
-\begin{itemize}
-\item You can think of deep learning, machine learning and artificial intelligence as a set of Russian dolls nested within each other. 
-\item Deep learning is a subset of machine learning, and machine learning is a subset of AI, which is an umbrella term for any computer program that does something smart. \item In other words, all machine learning is AI, but not all AI is machine learning, and so forth.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Artificial intelligence}
-\begin{itemize}
-\item John McCarthy, one of the founders of artificial intelligence, defined it as ``the science and engineering of making intelligent machines.''
-
-\url{https://en.wikipedia.org/wiki/John_McCarthy_(computer_scientist)}
-
-\item Here are a few other definitions of artificial intelligence:
-
-\item A branch of computer science dealing with the simulation of intelligent behavior in computers.
-
-\item The capability of a machine to imitate intelligent human behavior.
-
-\item A computer system able to perform tasks that normally require human intelligence, such as visual perception, speech recognition, decision-making, and translation between languages.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Symbolic AI/GOFAI}
-\begin{itemize}
-\item Symbolic artificial intelligence is the term for the collection of all methods in artificial intelligence research that are based on high-level "symbolic" (human-readable) representations of problems, logic and search.
-
-\item Symbolic artificial intelligence is often called GOFAI (``Good Old-Fashioned Artificial Intelligence'').
-
-\item The programming language Prolog is an example of symbolic artificial intelligence \url{https://en.wikipedia.org/wiki/Prolog}.
-\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{Symbolic AI/GOFAI}
-Roughly speaking, symbolic AI operates like this:
-\begin{verbatim}
-                    
-Input ------->  +---------+
-                |         |-------> Output
-Rules ------->  +---------+
-
-\end{verbatim}
 \end{frame}
 
 \begin{frame}{Machine learning}
@@ -178,18 +126,26 @@ Here is a short description of the main ideas in MIT  Technology Review:
 
 \begin{itemize}
 
-\item In basic terms, ML is the process of training a piece of software, called a model, to make useful predictions using a data set. 
+\item In basic terms, ML is the process of training a model to make useful predictions using a data set. 
 
-\item This predictive model can then serve up predictions about previously unseen data. 
-
-\item We use these predictions to take action in a product; for example, the system predicts that a user will like a certain video, so the system recommends that video to the user.
-
-\item Often, people talk about ML as having two paradigms, supervised and unsupervised learning. 
-
-\item However, it is more accurate to describe ML problems as falling along a spectrum of supervision between supervised and unsupervised learning.
+\item This predictive model can then make predictions about previously unseen data. 
 \end{itemize}
 
 \end{frame}
+
+%%%
+
+\begin{frame}{Common ML Problems}
+
+\begin{itemize}
+
+\item Machine learning is often said to have two paradigms: supervised and unsupervised learning. 
+
+\item However, it is more accurate to say that most practical problems fall along a spectrum of supervised and unsupervised learning.
+\end{itemize}
+
+\end{frame}
+
 
 %%%
 
@@ -203,7 +159,6 @@ Here is a short description of the main ideas in MIT  Technology Review:
 \item For example, suppose you are an amateur botanist determined to differentiate between two species of the Lilliputian plant genus (a completely made-up plant). 
 
 \item The two species look pretty similar. Fortunately, a botanist has put together a data set of Lilliputian plants she found in the wild along with their species name.
-
 \end{itemize}
 
 \end{frame}
@@ -322,22 +277,22 @@ Leaf Width & Leaf Length & Species \\ \hline
 
 %%%
 
-\begin{frame}{Supervised Learning}
-
-\begin{itemize}
-
-\item A real-world example of supervised learning is a study from Stanford University that used a model to detect skin cancer in images. 
-
-\medskip
-\url{https://news.stanford.edu/2017/01/25/artificial-intelligence-used-identify-skin-cancer/}
-
-\item In this case, the training set contained images of skin labeled by dermatologists as having one of several diseases. 
-
-\item The ML system found signals that indicate each disease from its training set, and used those signals to make predictions on new, unlabeled images.
-
-\end{itemize}
-
-\end{frame}
+%\begin{frame}{Supervised Learning}
+%
+%\begin{itemize}
+%
+%\item A real-world example of supervised learning is a study from Stanford University that used a model to detect skin cancer in images. 
+%
+%\medskip
+%\url{https://news.stanford.edu/2017/01/25/artificial-intelligence-used-identify-skin-cancer/}
+%
+%\item In this case, the training set contained images of skin labeled by dermatologists as having one of several diseases. 
+%
+%\item The ML system found signals that indicate each disease from its training set, and used those signals to make predictions on new, unlabeled images.
+%
+%\end{itemize}
+%
+%\end{frame}
 
 %%%
 
@@ -388,7 +343,7 @@ Leaf Width & Leaf Length & Species \\ \hline
 \begin{frame}{Unsupervised Learning}
 
 \begin{itemize}
-\item Here, we have two clusters. What do these clusters represent? It can be difficult to say. Sometimes the model finds patterns in the data that you don't want it to learn, such as stereotypes or bias.
+\item Here, we have two clusters. What do these clusters represent? It can be difficult to say. 
 
 \end{itemize}
 
@@ -411,21 +366,21 @@ Leaf Width & Leaf Length & Species \\ \hline
 
 %%%
 
-\begin{frame}{Unsupervised Learning}
+%\begin{frame}{Unsupervised Learning}
 
-\begin{itemize}
-\item But what if your photo clustering model has never seen a pangolin before? 
+%\begin{itemize}
+%\item But what if your photo clustering model has never seen a pangolin before? 
 
-\url{https://en.wikipedia.org/wiki/Pangolin}
+%\url{https://en.wikipedia.org/wiki/Pangolin}
 
-\item Will the system cluster the new photo with armadillos or maybe hedgehogs? 
+%\item Will the system cluster the new photo with armadillos or maybe hedgehogs? 
 
-\url{https://en.wikipedia.org/wiki/Armadillo}
+%\url{https://en.wikipedia.org/wiki/Armadillo}
 
-\url{https://en.wikipedia.org/wiki/Hedgehog}
-\end{itemize}
+%\url{https://en.wikipedia.org/wiki/Hedgehog}
+%\end{itemize}
 
-\end{frame}
+%\end{frame}
 
 %%%
 
@@ -434,9 +389,13 @@ Leaf Width & Leaf Length & Species \\ \hline
 \begin{frame}{Reinforcement Learning}
 
 \begin{itemize}
-\item An additional branch of machine learning is reinforcement learning (RL). Reinforcement learning differs from other types of machine learning. 
+\item An additional branch of machine learning is reinforcement learning (RL). 
 
-\item In RL you don't collect examples with labels. Imagine you want to teach a machine to play a very basic video game and never lose. You set up the model (often called an agent in RL) with the game, and you tell the model not to get a ``game over'' screen. 
+\item In RL you don't collect examples with labels. 
+
+\item Imagine you want to teach a machine to play a very basic video game and never lose. 
+
+\item You set up the model (often called an agent in RL) with the game, and you tell the model not to get a ``game over'' screen. 
 \end{itemize}
 \end{frame}
 
@@ -446,11 +405,42 @@ Leaf Width & Leaf Length & Species \\ \hline
 
 \item At time step $t$, the agent is in state $s_t$, takes action $a_t$, receives reward $r_t$, and transitions into state $s_{t+1}$.
 
+\bigskip
 \includegraphics[width=0.75\textwidth]{images/rl_diagram_transparent_bg.png}
+\end{itemize}
+\end{frame}
 
-\item The state $S_t$ describes the agent's knowledge of the world. For instance, the visual input from a camera and the positions of the joints of a robot.
+%%%
 
-\item The agent has to learn which actions to take so as to maximize the total reward.  For instance, a robot has to learn how to grasp and manipulate an object as fast as possible.
+\begin{frame}{Reinforcement Learning}
+
+\begin{itemize}
+\item The state $s_t$ describes the agent's knowledge of the world. 
+
+\item For instance, the visual input from a camera and the positions of the joints of a robot.
+
+\item The agent has to learn which actions to take so as to maximize the total reward.  
+
+\item For instance, a robot has to learn how to grasp and manipulate an object as fast as possible.
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+%\begin{frame}{Reinforcement Learning}
+
+%Look at the videos at \url{https://spinningup.openai.com/en/latest/spinningup/rl\_intro.html}
+
+%\end{frame}
+
+\begin{frame}{Reinforcement Learning}
+
+\begin{itemize} 
+\item You also need to provide a way for the agent to interact with the game to produce data.
+
+\item This means either building a physical agent that can interact with the real world or a virtual agent and a virtual world, either of which is a big challenge. 
+
 \end{itemize}
 
 \end{frame}
@@ -459,25 +449,17 @@ Leaf Width & Leaf Length & Species \\ \hline
 
 \begin{frame}{Reinforcement Learning}
 
-Look at the videos at \url{https://spinningup.openai.com/en/latest/spinningup/rl\_intro.html}
-
-\end{frame}
-
-\begin{frame}{Reinforcement Learning}
-
-\begin{itemize} 
-\item You also need to provide a way for the agent to interact with the game to produce data, which means either building a physical agent that can interact with the real world or a virtual agent and a virtual world, either of which is a big challenge. 
-
-\item Reinforcement learning is an active field of ML research, but in this course we'll not cover it.
-
-\item To learn more about RL, check out the following links:
-
 \url{https://gym.openai.com/}
 
 \url{https://unity3d.com/machine-learning}
 
-\url{http://incompleteideas.net/book/the-book-2nd.html}
-\end{itemize}
+\url{https://openai.com/blog/openai-five/}
+
+{\tiny
+\url{https://deepmind.com/blog/article/AlphaStar-Grandmaster-level-in-StarCraft-II-using-multi-agent-reinforcement-learning}
+}
+
+\url{https://openai.com/blog/emergent-tool-use/}
 
 \end{frame}
 
