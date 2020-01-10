@@ -10,11 +10,15 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 - [1_b_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_b_slides.pdf)
 
-### ML terminology, linear regression, training & loss, gradient descent, stochastic gradient descent
+### Basic ML terminology
 
-  - [2 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_slides.pdf)
+- [2_a_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_a_slides.pdf)
 
-  - [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_network.md)
+### Linear regression, training & loss, gradient descent, stochastic gradient descent
+
+- *working on slides*
+
+- [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_network.md)
 
 ### numpy and matplotlib
 
