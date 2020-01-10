@@ -6,9 +6,9 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 - [1_a_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_a_slides.pdf)
 
-### Overview of supervised, unsupervised, and reinforcement learning
+### Supervised/unsupervised/reinforcement learning
 
-  - [1 b_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_b_slides.pdf)
+- [1_b_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_b_slides.pdf)
 
 ### ML terminology, linear regression, training & loss, gradient descent, stochastic gradient descent
 
