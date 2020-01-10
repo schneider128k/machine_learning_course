@@ -1,0 +1,257 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{crane} % or try albatross, beaver, crane, ...
+  \usefonttheme{structurebold}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+
+\title[ML]{Machine Learning}
+\author{Pawel Wocjan}
+\institute{University of Central Florida}
+\date{Fall 2020}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Sources for Slides}
+
+\begin{itemize}
+\item I have extensively used the machine learning materials that have been prepared by Google. 
+
+\medskip
+\footnotesize{ 
+\url{https://developers.google.com/machine-learning/crash-course/}
+}
+
+\item Google has licensed these materials under the Creative Commons Attribution 3.0 License.
+
+\medskip
+\footnotesize{ 
+\url{https://creativecommons.org/licenses/by/3.0/}
+}
+\end{itemize}
+\end{frame}
+
+% Uncomment these lines for an automatically generated outline.
+%\begin{frame}{Outline}
+%  \tableofcontents
+%\end{frame}
+
+\begin{frame}{Basic ML Terminology}
+
+\begin{itemize}
+\item What is (supervised) machine learning? Concisely put, it is the following:
+
+\medskip
+\emph{ML systems learn how to combine input to produce useful predictions on never-before-seen data.}
+
+\medskip
+\item Let's explore basic ML terminology machine learning terminology.
+\end{itemize}
+\end{frame}
+
+%%%
+
+\begin{frame}{Labels and features}
+
+\begin{itemize}
+\item 
+A {\bf label} is the thing we seek to predict.
+
+\medskip
+For instance, the label could be the future price of a stock or the type of animal shown in a picture.
+
+\medskip
+\item 
+A {\bf feature} $x_i$ is an input variable that that is used to predict the label where $i\in\{1,\ldots,n\}$ and $n$ is the number of features.
+
+\medskip
+For instance, the feature could be the previous day's closing price of a stock or a pixel of an image.
+
+\medskip
+\item A simple machine learning project might use a single or few features, while a more sophisticated machine learning project could use millions of features. 
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Features for spam detection}
+
+\begin{itemize}
+\item For spam detection, for instance, the feature could include the following features:
+
+\medskip
+\begin{itemize}
+\item words in the email text
+\item sender's address
+\item time of day the email was sent
+\item email contains the phrase ``one weird trick.''
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+
+%%%
+
+\begin{frame}{Labeled and unlabeled example}
+
+\begin{itemize}
+\item An {\bf example} is a particular instance of data that is fed into a model. 
+
+\medskip
+\item We break examples into two categories:
+
+\medskip
+\begin{itemize}
+\item
+labeled examples
+
+\medskip
+\item
+unlabeled examples
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Labeled example}
+
+\begin{itemize}
+\item A {\bf labeled example} includes both feature(s) and the label.
+
+\medskip
+\texttt{labeled example: \{features, label\}}: $(x, y)$
+
+\medskip
+\item We use labeled examples to train the model. 
+
+\medskip
+In our spam detector example, the labeled examples would be individual emails that users have explicitly marked as ``spam'' or ``not spam.''
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Unlabeled example}
+
+\begin{itemize}
+\item 
+An {\bf unlabeled example} contains features but not the label:
+
+\medskip
+\texttt{unlabeled example: \{features, ?\}}: $(x, ?)$
+
+\medskip
+\item Once we've trained our model with labeled examples, we use that model to predict the label on unlabeled examples. 
+
+\medskip
+In the spam detector, unlabeled examples are new emails that humans haven't yet labeled.
+\end{itemize}
+
+\end{frame}
+
+
+%%%
+
+\begin{frame}{Training and inference}
+\begin{itemize}
+
+\medskip
+\item A model defines the relationship between features and labels. 
+    
+\medskip
+\item 
+Let's highlight two phases of a model's life:
+
+\medskip
+\begin{itemize}
+\item {\bf Training} means creating or learning the model. 
+
+\medskip
+You show the model labeled examples $(x, y)$ and enable it to gradually learn the relationships between features and label so that its predictions $\hat{y}$ are close to the labels $y$.
+        
+\medskip
+\item {\bf Inference} means applying the trained model to unlabeled examples. 
+
+\medskip
+You use the trained model to make useful predictions $\hat{y}$.
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+%%%
+
+\begin{frame}{Regression}
+\begin{itemize}
+\item A {\bf regression model} predicts continuous values. 
+
+\medskip
+For example, regression models make predictions that answer questions like the following:
+    
+\medskip    
+\begin{itemize}
+
+\medskip
+\item What is the value of a house in California?
+
+\medskip
+\item What is the probability that a user will click on this ad?
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+%%%
+
+\begin{frame}{Classification}
+\begin{itemize}
+\item A {\bf classification model} predicts discrete values. For example, classification models make predictions that answer questions like the following:
+
+\medskip
+\begin{itemize}
+\item Is a given email message spam or not spam?
+
+\medskip
+\item Is this an image of a dog, a cat, or a hamster?
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+%%%
+
+\begin{frame}{Key Terms}
+\begin{itemize}
+    \item classification model
+    \item example
+    \item feature
+    \item inference
+    \item label
+    \item model
+    \item regression model
+    \item training
+\end{itemize}
+\end{frame}
+
+%%%
+
+\end{document}
