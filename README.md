@@ -12,7 +12,7 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 ### Basic ML terminology
 
-- [2 a_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_a_slides.pdf)
+- [2_a_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_a_slides.pdf)
 
 ### Linear regression, training & loss, gradient descent, stochastic gradient descent
 
