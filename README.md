@@ -2,29 +2,21 @@
 
 Undergraduate course on ML/AI at the University of Central Florida.
 
-### Artificial intelligence, machine learning, and deep learning
+### Overview ###
 
-- [1_a_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_a_slides.pdf)
+- [Artificial intelligence, machine learning, and deep learning](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_a_slides.pdf)
 
-### Supervised learning, unsupervised learning, and reinforcement learning
+- [Supervised learning, unsupervised learning, and reinforcement learning](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_b_slides.pdf)
 
-- [1_b_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_b_slides.pdf)
+### Fundamental machine learning concepts ###
 
-### Labeled/unlabeled examples, training, inference, classification, regression ###
+- [Labeled/unlabeled examples, training, inference, classification, regression](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_a_slides.pdf)
 
-- [2_a_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_a_slides.pdf)
+- [Linear regression](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_b_slides.pdf)
 
-### Linear regression ###
+- [Loss, empirical risk minimization, squared error loss, mean square error loss](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_b_slides.pdf)
 
-- [2_b_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_b_slides.pdf)
-
-### Loss, empirical risk minimization, squared error loss, mean square error loss ### 
-
-- [2_c_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_b_slides.pdf)
-
-### Gradient descent, stochastic gradient descent ###
-
-- *working on slides*
+- Gradient descent, stochastic gradient descent (*working on slides*)
 
 - [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_network.md)
 
