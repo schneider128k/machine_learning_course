@@ -2,15 +2,15 @@
 
 Undergraduate course on ML/AI at the University of Central Florida.
 
-### Artificial intelligence/machine learning/deep learning
+### Artificial intelligence, machine learning, and deep learning
 
 - [1_a_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_a_slides.pdf)
 
-### Supervised/unsupervised/reinforcement learning
+### Supervised learning, unsupervised learning, and reinforcement learning
 
 - [1_b_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_b_slides.pdf)
 
-### Basic ML terminology
+### Labeled/unlabeled examples, training, inference, classification, regression ###
 
 - [2_a_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_a_slides.pdf)
 
@@ -18,7 +18,11 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 - [2_b_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_b_slides.pdf)
 
-### Training & loss, gradient descent, stochastic gradient descent ###
+### Loss, empirical risk minimization, squared error loss, mean square error loss ### 
+
+- [2_c_slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_b_slides.pdf)
+
+### Gradient descent, stochastic gradient descent ###
 
 - *working on slides*
 
