@@ -32,13 +32,13 @@
 
 \begin{frame}{Training and Loss}
 \begin{itemize}
-\item {\bf Training} a model simply means determining good values for all the weights and the bias that minimize the loss by examining many examples.
+\item {\bf Training} a model means examining the examples and adjusting the weights and the bias so that the loss is minimized.
 
 \medskip    
-\item {\bf Loss} is the penalty for a bad prediction, that it, {\bf loss} is a number indicating how bad the model's prediction was on a single example. 
+\item {\bf Loss} is the penalty for a bad prediction, that it, it quantifies how bad the model's prediction was on a single example. 
 
 \medskip
-If the model's prediction is perfect, the loss is zero; otherwise, the loss is greater. 
+If the prediction is perfect, the loss is zero; otherwise, it is greater than zero. 
 
 \medskip   
 \item The goal of training is to find a set of weights and biases that have low loss, on average, across all examples.
@@ -72,7 +72,7 @@ If the model's prediction is perfect, the loss is zero; otherwise, the loss is g
 \item Notice that the arrows in the left plot are much longer than their counterparts in the right plot. 
 
 \medskip    
-\item Clearly, the line in the right plot is a much better predictive model than the line in the left plot.
+\item Clearly, the right blue line is a much better predictive model than the left blue line.
 
 \medskip
 \item The linear regression models we examine here use a loss function called {\bf squared loss} (also known as $L_2$ loss). 
@@ -83,7 +83,16 @@ If the model's prediction is perfect, the loss is zero; otherwise, the loss is g
 
 \begin{frame}{Training and Loss}
 \begin{itemize}
+\item Let $w=(b,w_1,\ldots,w_n)$ the parameters of the model (its weights and bias).
+
+\item Consider a labeled example with features $x=(x_1,\ldots,x_n)$ and label $y$.
+
+\item The model predicts
+
+$$ \hat{y} = f_w(x) = b + \sum_{j=1}^n w_j x_j$$
+
 \item The squared loss for a single example the difference between the label (observation) $y$ and the prediction $\hat{y}$:
+
 $$ (y - \hat{y})^2 $$    
 \end{itemize}
 \end{frame}
@@ -94,7 +103,7 @@ $$ (y - \hat{y})^2 $$
 \begin{itemize}
 \item {\bf Mean square error (MSE)} is the average squared loss per example over the whole dataset
     
-$$ MSE = \frac{1}{m} \sum_{i=1}^m (y^{(i)} - \hat{y}^{(i)})^2 $$
+$$ \mathrm{MSE}(w) = \frac{1}{m} \sum_{i=1}^m (y^{(i)} - \hat{y}^{(i)})^2 $$
 
 \medskip
 \item $m$ is the number of examples.
@@ -104,8 +113,7 @@ $$ MSE = \frac{1}{m} \sum_{i=1}^m (y^{(i)} - \hat{y}^{(i)})^2 $$
 
 \medskip
 \item $\hat{y}^{(i)}$ is the prediction of the model. More formally, 
-$$ \hat{y}^{(i)} = f_\theta(x^{(i)}) $$
-where $\theta=(w_1,\ldots,w_n, b)$ are the parameters (weights and bias) of the model.
+$$ \hat{y} = f_w(x^{(i)}) = b + \sum_{j=1}^n w_j x^{(i)}_j $$
 \end{itemize}
 \end{frame}
 
