@@ -18,7 +18,9 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 - [Iterative approach to loss minimization](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_d_slides.pdf)
 
-- [Gradient descent, learning rate, stochastic gradient descent, mini-batch gradient descent (split slides?)](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_e_slides.pdf)
+- [Gradient descent, learning rate, stochastic gradient descent, mini-batch gradient descent](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_e_slides.pdf)
+
+TO DO: split above slides
 
 - [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_network.md)
 
