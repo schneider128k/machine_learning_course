@@ -22,23 +22,25 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 - [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_network.md)
 
-### Python package: numpy and matplotlib ###
+### Python, numpy, and matplotlib ###
+
+- [Python](https://docs.python.org/3/tutorial/)
 
 - [numpy](https://docs.scipy.org/doc/numpy/user/quickstart.html)
 
 - [matplotlib](https://matplotlib.org/tutorials/index.html#introductory)
 
-### Effect of learning rate on gradient descent ###
+### Effect of learning rate on gradient descent for finding minima of univariate function ###
 
-Let's examine what could go wrong when applying gradient descent with a poorly chosen learning rate. We could fail to find any solution due to divergence or we could get stuck in a bad local minimum. The following notebook allows us to apply gradient descent to functions that maps real numbers to real numbers.
+Let's examine what could go wrong when applying gradient descent with a poorly chosen learning rate. We could fail to find any solution due to divergence or we could get stuck in a bad local minimum. The following notebook allows us to apply gradient descent for finding minima of univariate functions. (Univariate means that the functions depend on only one variable.)
 
-  - [Notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
+- [Notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
   
-### Visualization of functions ###
+### Visualization of bivariate functions ###
   
-The loss function for a deep neural network depends on millions of parameters, that is, maps a high-dimensional real vectors to real numbers. Such functions define hypersurfaces and it is no longer possible to visualize them.  
+The loss function for a deep neural network depends on millions of parameters. Such functions are called multivariate because they depend on multiple variables.  It is no longer possible to easily visualize multivariate functions. They define hypersurfaces.
 
-The following notebooks show you how to visualize functions that map two-dimensional real vectors to real numbers.  Such functions define surfaces.  Think of the surface of a mountain range.
+The following notebooks present two methods for visualizing bivariate function, that is, those that depend on exactly two variables.  Such functions define surfaces.  Think of the surface of a mountain range.
 
 - [Notebook for creating density and contour plots](https://colab.research.google.com/drive/1pcvtvK6jITbp1Sf2nD2uEaDGpwUOA3IL)
 
