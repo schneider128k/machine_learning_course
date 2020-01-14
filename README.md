@@ -18,27 +18,33 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 - [Iterative approach to loss minimization](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_d_slides.pdf)
 
-- Gradient descent, stochastic gradient descent (*working on slides*)
+- [Gradient descent, learning rate, stochastic gradient descent, mini-batch gradient descent](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_e_slides.pdf)
 
 - [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_network.md)
 
-### numpy and matplotlib
+### Python package: numpy and matplotlib ###
 
 - [numpy](https://docs.scipy.org/doc/numpy/user/quickstart.html)
 
 - [matplotlib](https://matplotlib.org/tutorials/index.html#introductory)
 
-### Effect of learning rate on gradient descent
+### Effect of learning rate on gradient descent ###
 
-Let's look what could go wrong when applying gradient descent. We could fail to find any solution due to divergence or we could get stuck in a bad local minimum. The following notebook allows us to look at functions that maps real numbers to real numbers.
+Let's examine what could go wrong when applying gradient descent with a poorly chosen learning rate. We could fail to find any solution due to divergence or we could get stuck in a bad local minimum. The following notebook allows us to apply gradient descent to functions that maps real numbers to real numbers.
 
   - [Notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
   
-The loss function for a deep neural network depends on millions of parameters, that is, maps a high-dimensional real vectors to real numbers. It is no longer possible to visualize the shape of the function.  The following notebooks show you how to visualize functions that map two-dimensional real vectors to real numbers.
+### Visualization of functions ###
+  
+The loss function for a deep neural network depends on millions of parameters, that is, maps a high-dimensional real vectors to real numbers. Such functions define hypersurfaces and it is no longer possible to visualize them.  
+
+The following notebooks show you how to visualize functions that map two-dimensional real vectors to real numbers.  Such functions define surfaces.  Think of the surface of a mountain range.
 
 - [Notebook for creating density and contour plots](https://colab.research.google.com/drive/1pcvtvK6jITbp1Sf2nD2uEaDGpwUOA3IL)
 
 - [Notebook for creating three dimensional plots](https://colab.research.google.com/drive/1btvbObh-nZ4MSC7QkjpS3RGpefN_msth)
+
+(TO DO: improve everything below!)
 
 ### Linear regression using gradient descent - numpy implementation
 
