@@ -18,7 +18,7 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 - [Iterative approach to loss minimization](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_d_slides.pdf)
 
-- [Gradient descent, learning rate, stochastic gradient descent, mini-batch gradient descent](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_e_slides.pdf)
+- [Gradient descent, learning rate, stochastic gradient descent, mini-batch gradient descent (split slides?)](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_e_slides.pdf)
 
 - [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_network.md)
 
@@ -30,7 +30,7 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 - [matplotlib](https://matplotlib.org/tutorials/index.html#introductory)
 
-### Effect of learning rate on gradient descent for finding minima of univariate function ###
+### Effect of learning rate on gradient descent for finding minima of univariate functions ###
 
 Let's examine what could go wrong when applying gradient descent with a poorly chosen learning rate. We could fail to find any solution due to divergence or we could get stuck in a bad local minimum. The following notebook allows us to apply gradient descent for finding minima of univariate functions. (Univariate means that the functions depend on only one variable.)
 
