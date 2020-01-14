@@ -14,7 +14,9 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 - [Linear regression](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_b_slides.pdf)
 
-- [Loss, empirical risk minimization, squared error loss, mean square error loss](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_b_slides.pdf)
+- [Loss, empirical risk minimization, squared error loss, mean square error loss](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_c_slides.pdf)
+
+- [Iterative approach to loss minimization](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_d_slides.pdf)
 
 - Gradient descent, stochastic gradient descent (*working on slides*)
 
