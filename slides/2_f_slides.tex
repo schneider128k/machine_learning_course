@@ -1,0 +1,82 @@
+\documentclass{beamer}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{default}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usecolortheme{crane} % or try albatross, beaver, crane, ...
+  \usefonttheme{structurebold}  % or try serif, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+
+\title[ML]{Machine Learning}
+\author{Pawel Wocjan}
+\institute{University of Central Florida}
+\date{Fall 2020}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%%%
+\begin{frame}{Stochastic Gradient Descent}
+
+%%%
+
+\begin{itemize}
+\item In gradient descent, a {\bf batch} is the total number of examples you use to calculate the gradient in a single iteration. 
+    \item So far, we've assumed that the batch has been the entire data set. 
+    \item But often data sets contain huge numbers of examples with huge numbers of features.
+    \item Consequently, a batch can be enormous. A very large batch may cause even a single iteration to take a very long time to compute.
+    \item A large data set with randomly sampled examples probably contains redundant data. In fact, redundancy becomes more likely as the batch size grows. 
+    \item Some redundancy can be useful to smooth out noisy gradients, but enormous batches tend not to carry much more predictive value than large batches.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Stochastic Gradient Descent}
+
+\begin{itemize}
+\item What if we could get the right gradient on average for much less computation? 
+
+\medskip
+\item By choosing examples at random from our data set, we could estimate (albeit, noisily) a big average from a much smaller one. 
+
+\medskip
+\item {\bf Stochastic gradient descent (SGD)} takes this idea to the extreme--it uses only a single example (a batch size of 1) per iteration. 
+
+\medskip
+\item Given enough iterations, SGD works but is very noisy. The term ``stochastic'' indicates that the one example comprising each batch is chosen at random.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Reducing Loss}
+\begin{itemize}
+    \item {\bf Mini-batch stochastic gradient descent (mini-batch SGD)} is a compromise between full-batch iteration and SGD. A mini-batch is typically between $10$ and $1,000$ examples, chosen at random. 
+    
+\medskip
+\item Mini-batch SGD reduces the amount of noise in SGD but is still more efficient than full-batch.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Key Terms}
+\begin{itemize}
+    \item batch
+    \item batch size
+    \item mini-batch
+    \item stochastic gradient descent (SGD)
+\end{itemize}
+
+\end{frame}
+
+\end{document}

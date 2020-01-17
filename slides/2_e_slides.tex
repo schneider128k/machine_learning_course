@@ -56,19 +56,34 @@
 \begin{itemize}
 \item We consider the linear regression model 
 
-$$\hat{y}=w_1 x_1 + w_2 x_2 + \ldots + w_n x_n b$$
+$$\hat{y}=f_w(x) = w_1 x_1 + w_2 x_2 + \ldots + w_n x_n + b$$
 
-%\item Let us assume that the bias $b=0$ is fixed through the entire training and only $w_1$ can be adjusted.
+\medskip
+where $w=(w_0, w_1,\ldots,w_n)$.
+\end{itemize}
+\end{frame}
 
+%%%
+
+\begin{frame}{Gradient Descent}
+\begin{itemize}
 \item The loss function (mean squared error)
 
 $$\mathcal{L} : \mathbb{R}^{n+1} \rightarrow \mathbb{R}$$ 
 
-depends on the parameters $n+1$ parameters $w_0, w_1, \ldots, w_n$, where $w_0$ is the bias term $b$.
+\medskip
+depends on the parameters $n+1$ parameters $b, w_1, \ldots, w_n$.
 
 \medskip
-\item 
-Moreover, $\mathcal{L}$ defines a curve instead of a surface, which simplifies the presentation.
+\item The loss is given by
+
+\begin{align*} 
+\mathcal{L} 
+&= \frac{1}{m} \sum_{i=1}^m \frac{1}{2} (\hat{y}^{(i)} - y^{(i)})^2 \\
+&= \frac{1}{m} \sum_{i=1}^m \frac{1}{2} (f_w(x^{(i)} - y^{(i)})^2 \\
+&= \frac{1}{m} \sum_{i=1}^m \frac{1}{2} \left( \sum_{j=1}^n w_j x_j + b- y^{(i)} \right)^2 
+\end{align*}
+
 \end{itemize}
 \end{frame}
 
@@ -76,13 +91,21 @@ Moreover, $\mathcal{L}$ defines a curve instead of a surface, which simplifies t
 
 \begin{frame}{Gradient Decent}
 \begin{itemize}
-\item For $n=1$, the loss function $\mathcal{L}$ depends on two parameters -- the bias term $b=w_0$ and the weight $w_1$ -- and defines a surface.
+\item For $n=1$, the loss function $\mathcal{L}$ depends on two parameters -- the bias term $b=w_0$ and the weight $w_1$ -- and defines a surface in 3D.
 
 \medskip
-\item For $n>1$, the loss function $\mathcal{L}$ defines a hypersurface and cannot be visualize so easily.
+\item For $n>1$, the loss function $\mathcal{L}$ cannot be visualized so easily.
+\end{itemize}
+\end{frame}
+
+%%%
+
+\begin{frame}{Gradient Decent}
+\begin{itemize}
+\item To simplify the plots, we assume that $n=1$ and the bias term $b=w_0$ is fixed to be $0$.  
 
 \medskip
-\item To simplify the plots, we assume that $n=1$ and the bias term $b=w_0$ is fixed to be $0$.  Then, the loss function $\mathcal{L}$ defines a curve. 
+\item Then, the loss function $\mathcal{L}$ depends only on $w_1$ and defines a curve. 
 \end{itemize}
 \end{frame}
 
@@ -110,7 +133,7 @@ Moreover, $\mathcal{L}$ defines a curve instead of a surface, which simplifies t
 \item This is important because problems have only one minimum.
 
 \medskip    
-\item Calculating the loss function for all parameter values $w_0,\ldots,w_n\in\mathbb{R}^{n+1}$ set would be an inefficient way of finding the minimum.
+\item Calculating the loss function for all parameter values $w_0,\ldots,w_n\in\mathbb{R}^{n+1}$ would be an inefficient way of finding the minimum.
 
 \medskip    
 \item Let's examine a better mechanism -- very popular in machine learning -- called {\bf gradient descent}.
@@ -191,7 +214,7 @@ of the loss function $\mathcal{L}$ with respect to the weights $w_i$.
 
 \vspace{-0.25cm}
 
-$$ \boldsymbol{w} \leftarrow \boldsymbol{w} - \alpha \nabla\mathcal{L} $$
+$$ w \leftarrow w - \alpha \nabla\mathcal{L} $$
 
 where $\alpha$ is the learning rate.
 \end{itemize}
@@ -217,9 +240,6 @@ where $\alpha$ is the learning rate.
 
 \medskip
 \item The gradient descent algorithm multiplies the gradient by a scalar known as the learning rate (also sometimes called step size) to determine the next point. 
-
-\medskip
-\item For example, if the gradient magnitude is $2.5$ and the learning rate is $0.01$, then the gradient descent algorithm will pick the next point $0.025$ away from the previous point.
 \end{itemize}
 \end{frame}
 
@@ -270,56 +290,6 @@ where $\alpha$ is the learning rate.
 \item learning rate
 \item step size
 \end{itemize}
-\end{frame}
-
-\begin{frame}{Stochastic Gradient Descent}
-
-%%%
-
-\begin{itemize}
-\item In gradient descent, a {\bf batch} is the total number of examples you use to calculate the gradient in a single iteration. 
-    \item So far, we've assumed that the batch has been the entire data set. 
-    \item But often data sets contain huge numbers of examples with huge numbers of features.
-    \item Consequently, a batch can be enormous. A very large batch may cause even a single iteration to take a very long time to compute.
-    \item A large data set with randomly sampled examples probably contains redundant data. In fact, redundancy becomes more likely as the batch size grows. 
-    \item Some redundancy can be useful to smooth out noisy gradients, but enormous batches tend not to carry much more predictive value than large batches.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Stochastic Gradient Descent}
-
-\begin{itemize}
-\item What if we could get the right gradient on average for much less computation? 
-
-\medskip
-\item By choosing examples at random from our data set, we could estimate (albeit, noisily) a big average from a much smaller one. 
-
-\medskip
-\item {\bf Stochastic gradient descent (SGD)} takes this idea to the extreme--it uses only a single example (a batch size of 1) per iteration. 
-
-\medskip
-\item Given enough iterations, SGD works but is very noisy. The term ``stochastic'' indicates that the one example comprising each batch is chosen at random.
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}{Reducing Loss}
-\begin{itemize}
-    \item {\bf Mini-batch stochastic gradient descent (mini-batch SGD)} is a compromise between full-batch iteration and SGD. A mini-batch is typically between $10$ and $1,000$ examples, chosen at random. 
-    
-\medskip
-\item Mini-batch SGD reduces the amount of noise in SGD but is still more efficient than full-batch.
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Key Terms}
-\begin{itemize}
-    \item batch
-    \item batch size
-    \item mini-batch
-    \item stochastic gradient descent (SGD)
-\end{itemize}
-
 \end{frame}
 
 \end{document}
