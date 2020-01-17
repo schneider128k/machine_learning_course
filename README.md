@@ -18,9 +18,9 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 - [Iterative approach to loss minimization](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_d_slides.pdf)
 
-- [Gradient descent, learning rate, stochastic gradient descent, mini-batch gradient descent](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_e_slides.pdf)
+- [Gradient descent, learning rate](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_e_slides.pdf)
 
-TO DO: split above slides
+- [Stochastic gradient descent, mini-batch gradient descent](https://github.com/schneider128k/machine_learning_course/blob/master/slides/2_f_slides.pdf)
 
 - [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_network.md)
 
@@ -40,23 +40,23 @@ Let's examine what could go wrong when applying gradient descent with a poorly c
   
 ### Visualization of bivariate functions ###
   
-The loss function for a deep neural network depends on millions of parameters. Such functions are called multivariate because they depend on multiple variables.  It is no longer possible to easily visualize multivariate functions. They define hypersurfaces.
+The loss function for a deep neural network depends on millions of parameters. Such functions are called multivariate because they depend on multiple variables.  It is no longer possible to easily visualize multivariate functions.
 
-The following notebooks present two methods for visualizing bivariate function, that is, those that depend on exactly two variables.  Such functions define surfaces.  Think of the surface of a mountain range.
+The following notebooks present two methods for visualizing bivariate function, that is, those that depend on exactly two variables.  Such functions define surfaces in 3D.  Think of the surface of a mountain range.
 
 - [Notebook for creating density and contour plots](https://colab.research.google.com/drive/1pcvtvK6jITbp1Sf2nD2uEaDGpwUOA3IL)
 
 - [Notebook for creating three dimensional plots](https://colab.research.google.com/drive/1btvbObh-nZ4MSC7QkjpS3RGpefN_msth)
 
-(TO DO: improve everything below!)
-
 ### Linear regression using gradient descent - numpy implementation
 
-To get started, let's consider the simple case of linear regression: n=1, that is, there is only one feature and one weight.
+To get started, let's consider the simple case of linear regression: n=1, that is, there is only one feature and the model has only one weight (and a bias term). 
 
 - [Mathematical derivation of gradient for linear regression](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression_simple.pdf)
 
-In the first implementation, we consider the weight and bias separately.
+(TO DO: improve everything below!)
+
+In the first implementation, we us consider the weight and bias separately.
 
 - [Notebook for solving linear regression using stochastic gradient descent](https://colab.research.google.com/drive/1ZKa5sIiSgS8P1RuNyH6yYcZ6F9S7Yiwu)
 
