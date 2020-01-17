@@ -26,11 +26,11 @@ TO DO: split above slides
 
 ### Python, numpy, and matplotlib ###
 
-- [Python](https://docs.python.org/3/tutorial/)
+- [Python](https://colab.research.google.com/drive/1CdwvzRhFNIlhp1mWVWFXSXAsmRFWvASq)
 
-- [numpy](https://docs.scipy.org/doc/numpy/user/quickstart.html)
+- [numpy](https://colab.research.google.com/drive/1oixeI3yWIKkjCyg7SVIV-1mXI3LUbCAN)
 
-- [matplotlib](https://matplotlib.org/tutorials/index.html#introductory)
+- [matplotlib](https://colab.research.google.com/drive/1kKQ9sSFIrLlrZ0pW8nwjmLL9CUNUaSIC)
 
 ### Effect of learning rate on gradient descent for finding minima of univariate functions ###
 
