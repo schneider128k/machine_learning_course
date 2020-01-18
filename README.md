@@ -28,6 +28,8 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 - [Python](https://colab.research.google.com/drive/1CdwvzRhFNIlhp1mWVWFXSXAsmRFWvASq)
 
+- [Style guide for Python code](https://www.python.org/dev/peps/pep-0008/)
+
 - [numpy](https://colab.research.google.com/drive/1oixeI3yWIKkjCyg7SVIV-1mXI3LUbCAN)
 
 - [matplotlib](https://colab.research.google.com/drive/1kKQ9sSFIrLlrZ0pW8nwjmLL9CUNUaSIC)
