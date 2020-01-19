@@ -56,15 +56,15 @@ To get started, let's consider the simple case of linear regression: n=1, that i
 
 - [Mathematical derivation of gradient for linear regression](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression_simple.pdf)
 
-(TO DO: improve everything below!)
-
-In the first implementation, we us consider the weight and bias separately.
+In the first implementation, we consider the weight and bias separately and implement stochastic gradient descent.  It is easy to see the correspondance between the code and the mathematical expression for the gradient.
 
 - [Notebook for solving linear regression using stochastic gradient descent](https://colab.research.google.com/drive/1ZKa5sIiSgS8P1RuNyH6yYcZ6F9S7Yiwu)
 
-In the second implementation, we combine the weight and bias into one vector. We also consider three versions of gradient descent: batch, stochastic, and mini-batch gradient descent.
+In the second implementation, we combine the weight and bias into one vector. We also consider three versions of gradient descent: batch, stochastic, and mini-batch gradient descent.  We use a *vectorized* implementation, that is, all data in a batch is processed in parallel. It is more difficult to see the correspondance between the code and the mathematical expression for the gradient.
 
  - [Notebook for solving linear regression using gradient descent (batch, stochastic, mini-batch)](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
+
+(TO DO: improve everything below!)
 
 ### Linear regression - Keras implementation
 
