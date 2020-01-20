@@ -1,13 +1,13 @@
 # HW 1
 
-The purpose of this simple homework is (a) to become familiar with the logistics of submitting 
+The purpose of this simple homework is (a) to become familiar with the logistics of submitting your homework
 
 - create a colab notebook, 
 - make it editable
 - obtaining a shareable link and enter it in Webcourses
 - save the notebook to your GitHub repo
 
-and (b) become familiar with Python and numpy.
+and (b) to become familiar with Python and numpy.
 
 ## Problem 1
 
