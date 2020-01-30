@@ -92,18 +92,27 @@ Let's see how we can solve the simplest case of linear regression in Keras.
 
 ### TensorFlow and Keras
 
-Keras is a high-level deep learning API that allows you to easily build, train, evaluate, and execute all sorts of neural networks. Its documentation (or specification) is available at [https://keras.io](https://keras.io). The reference implementation [https://github.com/keras-team/keras](https://github.com/keras-team/keras) also called Keras, was developed by Francois Chollet as part of a research project and released as an open source project in 2015. To perform the heavy computation required by neural networks, this reference implementation relies on a computation backend. At present, you can choose from three popular open source deep learning libraries: TensorFlow, Microsoft Cognitive Toolkit (CNTK), and Theano. We will refer to this reference implementation as *multibackend Keras*.
+Keras is a high-level deep learning API that allows you to easily build, train, evaluate, and execute all sorts of neural networks. Its documentation (or specification) is available at [https://keras.io](https://keras.io). The reference implementation [https://github.com/keras-team/keras](https://github.com/keras-team/keras) also called Keras, was developed by Francois Chollet as part of a research project and released as an open source project in March 2015. To perform the heavy computation required by neural networks, this reference implementation relies on a computation backend. At present, you can choose from three popular open source deep learning libraries: TensorFlow, Microsoft Cognitive Toolkit (CNTK), and Theano. Therefore, to avoid any confusion, we will refer to this reference implementation as *multibackend Keras*.
 
+Since late 2016, other implementations have been released. You can now run Keras on Apache MXNet, Apple's Core ML, JavaScript or TypeScript (to run Keras code in a web browser), and PlaidML (which can run on all sorts of GPU devices, not just Nvidia).
 
-  - [TensorFlow](https://www.tensorflow.org/tutorials/)
+TensorFlow (TF 2.0) itself now comes bundled with its own Keras implementation, ```tf.keras```. It only supports TensorFlow as the backend, but it has the advantage of offering some very useful extra features: for example, it supports TensorFlow's Data API, which makes it easy to load and preprocess data efficiently.
+
+### ```tf.keras``` 
+
+In this course, we will use ```tf.keras```.
+
+- [Notebook showing how to load TensorFlow 2](https://colab.research.google.com/notebooks/tensorflow_version.ipynb)
+
+- [Notebook showing how to load ```tf.keras```](https://colab.research.google.com/drive/1fjMFLEJIXoC1LPCEXe4EUWCmRVfQVTu5)
+
+- [TensorFlow](https://www.tensorflow.org/tutorials/)
   
-  - [Keras](https://keras.io/)
-
-  - [Keras basics](https://github.com/schneider128k/machine_learning_course/blob/master/slides/4_slides.pdf)
+- [Keras basics (TO DO: improve it)](https://github.com/schneider128k/machine_learning_course/blob/master/slides/4_slides.pdf)
 
 ### Keras examples
 
-(TO DO: make sure that all notebooks use TF 2.0 and tf.keras)
+(!!! TO DO: make sure that all notebooks use Tensorflow 2 and ```tf.keras``` !!!)
 
 Let's now see how we can solve more interesting problems with Keras.  We consider the problems of classifying images from the MNIST digits, MNIST fashion items, and CIFAR10 datasets.  
 
