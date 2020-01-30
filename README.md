@@ -54,17 +54,19 @@ The following notebooks present two methods for visualizing bivariate function, 
 
 To get started, let's consider the simple case of linear regression: n=1, that is, there is only one feature and the model has only one weight (and a bias term). 
 
-- [Mathematical derivation of gradient for linear regression](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression_simple.pdf)
+- [Mathematical derivation of gradient for linear regression (single example)](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression_simple.pdf)
+
+(TO DO: add discussion of general case with arbitrary n)
 
 In the first implementation, we consider the weight and bias separately and implement stochastic gradient descent.  It is easy to see the correspondance between the code and the mathematical expression for the gradient.
 
 - [Notebook for solving linear regression using stochastic gradient descent](https://colab.research.google.com/drive/1ZKa5sIiSgS8P1RuNyH6yYcZ6F9S7Yiwu)
 
+- TO DO: Mathematical derivation of gradient for linear regression (multiple examples) 
+
 In the second implementation, we combine the weight and bias into one vector. We also consider three versions of gradient descent: batch, stochastic, and mini-batch gradient descent.  We use a *vectorized* implementation, that is, all data in a batch is processed in parallel. It is more difficult to see the correspondance between the code and the mathematical expression for the gradient.
 
  - [Notebook for solving linear regression using gradient descent (batch, stochastic, mini-batch)](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
-
-(TO DO: improve everything below!)
 
 ### Linear regression - Keras implementation
 
@@ -90,19 +92,18 @@ Let's see how we can solve the simplest case of linear regression in Keras.
 
 ### TensorFlow and Keras
 
-We will use Keras to build (almost) all deep learning models. Roughtly speaking, TensorFlow is a back-end for deep learning, whereas Keras is a front-front.  Keras can use TensorFlow or other backends.  
+Keras is a high-level deep learning API that allows you to easily build, train, evaluate, and execute all sorts of neural networks. Its documentation (or specification) is available at [https://keras.io](https://keras.io). The reference implementation [https://github.com/keras-team/keras](https://github.com/keras-team/keras) also called Keras, was developed by Francois Chollet as part of a research project and released as an open source project in 2015. To perform the heavy computation required by neural networks, this reference implementation relies on a computation backend. At present, you can choose from three popular open source deep learning libraries: TensorFlow, Microsoft Cognitive Toolkit (CNTK), and Theano. We will refer to this reference implementation as *multibackend Keras*.
 
-Keras is now part of the latest version of TensorFlow 2.0 so it is available automatically when you import tensorflow.  Previously (TensorFlow 1.x) you had to import Keras seperately.  I may need to do some minor tweaks to the notebooks so that everything is perfectly adapted to TensorFlow 2.0.
 
   - [TensorFlow](https://www.tensorflow.org/tutorials/)
   
   - [Keras](https://keras.io/)
 
-  - [3 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/3_slides.pdf)
-
-  - [4 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/4_slides.pdf)
+  - [Keras basics](https://github.com/schneider128k/machine_learning_course/blob/master/slides/4_slides.pdf)
 
 ### Keras examples
+
+(TO DO: make sure that all notebooks use TF 2.0 and tf.keras)
 
 Let's now see how we can solve more interesting problems with Keras.  We consider the problems of classifying images from the MNIST digits, MNIST fashion items, and CIFAR10 datasets.  
 
