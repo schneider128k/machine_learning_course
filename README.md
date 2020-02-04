@@ -58,9 +58,11 @@ In the first implementation, we consider the weight and bias separately and impl
 
 - [Notebook for solving linear regression using stochastic gradient descent](https://colab.research.google.com/drive/1ZKa5sIiSgS8P1RuNyH6yYcZ6F9S7Yiwu)
 
-In the second implementation, we combine the weight and bias into one vector. We also consider three versions of gradient descent: batch, stochastic, and mini-batch gradient descent.  We use a *vectorized* implementation, that is, all data in a batch is processed in parallel. It is more difficult to see the correspondance between the code and the mathematical expression for the gradient (see subsection 2.2 of the above notes).
+In the second implementation, we combine the weight and bias into one vector. We also consider three versions of gradient descent: batch, mini-batch, and stochastic gradient descent.  We use a *vectorized* implementation, that is, all data in a batch is processed in parallel. It is more difficult to see the correspondance between the code and the mathematical expression for the gradient (see subsection 2.2 of the above notes).
 
- - [Notebook for solving linear regression using gradient descent (batch, stochastic, mini-batch)](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
+ - [Notebook for solving linear regression using gradient descent (batch, mini-batch, and stochastic)](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
+
+This vectorized implementation of gradient descent for linear regression with a single feature can be generalized to linear regression with multiple features (you have to do this for n=2 for one of the homework problems).
 
 ### Linear regression - Keras implementation
 
