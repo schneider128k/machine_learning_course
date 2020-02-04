@@ -28,10 +28,10 @@
 
 
 \begin{abstract}
-We consider the gradient for linear regression for the simplest case.
+We compute the gradient for linear regression.
 \end{abstract}
 
-\section{Gradient}
+\section{Linear regression with single feature}
 
 Let $w\in\R$ and $b\in\R$ be the weight and bias for linear regression.  Given $x\in\R$, the predicted value is
 \begin{equation}
@@ -45,23 +45,101 @@ The gradient of the loss function is
 \begin{equation}
 \nabla\mathcal{L} = \left(
 \begin{array}{c}
-\dfrac{\partial \mathcal{L}}{\partial w}  \\
+\dfrac{\partial \mathcal{L}}{\partial b}  \\
 \\
-\dfrac{\partial \mathcal{L}}{\partial b} 
+\dfrac{\partial \mathcal{L}}{\partial w} 
 \end{array}
 \right)
 \end{equation}
-Using the chain rule, we obtain the weight component of the gradient
+Using the chain rule, we compute the bias component of the gradient
+\begin{equation}
+\dfrac{\partial \mathcal{L}}{\partial w} =
+\dfrac{\partial \mathcal{L}}{\partial\hat{y}} \cdot \dfrac{\partial \hat{y}}{\partial b} =
+(\hat{y} - y)
+\end{equation}
+and the weight component of the gradient
 \begin{equation}
 \dfrac{\partial \mathcal{L}}{\partial w} =
 \dfrac{\partial \mathcal{L}}{\partial\hat{y}} \cdot \dfrac{\partial \hat{y}}{\partial w} =
 (\hat{y} - y) \cdot x.
 \end{equation}
-The expression for the bias component of the gradient is even simpler
+
+\section{Linear regression for multiple features}
+
+\subsection{Single example}
+
+Let $w=(w_1,\ldots,w_n)^T\in\R^n$ and $b\in \R$ be the weight vector and bias for linear regression. Given $x=(x_1,\ldots,x_n)^T\in\R^n$, the predicted value is
 \begin{equation}
-\dfrac{\partial \mathcal{L}}{\partial w} =
-\dfrac{\partial \mathcal{L}}{\partial\hat{y}} \cdot \dfrac{\partial \hat{y}}{\partial b} =
-(\hat{y} - y).
+\hat{y}=\sum_{j=1}^n w_j x_j + b.
 \end{equation}
+It will be convenient to treat the weights $w_j$ and the bias $b$ in a unified way.  To do this, set $w=(w_0,w_1,\ldots,w_n)^T\in\R^n$  with $w_0=b$ and $x=(1,x_1,\ldots,x_n)^T\in\R^{n+1}$. The predicted value is then given by
+\begin{equation}
+\hat{y}=\sum_{j=0}^n w_j x_j.
+\end{equation}
+Note that the prediction $\hat{y}$ can also be expressed as the dot product  $x^T w$.
+
+Let loss is equal to 
+\begin{equation}
+\mathcal{L}=\frac{1}{2}(\hat{y}-y)^2 = \frac{1}{2}(x^T w - y)^2.
+\end{equation}
+Using the chain rule to compute the partial derivatives $\partial \mathcal{L} / \partial w_j$ for $j=0,\ldots,n$, we obtain the expression for the gradiet
+\begin{equation}
+\nabla\mathcal{L} = x (\hat{y}-y) = x (x^T w - y).
+\end{equation}
+
+\subsection{Multiple examples}
+
+Let $(x^{(1)},y^{(1)}), \ldots, (x^{(m)},y^{(m)})\in \R^{n+1}\times \R$ be the training example in a batch.  
+The loss for the $i$th example is
+\begin{equation}
+\mathcal{L}^{(i)} = \frac{1}{2}(\hat{y}^{(i)} - y) = \frac{1}{2}({x^{(i)}}^T w - y^{(i)})
+\end{equation}
+and the gradient of the loss for the $i$th example is
+\begin{equation}
+\nabla \mathcal{L}^{(i)} =  x^{(i)} (\hat{y}^{(i)} - y) = x^{(i)} ({x^{(i)}}^T w - y^{(i)}).
+\end{equation}
+The mean squared error loss for the batch is
+\begin{equation}
+\mathrm{MSE} = \frac{1}{m} \sum_{i=1}^m \mathcal{L}^{(i)}
+\end{equation}
+and the gradient of the MSE for the batch is
+\begin{eqnarray}
+\nabla \mathrm{MSE} 
+&=& 
+\frac{1}{m} \sum_{i=1}^m \nabla \mathcal{L}^{(i)} \\
+&=& 
+\frac{1}{m} \sum_{i=1}^m x^{(i)} ({x^{(i)}}^T w - y^{(i)}).
+\end{eqnarray}
+The summation corresponds to a for-loop.  To write vectorized code making it possible to process the example in the batch in parallel, we have to avoid the explicit summation. 
+To this end, define the matrix 
+\begin{equation}
+X = (x^{(1)} \ldots x^{(m)})\in\R^{(n+1) \times m}
+\end{equation}
+whose columns are the feature vectors $x^{(i)}$ and the vector
+\begin{equation}
+y = (y^{(1)} \ldots y^{(m)})\in\R^{1\times m}
+\end{equation}
+whose entries are the labels $y^{(i)}$.
+
+It is a little bit tricky, but it can be shown that
+\begin{equation}
+\nabla \mathrm{MSE} = X (X^T w - y^T).
+\end{equation}
+This provides the basis for the vectorized implementation of mini-batch gradient descent in the notebook
+
+\noindent
+{\footnotesize \url{https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-}}
+
+\noindent
+using the command \texttt{numpy.dot} 
+
+\noindent
+{\footnotesize \url{https://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html}}.
+
+\noindent
+(Note that in the code we use $X^T$ instead of $X$ and $y^T$ instead of $y$. This is because the first dimension is the batch dimension. I will explain this in class.)
+
+
+
 
 \end{document}
