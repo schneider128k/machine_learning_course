@@ -52,19 +52,13 @@ The following notebooks present two methods for visualizing bivariate function, 
 
 ### Linear regression using gradient descent - numpy implementation
 
-To get started, let's consider the simple case of linear regression: n=1, that is, there is only one feature and the model has only one weight (and a bias term). 
+- [Mathematical derivation of gradient for linear regression](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression_simple.pdf)
 
-- [Mathematical derivation of gradient for linear regression (single example)](https://github.com/schneider128k/machine_learning_course/blob/master/slides/linear_regression_simple.pdf)
-
-(TO DO: add discussion of general case with arbitrary n)
-
-In the first implementation, we consider the weight and bias separately and implement stochastic gradient descent.  It is easy to see the correspondance between the code and the mathematical expression for the gradient.
+In the first implementation, we consider the weight and bias separately and implement stochastic gradient descent.  It is easy to see the correspondance between the code and the mathematical expression for the gradient (see section 1 of the above notes).
 
 - [Notebook for solving linear regression using stochastic gradient descent](https://colab.research.google.com/drive/1ZKa5sIiSgS8P1RuNyH6yYcZ6F9S7Yiwu)
 
-- TO DO: Mathematical derivation of gradient for linear regression (multiple examples) 
-
-In the second implementation, we combine the weight and bias into one vector. We also consider three versions of gradient descent: batch, stochastic, and mini-batch gradient descent.  We use a *vectorized* implementation, that is, all data in a batch is processed in parallel. It is more difficult to see the correspondance between the code and the mathematical expression for the gradient.
+In the second implementation, we combine the weight and bias into one vector. We also consider three versions of gradient descent: batch, stochastic, and mini-batch gradient descent.  We use a *vectorized* implementation, that is, all data in a batch is processed in parallel. It is more difficult to see the correspondance between the code and the mathematical expression for the gradient (see subsection 2.2 of the above notes).
 
  - [Notebook for solving linear regression using gradient descent (batch, stochastic, mini-batch)](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-)
 
@@ -76,11 +70,11 @@ Let's see how we can solve the simplest case of linear regression in Keras.
 
 ### Linear regression using the normal equation - numpy implementation 
 
- There is a closed-form solution for choosing the best weights and bias for linear regression. The optimal solution achieves the smallest squared error loss.
+There is a closed-form solution for choosing the best weights and bias for linear regression. The optimal solution achieves the smallest squared error loss.
  
-  - [Colab notebook for solving linear regression using normal equation](https://colab.research.google.com/drive/1J7yct9aGfhtfXw8n00Mq4R-xldSSM1WY)
+  - [Notebook for solving linear regression using normal equation](https://colab.research.google.com/drive/1J7yct9aGfhtfXw8n00Mq4R-xldSSM1WY)
  
-  To understand the mathematics underlying the normal equation, read the following materials. I will not cover the derivation of the normal equation.
+To understand the mathematics underlying the normal equation, read the following materials. I will not cover the derivation of the normal equation.
 
   - [Chapter 2 Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html)
   
