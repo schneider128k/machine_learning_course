@@ -92,6 +92,12 @@ In this course, we will use ```tf.keras```.
 
 - [TensorFlow 2](https://www.tensorflow.org/overview/)
   
+### TensorFlow datasets 
+
+TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can quickly help build high-performance input data pipelines for training TensorFlow models. Instead of downloading and manipulating datasets manually and then figuring out how to read their labels, TensorFlow datasets standardizes the data format so that it's easy to swap one dataset with another, often with just a single line of code change. As you will see later on, doing things like breaking the dataset down into training, validation, and testing is also a matter of a single line of code. 
+
+- [Notebook showing how to use TensorFlow datasets](https://colab.research.google.com/drive/1hpMxTkAjYn3qjLK5P_HiukQNrxgxacgu)
+  
 ### Keras basics
   
 - [Keras basics (TO DO: improve it)](https://github.com/schneider128k/machine_learning_course/blob/master/slides/4_slides.pdf)
