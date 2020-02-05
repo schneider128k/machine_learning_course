@@ -104,6 +104,10 @@ TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can
   
 - [Notebook for exploring celebrities dataset ```celeb_a```](https://colab.research.google.com/drive/1jrabFFeiYU3ffXmnXh5szZud8A-zsV_5)
 
+### Keras datasets
+
+We are going to work with some simple datasets to start learning about neural network for computer vision. Two simple datasets are the MNIST digits dataset and fashion items dataset. It is not really necessary to use a highly performant pipeline to load these simple datasets. It sufficies to use [```tf.keras.datasets```](https://www.tensorflow.org/api_docs/python/tf/keras/datasets). This collection contains only a few simple datasets and provides an elementary way of loading them.
+
 ### Keras basics
   
 - [Keras basics (TO DO: improve it)](https://github.com/schneider128k/machine_learning_course/blob/master/slides/4_slides.pdf)
