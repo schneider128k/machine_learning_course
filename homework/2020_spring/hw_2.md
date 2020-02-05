@@ -23,6 +23,6 @@ To solve this problem, you have to create data points that approximately lie on 
 What does an average MNIST digit look like? For each i=0,1,...,9, compute the average of digit i and display it.  More precisely, you have 
 add all the images of the digit i together and divide it by the number of times the digit i occurs in the data set. 
 
-TO DO: I will add info how to load the dataset in TensorFlow 2.0.
+Use ```tf.keras.datasets``` to load the MNIST digits dataset.
 
-You have to post the links to your editable notebooks in Webcourses, save the in your GitHub course repo in the folder ```HW_2```.
+You have to post the links to your editable notebooks in Webcourses, save the in your GitHub course repo in the folder ```HW_2```.  Make sure that you follow the style guid for Python code.  Also, you text cells with markup headings to divide your notebooks into logical units. Always cite all sources used.
