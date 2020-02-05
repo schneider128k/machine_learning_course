@@ -98,6 +98,8 @@ TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can
 
 - [Notebook showing how to use TensorFlow datasets](https://colab.research.google.com/drive/1hpMxTkAjYn3qjLK5P_HiukQNrxgxacgu)
   
+- [TensorFlow blog: introducing TensorFlow datasets](https://blog.tensorflow.org/2019/02/introducing-tensorflow-datasets.html)
+
 ### Keras basics
   
 - [Keras basics (TO DO: improve it)](https://github.com/schneider128k/machine_learning_course/blob/master/slides/4_slides.pdf)
