@@ -25,4 +25,6 @@ add all the images of the digit i together and divide it by the number of times 
 
 Use ```tf.keras.datasets``` to load the MNIST digits dataset.
 
+---
+
 You have to post the links to your editable notebooks in Webcourses, save the in your GitHub course repo in the folder ```HW_2```.  Make sure that you follow the style guid for Python code.  Also, you text cells with markup headings to divide your notebooks into logical units. Always cite all sources used.
