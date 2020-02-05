@@ -4,7 +4,7 @@ There is a closed-form solution for choosing the best weights and bias for linea
  
   - [Notebook for solving linear regression using normal equation](https://colab.research.google.com/drive/1J7yct9aGfhtfXw8n00Mq4R-xldSSM1WY)
  
-To understand the mathematics underlying the normal equation, read the following materials. I will not cover the derivation of the normal equation.
+To understand the mathematics underlying the normal equation, read the following materials.
 
   - [Chapter 2 Linear Algebra](https://www.deeplearningbook.org/contents/linear_algebra.html)
   
