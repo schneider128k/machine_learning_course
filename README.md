@@ -100,8 +100,9 @@ TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can
 
 - [TensorFlow blog: introducing TensorFlow datasets](https://blog.tensorflow.org/2019/02/introducing-tensorflow-datasets.html)
 
-- [Notebook showing how to load the MNIST datasets](https://colab.research.google.com/drive/1hpMxTkAjYn3qjLK5P_HiukQNrxgxacgu)
+- [Notebook for exploring MNIST dataset](https://colab.research.google.com/drive/1hpMxTkAjYn3qjLK5P_HiukQNrxgxacgu)
   
+- [Notebook for exploring celebrities dataset ```celeb_a```](https://colab.research.google.com/drive/1jrabFFeiYU3ffXmnXh5szZud8A-zsV_5)
 
 ### Keras basics
   
