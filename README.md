@@ -94,7 +94,7 @@ In this course, we will use ```tf.keras```.
   
 ### TensorFlow datasets 
 
-TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can quickly help build high-performance input data pipelines for training TensorFlow models. Instead of downloading and manipulating datasets manually and then figuring out how to read their labels, TensorFlow datasets standardizes the data format so that it's easy to swap one dataset with another, often with just a single line of code change. As you will see later on, doing things like breaking the dataset down into training, validation, and testing is also a matter of a single line of code. 
+TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can quickly help build high-performance input data pipelines for training TensorFlow models. Instead of downloading and manipulating datasets manually and then figuring out how to read their labels, TensorFlow datasets standardizes the data format so that it's easy to swap one dataset with another, often with just a single line of code change. As you will see later on, doing things like breaking the dataset down into training, validation, and testing is also a matter of a single line of code. The high-performance input data pipelines make it possible to work on the data in parallel. For instance, while the GPU is working with a batch of data, the CPU is prefeching the next batch.
 
 - [TensorFlow datasets](https://www.tensorflow.org/datasets)
 
@@ -106,7 +106,7 @@ TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can
 
 ### Keras datasets
 
-We are going to work with some simple datasets to start learning about neural network for computer vision. Two simple datasets are the MNIST digits dataset and fashion items dataset. It is not really necessary to use a high-performace pipeline to load such simple datasets. It sufficies to use [```tf.keras.datasets```](https://www.tensorflow.org/api_docs/python/tf/keras/datasets) instead of TensorFlow datasets. The collection ```tf.keras.datasets``` contains only a few simple datasets and provides an elementary way of loading them.  
+We are going to work with some simple datasets to start learning about neural network for computer vision. Two simple datasets are the MNIST digits dataset and the fashion items dataset. It is not really necessary to use high-performace input data pipelines to load such simple datasets. It sufficies to use [```tf.keras.datasets```](https://www.tensorflow.org/api_docs/python/tf/keras/datasets) instead of TensorFlow datasets. The collection ```tf.keras.datasets``` contains only a few simple datasets and provides an elementary way of loading them.  
 
 ### Keras basics
   
