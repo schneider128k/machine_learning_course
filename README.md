@@ -114,20 +114,22 @@ We are going to work with some simple datasets to start learning about neural ne
 
 ### Keras examples
 
-Before formalizing sequential neural networks consisting of dense layers, let's look at some simple Keras examples showing how to use such networks for classification. We consider the problems of classifying images from the MNIST digits dataset, fashion items dataset, and CIFAR10 dataset.  
+Before mathematically formalizing sequential neural networks with dense layers, let's look at some simple Keras examples showing how to use such networks for classification. We consider the problems of classifying images from the MNIST digits dataset, the fashion items dataset, and the CIFAR10 dataset.  
 
-These problems are so-called multi-class, single-label classifications problems.*Multi-class* means that there are several classes. For instance, T-shirt, pullover or bag in the fashion items dataset. *Single-label* means that classes are mutually exclusive. For instance, an image is either the digit 0, or the digit 1, etc. in the MNIST digits dataset.
+These problems are so-called multi-class, single-label classifications problems. *Multi-class* means that there are several classes. For instance, T-shirt, pullover or bag in the fashion items dataset. *Single-label* means that classes are mutually exclusive. For instance, an image is either the digit 0, or the digit 1, etc. in the MNIST digits dataset.
 
 The example neural networks consist of three layers: input, hidden, and output layers.
 They use the *softmax* activation function in the last (output) layer and the *categorical cross entropy* loss function because the problems are multi-class, single-label classification problems.  They also use the  *relu activation* activation function for the hidden layer.  
-  
-  - [Notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
-  
-  - [Notebook for classifying MNIST digits with dense layers and analyzing model performance](https://colab.research.google.com/drive/144nj1SRtSjpIcKZgH6-GPdA9bWkg68nh)
-  
-  - [Notebook for classifying MNIST fashion items with dense layers and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
 
-  - [Notebook for displaying CIFAR10 data set](https://colab.research.google.com/drive/1LZZviWOzvchcXRdZi2IBx3KOpQOzLalf)
+These notebooks also show how to split datasets into *training datasets* and *test datasets* and also discuss *overfitting*.
+  
+- [Notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
+  
+- [Notebook for classifying MNIST digits with dense layers and analyzing model performance](https://colab.research.google.com/drive/144nj1SRtSjpIcKZgH6-GPdA9bWkg68nh)
+  
+- [Notebook for classifying fashion items with dense layers and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
+
+- [Notebook for displaying CIFAR10 data set](https://colab.research.google.com/drive/1LZZviWOzvchcXRdZi2IBx3KOpQOzLalf)
 
 ### Generalization, overfitting, splitting data in train & test sets
 
