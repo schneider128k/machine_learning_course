@@ -114,15 +114,24 @@ We are going to work with some simple datasets to start learning about neural ne
 
 ### Keras examples
 
-(!!! TO DO: make sure that all notebooks use Tensorflow 2 and ```tf.keras``` !!!)
+Before formalizing sequential neural networks consisting of dense layers, let's look at some simple Keras examples showing how to use such networks for classification. We consider the problems of classifying images from the MNIST digits dataset, fashion items dataset, and CIFAR10 dataset.  
 
-Let's now see how we can solve more interesting problems with Keras.  We consider the problems of classifying images from the MNIST digits, MNIST fashion items, and CIFAR10 datasets.  
+The classifications problems are so-called multi-class, single-label classifications problems
 
-The classifications problems are all multi-class, single-label classifications problems.  *Multi-class* means that there are several classes. For instance, T-shirt, pullover or bag in the MNIST fashion items dataset.  *Single-label* means that classes are mutually exclusive. For instance, an image is either the digit 0, or the digit 1, etc. in the MNIST digits dataset.
+- *Multi-class* means that there are several classes. For instance, T-shirt, pullover or bag in the fashion items dataset.  
 
-In the multi-class, single-label classification problem, the activation in the last layer is *softmax* and the loss function is *categorical cross entropy*.  
+- *Single-label* means that classes are mutually exclusive. For instance, an image is either the digit 0, or the digit 1, etc. in the MNIST digits dataset.
 
-The examples below use the so-called *relu activation* function for the hidden layer.
+The example neural networks consist of three layers: input, hidden, and output layers.
+They use 
+
+- the *softmax* activation function in the last (output) layer and 
+
+- the *categorical cross entropy* loss function
+
+because the problems are multi-class, single-label classification problems.  
+
+They also use the  *relu activation* activation function for the hidden layer.
   
   - [Notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
   
