@@ -114,11 +114,13 @@ We are going to work with some simple datasets to start learning about neural ne
 
 ### Keras basics
   
+Let's briefly describe Keras concepts such as dense/convolutional/ recurrent layers, sequential models, functional API, activation functions, loss functions, optimizers, and metrics.
+  
 - [Keras basics](https://github.com/schneider128k/machine_learning_course/blob/master/keras_basics.md)
 
 ### Keras models for classification of MNIST digits and fashion items
 
-Before formally defining sequential neural networks with dense layers, let's look at some simple Keras models showing how to use such networks for classification. We consider the problems of classifying images from the MNIST digits dataset, the fashion items dataset, and the CIFAR10 datasets.  
+Before formally defining sequential neural networks with dense layers, let's look at some simple Keras models showing how to use such networks for classification. We consider the problems of classifying images from the MNIST digits dataset and the fashion items dataset.  
 
 These problems are so-called multi-class, single-label classifications problems. *Multi-class* means that there are several classes. For instance, T-shirt, pullover or bag in the fashion items dataset. *Single-label* means that classes are mutually exclusive. For instance, an image is either the digit 0, or the digit 1, etc. in the MNIST digits dataset.
 
@@ -134,6 +136,8 @@ These notebooks also show how to split datasets into *training datasets* and *te
 - [Notebook for classifying fashion items with dense layers and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
 
 ### Generalization, overfitting, splitting data in train & test sets
+
+**TO DO: clean up everything below**
 
 The goal of machine learning is to obtain models that perform well on new unseen data, that is.  For instance, it can happen that a model performs perfectly on the training data, but fails on new data.  This is called *overfitting*.  The following notes explain briefly how to deal with this important issue.
 
@@ -251,6 +255,11 @@ I have made several changes to the code from the Keras documentation. In the abo
 
 ---
 
+- one-shot learning
+- image similarity, face-recognition
+
+---
+
 ### Visualizing high-dimensional data using t-SNE
 
 - [How to use t-SNE effectively?](https://distill.pub/2016/misread-tsne/)
@@ -292,11 +301,17 @@ I have made several changes to the code from the Keras documentation. In the abo
 
 ---
 
+### GANs
+
 ### Sequence-to-sequence models
 
 - [Arguments ```return_sequences``` and and ```return_sequences```for LSTM cells in Keras](https://colab.research.google.com/drive/1xjndR7H9l6ICNBM0LqU-kfNheNt36tER)
 - [Character-based sequence-to-sequence model for translating French to English](https://colab.research.google.com/drive/1WPRV12WdxXo7NzVqHwpqYzHAGdCPkmlx)
 - TO DO: sequence-to-sequence model with attention
+
+---
+
+### Reinforcement learning ???
 
 ---
 
