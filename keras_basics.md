@@ -48,7 +48,7 @@ network.add(tf.keras.layers.Dense(512,
                                   input_shape=(28 * 28,)))
 
 # no need to specify input_shape for second dense layer 
-# it is dense layer with softmax activation function
+# it is a dense layer with softmax activation function
 network.add(tf.keras.layers.Dense(10,
                                   activation='softmax')) 
 ```
@@ -70,16 +70,54 @@ The second layer didn't receive an input shape argument - instead, it automatica
 - You'll be then searching for a good set of values for the weight tensor involved in these tensor operations using stochastic a variant of gradient descent.
 - Picking the right network architecture is more art than a science. We will study explicit principles for building neural networks and develop intuition as to what works or doesn't for specific problems.
 
-## Loss functions & optimizers: keys to configuring the learning process
+## Anatomy of a sequential network with dense layers
 
-- Once the network architecture is defined, you still choose two things:
+```
+                              Input X
+                                |
+                                V
++-----------+       +-------------------------+
+|  Weights  |  -->  |          Layer          |
++-----------+       |  (data transformation)  |
+                    +-------------------------+
+                                |
+                                .
+                                |
+                                V
++-----------+       +-------------------------+
+|  Weights  |  -->  |          Layer          |
++-----------+       |  (data transformation)  |
+      ^             +-------------------------+                         
+      | update                  |
+      | weight                  V
+      |                 +---------------+              +----------------+
+      |                 |  Predictions  |              |  True targets  |
+      |                 |      ^y       |              |       y        |
+      |                 +---------------+              +----------------+
+      |                         |                             |
+      |                         |     +-----------------+     |
+      |                         +---->|  Loss function  |<----+
++-------------+                       +-----------------+
+|  Optimizer  |                                |
++-------------+                                |
+      ^                                        V
+      |                                +--------------+      
+      +--------------------------------|  Loss score  |
+                                       +--------------+
+```
+
+## Loss functions & optimizers
+
+- Once the network architecture is defined, you choose the loss function and the optimizer to configure the learning process:
 
   - **Loss function (objective function)** 
   - **Optimizer**
 
-- The loss function that will be minimized during training. For supervised learning problems, it measures the deviation between the predicted value and the target for training examples. See [Loss functions](https://keras.io/losses/)
+- The loss function is the function that will be minimized during training. For supervised learning problems, it measures the deviation between the predicted value and the target for the training examples. See [loss functions](https://keras.io/losses/)
 
 - The optimizer determines how the network will be updated based on the loss function. It implements a specific variant of stochastic gradient descent (SGD). See [Optimizers](https://keras.io/optimizers/).
+
+- A metric function is used to judge the performance of the model.  See [metrics](https://keras.io/metrics/)
 
 ---
 
@@ -87,6 +125,12 @@ The second layer didn't receive an input shape argument - instead, it automatica
 network.compile(optimizer='rmsprop',
                 loss='categorical_crossentropy',
                 metrics=['accuracy'])
+                
+history = network.fit(train_images, 
+                      train_labels, 
+                      epochs=epochs, 
+                      batch_size=128, 
+                      validation_data=(test_images, test_labels))
 ```
 
 ---
