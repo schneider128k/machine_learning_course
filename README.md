@@ -106,7 +106,9 @@ TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can
 
 ### Keras datasets
 
-We are going to work with some simple datasets to start learning about neural network for computer vision. Two simple datasets are the MNIST digits dataset and the fashion items dataset. It is not really necessary to use high-performace input data pipelines to load such simple datasets. It sufficies to use [```tf.keras.datasets```](https://www.tensorflow.org/api_docs/python/tf/keras/datasets) instead of TensorFlow datasets. The collection ```tf.keras.datasets``` contains only a few simple datasets and provides an elementary way of loading them.  
+We are going to work with some simple datasets to start learning about neural network for computer vision. Two simple datasets are the MNIST digits dataset and the fashion items dataset. It is not really necessary to use high-performace input data pipelines to load such simple datasets. It sufficies to use [```tf.keras.datasets```](https://www.tensorflow.org/api_docs/python/tf/keras/datasets) instead of TensorFlow datasets. The collection ```tf.keras.datasets``` contains only a few simple datasets and provides an elementary way of loading them. 
+
+- [Notebook for exploring the CIFAR10 dataset](https://colab.research.google.com/drive/1LZZviWOzvchcXRdZi2IBx3KOpQOzLalf)
 
 ### Keras basics
   
@@ -128,8 +130,6 @@ These notebooks also show how to split datasets into *training datasets* and *te
 - [Notebook for classifying MNIST digits with dense layers and analyzing model performance](https://colab.research.google.com/drive/144nj1SRtSjpIcKZgH6-GPdA9bWkg68nh)
   
 - [Notebook for classifying fashion items with dense layers and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
-
-- [Notebook for displaying CIFAR10 data set](https://colab.research.google.com/drive/1LZZviWOzvchcXRdZi2IBx3KOpQOzLalf)
 
 ### Generalization, overfitting, splitting data in train & test sets
 
