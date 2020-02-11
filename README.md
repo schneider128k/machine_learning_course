@@ -92,7 +92,7 @@ In this course, we will use TensorFlow 2.x and ```tf.keras```.  Always make sure
 
 - [TensorFlow 2](https://www.tensorflow.org/overview/)
   
-- [keras.io](https://keras.io/) is the documentation for the multibackend Keras implementation.  You have to tweak the code examples to use them with TensorFlow 2.x and ```tf.keras```.
+- [keras.io](https://keras.io/) is the documentation for the multibackend Keras implementation.  You have to tweak the code examples from keras.io to use them with TensorFlow 2.x and ```tf.keras```.
   
 ### TensorFlow datasets 
 
