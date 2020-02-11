@@ -58,11 +58,10 @@ The second layer didn't receive an input shape argument - instead, it automatica
 ## Models: networks of layers
 
 - A deep-learning model is a directed, acyclic graph of layers. 
-- The most common topology is a linear stack of layers, mapping a single input to a single output. These can be implemented using ```tf.keras.models.Sequential()```.
+- The most common topology is a sequential (linear) stack of layers, mapping a single input to a single output. These can be implemented using ```tf.keras.models.Sequential()```.  See [Sequential model](https://keras.io/getting-started/sequential-model-guide/).
 - Initially, we will only work with linear stacks of layers. 
 - Later, we will also look at other network topologies such as two-branch networks, multi-head networks, and inception blocks.
-
-- [Sequential model](https://keras.io/getting-started/sequential-model-guide/)
+- Such topologies are implemented using the help of [the functional API](https://keras.io/getting-started/functional-api-guide/).
 
 ---
 
@@ -76,14 +75,9 @@ The second layer didn't receive an input shape argument - instead, it automatica
 - Once the network architecture is defined, you still choose two things:
 
   - **Loss function (objective function)** 
-
-The loss function that will be minimized during training. For supervised learning problems, it measures the deviation between the predicted value and the target for training examples.
-
-[Loss functions](https://keras.io/losses/)
-
   - **Optimizer**
 
-The optimizer determines how the network will be updated based on the loss function. It implements a specific variant of stochastic gradient descent (SGD).
+- The loss function that will be minimized during training. For supervised learning problems, it measures the deviation between the predicted value and the target for training examples. See [Loss functions](https://keras.io/losses/)
 
-[Optimizers](https://keras.io/optimizers/)
+- The optimizer determines how the network will be updated based on the loss function. It implements a specific variant of stochastic gradient descent (SGD). See [Optimizers](https://keras.io/optimizers/).
 
