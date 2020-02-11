@@ -71,4 +71,20 @@ The second layer didn't receive an input shape argument - instead, it automatica
 - You'll be then searching for a good set of values for the weight tensor involved in these tensor operations using stochastic a variant of gradient descent.
 - Picking the right network architecture is more art than a science. We will study explicit principles for building neural networks and develop intuition as to what works or doesn't for specific problems.
 
+## Loss functions & optimizers: keys to configuring the learning process
+
+- Once the network architecture is defined, you still choose two things:
+
+-- **Loss function (objective function)** 
+
+The quantity that will be minimized during training. It represents a measure of success for that task at hand.
+
+[Loss functions](https://keras.io/losses/)
+
+-- **Optimizer**
+
+Determines how the network will be updated based on the loss function. Implements a specific variant of stochastic gradient descent (SGD).
+
+[Optimizers](https://keras.io/optimizers/)
+
 
