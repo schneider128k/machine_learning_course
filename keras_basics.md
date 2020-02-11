@@ -83,6 +83,18 @@ The second layer didn't receive an input shape argument - instead, it automatica
 
 ---
 
+```
+network.compile(optimizer='rmsprop',
+                loss='categorical_crossentropy',
+                metrics=['accuracy'])
+```
+
+---
+
+- Choosing the right objective function for the right problem is extremely important: your network will take any shortcut it can, to minimize the loss.
+
+- Fortunately, there are simple guidelines you can use to choose the correct loss for common problems such as classification, regression, and sequence prediction.
+
 | Problem type              | Last layer activation  | Loss function              | 
 |:-:                        |:-:                     |:-:                         |
 | Binary classification     | sigmoid                | binary_crossentropy        |
