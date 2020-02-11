@@ -84,13 +84,15 @@ TensorFlow 2 itself now comes bundled with its own Keras implementation, ```tf.k
 
 ### ```tf.keras``` 
 
-In this course, we will use ```tf.keras```.
+In this course, we will use TensorFlow 2.x and ```tf.keras```.  Always make sure that you use correct versions of TensorFlow and Keras.
 
 - [Notebook showing how to load TensorFlow 2](https://colab.research.google.com/notebooks/tensorflow_version.ipynb)
 
 - [Notebook showing how to load ```tf.keras```](https://colab.research.google.com/drive/1fjMFLEJIXoC1LPCEXe4EUWCmRVfQVTu5)
 
 - [TensorFlow 2](https://www.tensorflow.org/overview/)
+  
+- [keras.io](https://keras.io/) is the documentation for the multibackend Keras implementation.  You have to tweak the code examples to use them with TensorFlow 2.x and ```tf.keras```.
   
 ### TensorFlow datasets 
 
@@ -112,7 +114,7 @@ We are going to work with some simple datasets to start learning about neural ne
 
 ### Keras basics
   
-- [Keras basic](https://github.com/schneider128k/machine_learning_course/blob/master/keras_basics.md)
+- [Keras basics](https://github.com/schneider128k/machine_learning_course/blob/master/keras_basics.md)
 
 ### Keras models for classification of MNIST digits and fashion items
 
