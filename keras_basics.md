@@ -83,8 +83,10 @@ The second layer didn't receive an input shape argument - instead, it automatica
 
 ---
 
-| Problem type  | Last layer activation  | Loss function  | | |
-|:-:|:-:|:-:|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+| Problem type              | Last layer activation  | Loss function              | 
+|:-:                        |:-:                     |:-:                         |
+| Binary classification     | sigmoid                | binary_crossentropy        |
+| Multiclass, single-label  | softmax                | categorical_crossentropy   |
+| Mutlticlass, multi-label  | sigmoid                | binary_crossentropy        |
+| Regression to real values | none                   | mse                        |
+| Regression to \[0,1\]     | sigmoid                | mse or binary_crossentropy |
