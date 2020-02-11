@@ -25,3 +25,9 @@ Links to Keras documentation:
 - [Convolutional layers](https://keras.io/layers/convolutional/)
 - [Recurrent layers](https://keras.io/layers/recurrent/)
 
+## Layers: the building blocks of deep learning
+
+- You can think of layers as LEGO bricks of deep learning.
+- Building deep-learning models in Keras is done by combining compatible layers to form useful data-processing pipelines.
+- Layer compatibility means that every layer will only accept input tensors of a certain shape and will return output tensors of a certain shape.
+- When using Keras, you don't have to worry about compatibility, because the layers you add to your model are dynamically built to match the shape of the incoming layer.
