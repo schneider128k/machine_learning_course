@@ -35,15 +35,20 @@ Links to Keras documentation:
 ---
 
 ```
+%tensorflow_version 2.x
 import tensorflow as tf
 
+# define a sequential model
 network = tf.keras.models.Sequential()
 
+# add a dense layer with relu activation function
+# it takes as input a batch of vectors of length 28*28 
 network.add(tf.keras.layers.Dense(512,
                                   activation='relu',
                                   input_shape=(28 * 28,)))
 
-# no need to specify input_shape for second layer
+# no need to specify input_shape for second dense layer 
+# it is dense layer with softmax activation function
 network.add(tf.keras.layers.Dense(10,
                                   activation='softmax')) 
 ```
