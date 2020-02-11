@@ -54,3 +54,21 @@ network.add(tf.keras.layers.Dense(10,
 ```
 
 The second layer didn't receive an input shape argument - instead, it automatically inferred its input shape as being the output shape of the first layer.
+
+## Models: networks of layers
+
+- A deep-learning model is a directed, acyclic graph of layers. 
+- The most common topology is a linear stack of layers, mapping a single input to a single output. These can be implemented using ```tf.keras.models.Sequential()```.
+- Initially, we will only work with linear stacks of layers. 
+- Later, we will also look at other network topologies such as two-branch networks, multi-head networks, and inception blocks.
+
+- [Sequential model](https://keras.io/getting-started/sequential-model-guide/)
+
+---
+
+- The topology of a network defines a **hypothesis space**. 
+- By choosing a network topology, you constrain your **space of possibilities** (hypothesis space) to a specific series of tensor operations, mapping input data to output data.
+- You'll be then searching for a good set of values for the weight tensor involved in these tensor operations using stochastic a variant of gradient descent.
+- Picking the right network architecture is more art than a science. We will study explicit principles for building neural networks and develop intuition as to what works or doesn't for specific problems.
+
+
