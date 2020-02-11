@@ -61,7 +61,7 @@ The second layer didn't receive an input shape argument - instead, it automatica
 - The most common topology is a sequential (linear) stack of layers, mapping a single input to a single output. These can be implemented using ```tf.keras.models.Sequential()```.  See [Sequential model](https://keras.io/getting-started/sequential-model-guide/).
 - Initially, we will only work with linear stacks of layers. 
 - Later, we will also look at other network topologies such as two-branch networks, multi-head networks, and inception blocks.
-- Such topologies are implemented using the help of [the functional API](https://keras.io/getting-started/functional-api-guide/).
+- Such topologies are implemented using [the functional API](https://keras.io/getting-started/functional-api-guide/).
 
 ---
 
@@ -81,3 +81,10 @@ The second layer didn't receive an input shape argument - instead, it automatica
 
 - The optimizer determines how the network will be updated based on the loss function. It implements a specific variant of stochastic gradient descent (SGD). See [Optimizers](https://keras.io/optimizers/).
 
+---
+
+| Problem type  | Last layer activation  | Loss function  | | |
+|:-:|:-:|:-:|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
