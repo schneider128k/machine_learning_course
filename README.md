@@ -68,7 +68,7 @@ This vectorized implementation of gradient descent for linear regression with a 
 
 Let's see how we can solve the simplest case of linear regression in Keras.
 
-  - [Notebook for solving linear regression](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
+- [Notebook for solving linear regression](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
 
 ### Linear regression using the normal equation - numpy implementation 
 
@@ -116,7 +116,7 @@ We are going to work with some simple datasets to start learning about neural ne
 
 ### Keras examples
 
-Before mathematically formalizing sequential neural networks with dense layers, let's look at some simple Keras examples showing how to use such networks for classification. We consider the problems of classifying images from the MNIST digits dataset, the fashion items dataset, and the CIFAR10 dataset.  
+Before formally defining sequential neural networks with dense layers, let's look at some simple Keras examples showing how to use such networks for classification. We consider the problems of classifying images from the MNIST digits dataset, the fashion items dataset, and the CIFAR10 dataset.  
 
 These problems are so-called multi-class, single-label classifications problems. *Multi-class* means that there are several classes. For instance, T-shirt, pullover or bag in the fashion items dataset. *Single-label* means that classes are mutually exclusive. For instance, an image is either the digit 0, or the digit 1, etc. in the MNIST digits dataset.
 
