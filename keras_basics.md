@@ -75,15 +75,14 @@ The second layer didn't receive an input shape argument - instead, it automatica
 
 - Once the network architecture is defined, you still choose two things:
 
--- **Loss function (objective function)** 
+  - **Loss function (objective function)** 
+  - **Optimizer**
 
-The quantity that will be minimized during training. It represents a measure of success for that task at hand.
+The loss function that will be minimized during training. For supervised learning problems, it measures the deviation between the predicted value and the target for training examples.
 
 [Loss functions](https://keras.io/losses/)
 
--- **Optimizer**
-
-Determines how the network will be updated based on the loss function. Implements a specific variant of stochastic gradient descent (SGD).
+The optimizer determines how the network will be updated based on the loss function. It implements a specific variant of stochastic gradient descent (SGD).
 
 [Optimizers](https://keras.io/optimizers/)
 
