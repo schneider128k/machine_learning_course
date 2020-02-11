@@ -7,7 +7,7 @@
 - A layer is a data-processing module that takes as input one or more tensors and that outputs one or more tensors.
 - Some layers are stateless, but more frequently layers have a state: the layers **weights**, one or several tensors learned with stochastic gradient descent, which together contain the network's **knowledge**.
 
-## Layers: the building blocks of deep learning
+---
 
 - Different layers are appropriate for different tensor formats and different types of data processing.
 
@@ -25,9 +25,27 @@ Links to Keras documentation:
 - [Convolutional layers](https://keras.io/layers/convolutional/)
 - [Recurrent layers](https://keras.io/layers/recurrent/)
 
-## Layers: the building blocks of deep learning
+---
 
 - You can think of layers as LEGO bricks of deep learning.
 - Building deep-learning models in Keras is done by combining compatible layers to form useful data-processing pipelines.
 - Layer compatibility means that every layer will only accept input tensors of a certain shape and will return output tensors of a certain shape.
 - When using Keras, you don't have to worry about compatibility, because the layers you add to your model are dynamically built to match the shape of the incoming layer.
+
+---
+
+```
+import tensorflow as tf
+
+network = tf.keras.models.Sequential()
+
+network.add(tf.keras.layers.Dense(512,
+                                  activation='relu',
+                                  input_shape=(28 * 28,)))
+
+# no need to specify input_shape for second layer
+network.add(tf.keras.layers.Dense(10,
+                                  activation='softmax')) 
+```
+
+The second layer didn't receive an input shape argument - instead, it automatically inferred its input shape as being the output shape of the first layer.
