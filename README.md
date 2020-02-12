@@ -112,7 +112,7 @@ We are going to work with some simple datasets to start learning about neural ne
 
 - [Notebook for loading and exploring the MNIST digits dataset](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
 
-- [Notebook for exploring the CIFAR10 dataset](https://colab.research.google.com/drive/1LZZviWOzvchcXRdZi2IBx3KOpQOzLalf)
+- [Notebook for loading exploring the CIFAR10 dataset](https://colab.research.google.com/drive/1LZZviWOzvchcXRdZi2IBx3KOpQOzLalf)
 
 ### Keras basics
   
