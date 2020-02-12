@@ -122,10 +122,14 @@ Let's briefly describe Keras concepts such as dense/convolutional/ recurrent lay
 
 ### Keras models for classification of MNIST digits and fashion items
 
-Before formally defining sequential neural networks with dense layers, let's look at some simple Keras models showing how to use such networks for classification. We consider the problems of classifying images from the MNIST digits dataset and the fashion items dataset.  
-These problems are so-called multi-class, single-label classifications problems. *Multi-class* means that there are several classes. For instance, T-shirt, pullover or bag in the fashion items dataset. *Single-label* means that classes are mutually exclusive. For instance, an image is either the digit 0, or the digit 1, etc. in the MNIST digits dataset.
+Before formally defining sequential neural networks with dense layers, let's look at some simple Keras models showing how to use such networks for classification. We consider the problems of classifying images from the MNIST digits dataset and the fashion items dataset. 
+These problems are so-called *multi-class*, *single-label* classifications problems. 
 
-The example neural networks consist of three layers: input, hidden, and output layers.
+*Multi-class* means that there are several classes. For instance, T-shirt, pullover or bag in the fashion items dataset. 
+
+*Single-label* means that classes are mutually exclusive. For instance, an image is either the digit 0, or the digit 1, etc. in the MNIST digits dataset.
+
+The example neural networks in the notebooks below consist of three layers: input, hidden, and output layers.
 They use the *softmax* activation function in the last (output) layer and the *categorical cross entropy* loss function because the problems are multi-class, single-label classification problems.  They also use the  *relu activation* activation function for the hidden layer.  
 
 These notebooks also show how to split datasets into *training datasets* and *test datasets* and also discuss *overfitting*.
