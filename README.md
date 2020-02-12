@@ -134,6 +134,8 @@ These notebooks also show how to split datasets into *training datasets* and *te
   
 - [Notebook for classifying fashion items with dense layers and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
 
+The notebook below uses ``pandas.DataFrame``` to display learning curves and to visually analyze predictions. 
+
 - [Notebook for classifying fashion items with dense layers and analyzing model performance](https://colab.research.google.com/drive/1ejWWMNlsfnMMPlSNCAw6CykWH1Wlu_6D) uses pandas to display learning curves
 
 ### Generalization, overfitting, splitting data in train & test sets
