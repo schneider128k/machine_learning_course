@@ -110,6 +110,8 @@ TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can
 
 We are going to work with some simple datasets to start learning about neural network for computer vision. Two simple datasets are the MNIST digits dataset and the fashion items dataset. It is not really necessary to use high-performace input data pipelines to load such simple datasets. It sufficies to use [```tf.keras.datasets```](https://www.tensorflow.org/api_docs/python/tf/keras/datasets) instead of TensorFlow datasets. The collection ```tf.keras.datasets``` contains only a few simple datasets and provides an elementary way of loading them. 
 
+- [Notebook for loading and exploring the MNIST digits dataset](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
+
 - [Notebook for exploring the CIFAR10 dataset](https://colab.research.google.com/drive/1LZZviWOzvchcXRdZi2IBx3KOpQOzLalf)
 
 ### Keras basics
@@ -121,19 +123,18 @@ Let's briefly describe Keras concepts such as dense/convolutional/ recurrent lay
 ### Keras models for classification of MNIST digits and fashion items
 
 Before formally defining sequential neural networks with dense layers, let's look at some simple Keras models showing how to use such networks for classification. We consider the problems of classifying images from the MNIST digits dataset and the fashion items dataset.  
-
 These problems are so-called multi-class, single-label classifications problems. *Multi-class* means that there are several classes. For instance, T-shirt, pullover or bag in the fashion items dataset. *Single-label* means that classes are mutually exclusive. For instance, an image is either the digit 0, or the digit 1, etc. in the MNIST digits dataset.
 
 The example neural networks consist of three layers: input, hidden, and output layers.
 They use the *softmax* activation function in the last (output) layer and the *categorical cross entropy* loss function because the problems are multi-class, single-label classification problems.  They also use the  *relu activation* activation function for the hidden layer.  
 
 These notebooks also show how to split datasets into *training datasets* and *test datasets* and also discuss *overfitting*.
-  
-- [Notebook for loading and exploring the MNIST digits data set](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
-  
+    
 - [Notebook for classifying MNIST digits with dense layers and analyzing model performance](https://colab.research.google.com/drive/144nj1SRtSjpIcKZgH6-GPdA9bWkg68nh)
   
 - [Notebook for classifying fashion items with dense layers and analyzing model performance](https://colab.research.google.com/drive/1TTO7P5GTmsHhIt_YGqZYyw4KGBCnjqyW)
+
+- [Notebook for classifying fashion items with dense layers and analyzing model performance](https://colab.research.google.com/drive/1ejWWMNlsfnMMPlSNCAw6CykWH1Wlu_6D) uses pandas to display learning curves
 
 ### Generalization, overfitting, splitting data in train & test sets
 
