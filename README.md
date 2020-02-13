@@ -142,17 +142,19 @@ The notebook below uses ```pandas.DataFrame``` to display learning curves and to
 
 - [Notebook for classifying fashion items with dense layers and analyzing model performance](https://colab.research.google.com/drive/1ejWWMNlsfnMMPlSNCAw6CykWH1Wlu_6D)
 
-### Generalization, overfitting, and splitting dataset in train & test sets
+### Generalization, overfitting, and splitting dataset in train set and test set
 
 The goal of machine learning is to obtain models that perform well on new unseen data, that is.  For instance, it can happen that a model performs perfectly on the training data, but fails on new data.  This is called *overfitting*.  The following notes explain briefly how to deal with this important issue.
 
   - [Generalization, overfitting, and train & test sets](https://github.com/schneider128k/machine_learning_course/blob/master/slides/5_slides.pdf)
 
+### Simple hold-out validation and K-fold validation
+
+  - [Simple hold-out validation and K-fold validation](https://github.com/schneider128k/machine_learning_course/blob/master/slides/6_slides.pdf)
+
+---
+
 **TO DO: clean up everything below**
-
-### Validation
-
-  - [6 Slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/6_slides.pdf)
 
 ### Logistic regression, gradient for squared error loss, and gradient for binary cross entropy loss
 
