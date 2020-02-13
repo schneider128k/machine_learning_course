@@ -33,7 +33,11 @@
 
 \begin{itemize}
 \item We introduced previously the partitioning a data set into a training set and a test set. 
+
+\medskip
 \item This partitioning enabled you to train on one set of examples and then to test the model against a different set of examples. 
+
+\medskip
 \item With two partitions, the workflow would look as follows:
 \end{itemize}
 
@@ -52,66 +56,111 @@
 }
 \end{frame}
 
+%%%
+
 \begin{frame}{Validation set}
 \begin{itemize}
 \item Dividing the data set into two sets is a good idea, but it is not enough. 
+
+\medskip
 \item You can greatly reduce the chances of overfitting by partitioning the data into three subsets shown below:
 
 \medskip
 \includegraphics[width=0.9\textwidth]{images/PartitionThreeSets.png}
 
+\medskip
 \item Use the validation set to evaluate results from the training set. 
+
+\medskip
 \item Then, use the test set to double-check your evaluation after the model has ``passed'' the validation set.
 \end{itemize}
 \end{frame}
+
+%%%
 
 \begin{frame}[fragile]{Validation set}
 \begin{itemize}
 \item With three partitions, the workflow looks as follows:
 \end{itemize}
+
+\medskip
 {\footnotesize
 \begin{verbatim}
 Train model on Training Set --> Evaluate model on Validation Set
    ^                                                       |
    |                                                       |   
-   +---------------- Tune model according <----------------+ 
-                     results on Validation Set
+   +------------ Tune model parameters according <---------+ 
+                 results on Validation Set
                             |
                             V
                Pick model that does best --> Confirm model 
                on Validation Set             on Test Set
 \end{verbatim}
 }
+
+\end{frame}
+
+%%%
+
+\begin{frame}[fragile]{Validation set}
 \begin{itemize}
 \item In this improved workflow:
+
+\medskip
 \begin{itemize}
 \item Pick the model that does best on validation set.
+
+\medskip
 \item Double-check that model against the test set.
 \end{itemize}
+
+\medskip
 \item This is a better workflow because it creates fewer exposures to the data set.
 \end{itemize}
 \end{frame}
 
+%%%
+
 \begin{frame}{Validation methods}
 \begin{itemize}
 \item Splitting your data into
+
+\medskip
 \begin{itemize}
 \item training set
+
+\medskip
 \item validation set
+
+\medskip
 \item test set
 \end{itemize}
+
+\medskip
 may seem straightforward, but there are a few advanced ways to do it. 
+
+\medskip
 \item This is especially important when there is little data available.
 \end{itemize}
 \end{frame}
 
+%%%
+
 \begin{frame}[fragile]{Simple hold-out validation}
 \begin{itemize}
 \item Set apart some fraction of your data as your test set.
+
+\medskip
 \item Train on the remaining data, and evaluate at the end on the test set.
+
+\medskip
 \item To prevent information leaks, you shouldn't tune your model based on the test set, and therefore you should also reserve a validation set.
-\item Schematically, hold-out validation look as follows:
+
+\medskip
+\item Schematically, non-test data is split in hold-out validation as follows:
 \end{itemize}
+
+\medskip
 \begin{verbatim}
 +-------------------------------------------+
 |                              | Held-out   |
@@ -121,74 +170,63 @@ may seem straightforward, but there are a few advanced ways to do it.
 \end{verbatim}
 \end{frame}
 
+%%%
+
 \begin{frame}[fragile]{Pseudo code for simple hold-out validation}
-\vspace{-0.75cm}
-\begin{lstlisting}
-# split non-test data into training and validation data
 
-training_data = data[num_validation_samples:]
-validation_data = data[:num_validation_samples]
-
-model = get_model()
-model.train(training_data)
-
-validation_score = model.evaluate(validation_data)
-
-# At this point you can tune your model,
-# retrain it, evaluate it, tune it again ...
-\end{lstlisting}
+{\small
+\url{https://github.com/schneider128k/machine\_learning\_course/blob/master/simple\_hold-out\_validation\_pseudocode.py}
+}
 \end{frame}
 
-%
-
-\begin{frame}[fragile]{Pseudo code for simple hold-out validation continued}
-\vspace{-0.75cm}
-\begin{lstlisting}
-# Once you've tuned your hyperparameters,
-# it's common to train your final model
-# from scratch on all non-test data available.
-
-model = get_model()
-model.train(data)
-test_score = model.evaluate(test_data)
-\end{lstlisting}
-\end{frame}
-
+%%%
 
 \begin{frame}{Simple hold-out validation}
 \begin{itemize}
-\item This is the simplest evaluation protocol, and it suffers from one flaw: if little data is available, then your validation and test set may contain few samples to be statistically representative of the entire data at hand.
+\item This is the simplest evaluation protocol, and it suffers from one flaw.
+
+\medskip
+\item If little data is available, then your validation may contain few samples to be statistically representative of the entire data at hand.
+
+\medskip
 \item This is easy to recognize: if different shuffling rounds of the data before splitting end up yielding very different measures of model performance, then you are having this issue.
-\item K-fold validation and iterated K-fold validation are two ways to address this issue.
+
+\medskip
+\item $K$-fold validation and iterated $K$-fold validation are two ways to address this issue.
 \end{itemize}
 \end{frame}
 
+%%%
 
-
-\begin{frame}{K-fold validation}
+\begin{frame}{$K$-fold validation}
 \begin{itemize}
 \item With this approach, you split your data into $K$ partitions of equal size.
+
+\medskip
 \item For each partition $i$, train a model on the remaining $K-1$ partitions, and evaluate it on partition $i$.
+
+\medskip
 \item Your final score is the average of the $K$ scores obtained.
 \end{itemize}
 \end{frame}
 
+%%%
+
 \begin{frame}{K-fold validation}
 
-Three-fold validation
-
-\medskip
-\begin{tabular}{cccccc}
-Fold 1 & Validation & Training   & Training  & $\rightarrow$ & validation score 1 \\
-Fold 2 & Training   & Validation & Training  & $\rightarrow$ & validation score 2 \\
-Fold 3 & Training   & Training   & Validation & $\rightarrow$ & validation score 3
-\end{tabular}
+\includegraphics[width=0.9\textwidth]{images/grid_search_cross_validation.png}
 \end{frame}
+
+%%%
 
 \begin{frame}{Iterated K-fold validation}
 \begin{itemize}
 \item This method is for situations in which you have relatively little data available and you need to evaluate your model as precisely as possible.
+
+\medskip
 \item It consists of applying $K$-fold validation multiple times, shuffling the data every time before before splitting it $K$ ways.
+
+\medskip
 \item Note that you end up training and evaluating $P\times K$ models, where $P$ is the number of iterations you use, which can be expensive.
 \end{itemize}
 \end{frame}
