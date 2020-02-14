@@ -146,31 +146,43 @@ The notebook below uses ```pandas.DataFrame``` to display learning curves and to
 
 ### Generalization, overfitting, and splitting dataset in train set and test set
 
-The goal of machine learning is to obtain models that perform well on new unseen data, that is.  For instance, it can happen that a model performs perfectly on the training data, but fails on new data.  This is called *overfitting*.  The following notes explain briefly how to deal with this important issue.
+The goal of machine learning is to obtain models that perform well on new unseen data.  It can happen that a model performs perfectly on the training data, but fails on new data.  This is called *overfitting*.  The following notes explain briefly how to deal with this important issue.
 
-  - [Generalization, overfitting, and train & test sets](https://github.com/schneider128k/machine_learning_course/blob/master/slides/5_slides.pdf)
+ - [Generalization, overfitting, and train & test sets](https://github.com/schneider128k/machine_learning_course/blob/master/slides/5_slides.pdf)
 
 ### Simple hold-out validation and K-fold validation
 
-  - [Simple hold-out validation and K-fold validation](https://github.com/schneider128k/machine_learning_course/blob/master/slides/6_slides.pdf)
+- [Simple hold-out validation and K-fold validation](https://github.com/schneider128k/machine_learning_course/blob/master/slides/6_slides.pdf)
+
+### Binary classification, logistic regression, sigmoid activation, binary cross entropy loss
+
+Logistic regression is used for binary classification problems. *Binary* means that there are only two classes.  For instance, a movie review has to be classified as either positive (class 1) or negative (class 0).  There is only one output neuron whose activation indicates the probability of class 1.  This output neuron uses the *sigmoid activation function*, which enforces that its activation inside the interval \[0, 1\], that is, is a valid probability. 
+
+The *squared error loss* could be used, but it is much better to use the *binary cross entropy loss* instead of the *squared error loss* because it speeds up training.  The notes below derive the gradient for the two combinatations: sigmoid activation with squared error loss and sigmoid activation with binary cross entropy loss.
+
+- [Logistic regression notes](https://github.com/schneider128k/machine_learning_course/blob/master/slides/logistic_regression.pdf)
+
+- Notebook for classifying IMDB movie reviews with dense layers (TO DO: implement it)
+
+### Multi-class / single-label classification, softmax activation, categorical cross entropy loss
+
+We already talked briefly about multi-class / single-label classification, softmax activation, and categorical cross entropy loss when presenting Keras examples for classifying MNIST digits and fashion items.
+
+The notes below explain the mathematics behind softmax activation and categorical cross entropy loss and derive the gradient for this combination of activation and loss.  
+
+- [Softmax activation, categorical cross entropy](https://github.com/schneider128k/machine_learning_course/blob/master/slides/softmax.pdf)
+  
+- [Notebook for verifying formulas for the partial derivatives inside the gradient with symbolic differentiation](https://colab.research.google.com/drive/1G8u6w3FFhZyb0nWfparVvn77DSjHyxEW)
+
+### Multi-class / multi-label classification
+
+Image that you receive an image of a face and that you have to decide (a) if the person is smiling or not and (b) if the person is wearing glasses.  Similing and wearing glasses are independent of each other.  This is an example of multi-class / multi-label classification.
+
+*Sigmoid activation* functions are used in the output layer in multi-class / multi-label classification problems. The number of output neurons is equal to the number of classes, and each neuron uses the sigmoid activation function.  The *binary cross entropy loss* is used for each output neuron.
 
 ---
 
 **TO DO: clean up everything below**
-
-### Logistic regression, gradient for squared error loss, and gradient for binary cross entropy loss
-
-Logistic regression is used for binary classification problems. *Binary* means that there are only two classes.  For instance, an image has to be classified as either a cat or a dog.  There is only one output neuron whose activation indicates the class (say, 1=dog, 0=cat).  It is best to use the *binary cross entropy loss* instead of the *squared error loss*. 
-
-*Sigmoid activation* functions are used in multi-class, multi-label classification problems. The number of output neurons is equal to the number of classes, and each neuron uses the sigmoid activation function.  The binary cross entropy loss is used for each output neuron.
-
-  - [Logistic regression notes](https://github.com/schneider128k/machine_learning_course/blob/master/slides/logistic_regression.pdf)
-
-### Softmax, gradient for categorical cross entropy loss
-
-  - [Softmax, categorical cross entropy](https://github.com/schneider128k/machine_learning_course/blob/master/slides/softmax.pdf)
-  
-  - [Notebook for verifying formulas for partial derivatives with symbolic differentiation](https://colab.research.google.com/drive/1G8u6w3FFhZyb0nWfparVvn77DSjHyxEW)
 
 ### Sequential neural networks with dense layers
 
