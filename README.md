@@ -114,6 +114,8 @@ We are going to work with some simple datasets to start learning about neural ne
 
 - [Notebook for loading and exploring the CIFAR10 dataset](https://colab.research.google.com/drive/1LZZviWOzvchcXRdZi2IBx3KOpQOzLalf)
 
+- [Notebook for loading and exploring the IMDB movie reviews dataset](https://colab.research.google.com/drive/1rYSzV6if2Y4P-X6yrF10IONLynyd416_)
+
 ### Keras basics
   
 Let's briefly describe Keras concepts such as dense/convolutional/ recurrent layers, sequential models, functional API, activation functions, loss functions, optimizers, and metrics.
