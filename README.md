@@ -9,6 +9,7 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 - [Supervised learning, unsupervised learning, and reinforcement learning](https://github.com/schneider128k/machine_learning_course/blob/master/slides/1_b_slides.pdf)
 
+---
 
 ### Fundamental machine learning concepts ###
 
@@ -26,6 +27,7 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 - [Anatomy of a neural network](https://github.com/schneider128k/machine_learning_course/blob/master/slides/anatomy_of_neural_network.md)
 
+---
 
 ### Python, numpy, and matplotlib ###
 
@@ -38,12 +40,15 @@ Undergraduate course on ML/AI at the University of Central Florida.
 - [matplotlib](https://colab.research.google.com/drive/1kKQ9sSFIrLlrZ0pW8nwjmLL9CUNUaSIC)
 
 
+---
+
 ### Effect of learning rate on gradient descent for finding minima of univariate functions ###
 
 Let's examine what could go wrong when applying gradient descent with a poorly chosen learning rate. We could fail to find any solution due to divergence or we could get stuck in a bad local minimum. The following notebook allows us to apply gradient descent for finding minima of univariate functions. (Univariate means that the functions depend on only one variable.)
 
 - [Notebook for experimenting with different learning rates](https://colab.research.google.com/drive/1eECClMU1r-Y9hzPnRw89__jC3nw3C-zD)
 
+---
 
 ### Visualization of bivariate functions ###
   
@@ -55,6 +60,7 @@ The following notebooks present two methods for visualizing bivariate function, 
 
 - [Notebook for creating three dimensional plots](https://colab.research.google.com/drive/1btvbObh-nZ4MSC7QkjpS3RGpefN_msth)
 
+---
 
 ### Linear regression using gradient descent - numpy implementation
 
@@ -70,11 +76,14 @@ In the second implementation, we combine the weight and bias into one vector. We
 
 This vectorized implementation of gradient descent for linear regression with a single feature can be generalized to linear regression with multiple features (you have to do this for n=2 for one of the homework problems).
 
+---
 
 ### Linear regression using the normal equation - numpy implementation 
 
 There is a closed-form solution for choosing the best weights and bias for linear regression. The optimal solution achieves the smallest squared error loss.  I will not cover this in class. If you are interested, you can find more details in the notes [Linear regression using the normal equation](https://github.com/schneider128k/machine_learning_course/blob/master/linear_regression_normal_equation.md).
 
+
+---
 
 ### TensorFlow and Keras
 
@@ -84,6 +93,7 @@ Since late 2016, other implementations have been released. You can now run Keras
 
 TensorFlow 2 itself now comes bundled with its own Keras implementation, ```tf.keras```. It only supports TensorFlow as the backend, but it has the advantage of offering some very useful extra features: for example, it supports TensorFlow's Data API, which makes it easy to load and preprocess data efficiently.
 
+---
 
 ### ```tf.keras``` 
 
@@ -97,6 +107,7 @@ In this course, we will use TensorFlow 2.x and ```tf.keras```.  Always make sure
   
 - [keras.io](https://keras.io/) is the documentation for the multibackend Keras implementation.  You have to tweak the code examples from keras.io to use them with TensorFlow 2.x and ```tf.keras```.
 
+---
 
 ### Linear regression - Keras implementation
 
@@ -104,6 +115,7 @@ Let's see how we can solve the simplest case of linear regression in Keras.
 
 - [Notebook for solving linear regression](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
 
+---
 
 ### Keras datasets
 
@@ -115,6 +127,7 @@ We are going to work with some simple datasets to start learning about neural ne
 
 - [Notebook for loading and exploring the IMDB movie reviews dataset](https://colab.research.google.com/drive/1rYSzV6if2Y4P-X6yrF10IONLynyd416_)
 
+---
 
 ### Keras basics
   
@@ -122,6 +135,7 @@ Let's briefly describe Keras concepts such as dense / convolutional / recurrent 
   
 - [Keras basics](https://github.com/schneider128k/machine_learning_course/blob/master/keras_basics.md)
 
+---
 
 ### Keras models for classification of MNIST digits and fashion items
 
@@ -145,6 +159,7 @@ The notebook below uses ```pandas.DataFrame``` to display learning curves and to
 
 - [Notebook for classifying fashion items with dense layers and analyzing model performance](https://colab.research.google.com/drive/1ejWWMNlsfnMMPlSNCAw6CykWH1Wlu_6D)
 
+---
 
 ### Generalization, overfitting, and splitting dataset in train set and test set
 
@@ -153,10 +168,13 @@ The goal of machine learning is to obtain models that perform well on new unseen
  - [Generalization, overfitting, and train & test sets](https://github.com/schneider128k/machine_learning_course/blob/master/slides/5_slides.pdf)
 
 
+---
+
 ### Simple hold-out validation and K-fold validation
 
 - [Simple hold-out validation and K-fold validation](https://github.com/schneider128k/machine_learning_course/blob/master/slides/6_slides.pdf)
 
+---
 
 ### Binary classification, logistic regression, sigmoid activation, binary cross entropy loss
 
@@ -172,6 +190,7 @@ This notebook also shows how we can use a validation set to monitor the performa
 
 - [Notebook for classifying IMDB movie reviews with dense layers](https://colab.research.google.com/drive/1e1scwvXdgCEEdPX4szVuw_KHD_NlINTZ)
 
+---
 
 ### Multi-class / single-label classification, softmax activation, categorical cross entropy loss
 
@@ -183,6 +202,7 @@ The notes below explain the mathematics behind softmax activation and categorica
   
 - [Notebook for verifying formulas for the partial derivatives inside the gradient with symbolic differentiation](https://colab.research.google.com/drive/1G8u6w3FFhZyb0nWfparVvn77DSjHyxEW)
 
+---
 
 ### Multi-class / multi-label classification
 
@@ -192,28 +212,15 @@ Image that you receive an image of a face and that you have to decide (a) if the
 
 We will look at some examples of multi-class / multi-label classification after introducting convolutional neural networks.  
 
+---
+
 ### Sequential neural networks with dense layers - numpy implementation
 
 These notes explain how to compute the gradients for neural networks consisting of multiple dense layers.  I will not go over the mathematical derivation of the backpropagation algorithm.  Fortunately, the gradients are computed automatically in Keras.
 
-  - [Notes on forward propagation, backpropagation algorithm for computing partial derivatives wrt weights and biases](https://github.com/schneider128k/machine_learning_course/blob/master/slides/neural_networks.pdf)
+- [Notes on forward propagation, backpropagation algorithm for computing partial derivatives wrt weights and biases](https://github.com/schneider128k/machine_learning_course/blob/master/slides/neural_networks.pdf)
   
-  - [Code for creating sequential neural networks with dense layers and training them with backprop and mini-batch SGD](https://github.com/schneider128k/machine_learning_course/blob/master/code/neural_network.py); currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.
-
-
-### TensorFlow datasets 
-
-TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can quickly help build high-performance input data pipelines for training TensorFlow models. Instead of downloading and manipulating datasets manually and then figuring out how to read their labels, TensorFlow datasets standardizes the data format so that it's easy to swap one dataset with another, often with just a single line of code change. As you will see later on, doing things like breaking the dataset down into training, validation, and testing is also a matter of a single line of code. The high-performance input data pipelines make it possible to work on the data in parallel. For instance, while the GPU is working with a batch of data, the CPU is prefeching the next batch.
-
-- [TensorFlow datasets](https://www.tensorflow.org/datasets)
-
-- [TensorFlow blog: introducing TensorFlow datasets](https://blog.tensorflow.org/2019/02/introducing-tensorflow-datasets.html)
-
-- [Notebook for exploring MNIST dataset](https://colab.research.google.com/drive/1hpMxTkAjYn3qjLK5P_HiukQNrxgxacgu)
-  
-- [Notebook for exploring celebrities dataset ```celeb_a```](https://colab.research.google.com/drive/1jrabFFeiYU3ffXmnXh5szZud8A-zsV_5)
-
-
+- [Code for creating sequential neural networks with dense layers and training them with backprop and mini-batch SGD](https://github.com/schneider128k/machine_learning_course/blob/master/code/neural_network.py); currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.
 
 ---
 
@@ -249,6 +256,8 @@ TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can
   
   ---
   
+  !!! Revome the notebooks below? Redundant ? !!!
+  
  based on [Google ML Practicum: Image Classification](https://developers.google.com/machine-learning/practica/image-classification/)
     
   - [Colab notebook for training a convolutional neural network from scratch](https://colab.research.google.com/drive/1GCz7d32nfYTlY1paDk7-2oVw6E7HFK80)
@@ -272,7 +281,7 @@ TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can
   - [Visualizing heatmaps of class activations, modified version](https://colab.research.google.com/drive/1KDdxUlvHsEAUmSHfiTh9kSkm9ceOz3tw), changes softmax to linear activation in last layer
   
   - [keras-vis](https://github.com/raghakot/keras-vis)
-  This is a package for producing cool looking visualizations.  I had problems using it on colab.  
+  This is a package for producing cool looking visualizations.  I had problems using it on colab.  !!! Fix it !!!
   
   ---
   
@@ -304,6 +313,21 @@ The relevant research papers are:
 I have made several changes to the code from the Keras documentation. In the above notebook, I had to change the number of epochs and the learning rate schedule because the model is only trained on 40k and validated on 10k, whereas the model in the Keras documentation is trained on 50k and not validated at all. I wanted to have a situation that is similar to the situation in HW 2 so we can better compare the performance of the ResNet and the (normal) CNN.
 
 - [Resnet for CIFAR10- train/test](https://colab.research.google.com/drive/1qpQc0senOmJZvVEBbOFcR8uoSP58L-5T)
+
+
+---
+
+### TensorFlow datasets 
+
+TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can quickly help build high-performance input data pipelines for training TensorFlow models. Instead of downloading and manipulating datasets manually and then figuring out how to read their labels, TensorFlow datasets standardizes the data format so that it's easy to swap one dataset with another, often with just a single line of code change. As you will see later on, doing things like breaking the dataset down into training, validation, and testing is also a matter of a single line of code. The high-performance input data pipelines make it possible to work on the data in parallel. For instance, while the GPU is working with a batch of data, the CPU is prefeching the next batch.
+
+- [TensorFlow datasets](https://www.tensorflow.org/datasets)
+
+- [TensorFlow blog: introducing TensorFlow datasets](https://blog.tensorflow.org/2019/02/introducing-tensorflow-datasets.html)
+
+- [Notebook for exploring MNIST dataset](https://colab.research.google.com/drive/1hpMxTkAjYn3qjLK5P_HiukQNrxgxacgu)
+  
+- [Notebook for exploring celebrities dataset ```celeb_a```](https://colab.research.google.com/drive/1jrabFFeiYU3ffXmnXh5szZud8A-zsV_5)
 
 ---
 
