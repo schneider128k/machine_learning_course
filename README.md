@@ -71,13 +71,6 @@ In the second implementation, we combine the weight and bias into one vector. We
 This vectorized implementation of gradient descent for linear regression with a single feature can be generalized to linear regression with multiple features (you have to do this for n=2 for one of the homework problems).
 
 
-### Linear regression - Keras implementation
-
-Let's see how we can solve the simplest case of linear regression in Keras.
-
-- [Notebook for solving linear regression](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
-
-
 ### Linear regression using the normal equation - numpy implementation 
 
 There is a closed-form solution for choosing the best weights and bias for linear regression. The optimal solution achieves the smallest squared error loss.  I will not cover this in class. If you are interested, you can find more details in the notes [Linear regression using the normal equation](https://github.com/schneider128k/machine_learning_course/blob/master/linear_regression_normal_equation.md).
@@ -105,17 +98,11 @@ In this course, we will use TensorFlow 2.x and ```tf.keras```.  Always make sure
 - [keras.io](https://keras.io/) is the documentation for the multibackend Keras implementation.  You have to tweak the code examples from keras.io to use them with TensorFlow 2.x and ```tf.keras```.
 
 
-### TensorFlow datasets 
+### Linear regression - Keras implementation
 
-TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can quickly help build high-performance input data pipelines for training TensorFlow models. Instead of downloading and manipulating datasets manually and then figuring out how to read their labels, TensorFlow datasets standardizes the data format so that it's easy to swap one dataset with another, often with just a single line of code change. As you will see later on, doing things like breaking the dataset down into training, validation, and testing is also a matter of a single line of code. The high-performance input data pipelines make it possible to work on the data in parallel. For instance, while the GPU is working with a batch of data, the CPU is prefeching the next batch.
+Let's see how we can solve the simplest case of linear regression in Keras.
 
-- [TensorFlow datasets](https://www.tensorflow.org/datasets)
-
-- [TensorFlow blog: introducing TensorFlow datasets](https://blog.tensorflow.org/2019/02/introducing-tensorflow-datasets.html)
-
-- [Notebook for exploring MNIST dataset](https://colab.research.google.com/drive/1hpMxTkAjYn3qjLK5P_HiukQNrxgxacgu)
-  
-- [Notebook for exploring celebrities dataset ```celeb_a```](https://colab.research.google.com/drive/1jrabFFeiYU3ffXmnXh5szZud8A-zsV_5)
+- [Notebook for solving linear regression](https://colab.research.google.com/drive/1pOFL4Qm6WOn2Nxxy6_HteEqQMxStTwzs)
 
 
 ### Keras datasets
@@ -212,6 +199,21 @@ These notes explain how to compute the gradients for neural networks consisting 
   - [Notes on forward propagation, backpropagation algorithm for computing partial derivatives wrt weights and biases](https://github.com/schneider128k/machine_learning_course/blob/master/slides/neural_networks.pdf)
   
   - [Code for creating sequential neural networks with dense layers and training them with backprop and mini-batch SGD](https://github.com/schneider128k/machine_learning_course/blob/master/code/neural_network.py); currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.
+
+
+### TensorFlow datasets 
+
+TensorFlow datasets is a collection of nearly 100 ready-to-use datasets that can quickly help build high-performance input data pipelines for training TensorFlow models. Instead of downloading and manipulating datasets manually and then figuring out how to read their labels, TensorFlow datasets standardizes the data format so that it's easy to swap one dataset with another, often with just a single line of code change. As you will see later on, doing things like breaking the dataset down into training, validation, and testing is also a matter of a single line of code. The high-performance input data pipelines make it possible to work on the data in parallel. For instance, while the GPU is working with a batch of data, the CPU is prefeching the next batch.
+
+- [TensorFlow datasets](https://www.tensorflow.org/datasets)
+
+- [TensorFlow blog: introducing TensorFlow datasets](https://blog.tensorflow.org/2019/02/introducing-tensorflow-datasets.html)
+
+- [Notebook for exploring MNIST dataset](https://colab.research.google.com/drive/1hpMxTkAjYn3qjLK5P_HiukQNrxgxacgu)
+  
+- [Notebook for exploring celebrities dataset ```celeb_a```](https://colab.research.google.com/drive/1jrabFFeiYU3ffXmnXh5szZud8A-zsV_5)
+
+
 
 ---
 
