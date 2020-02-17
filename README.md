@@ -205,7 +205,7 @@ Image that you receive an image of a face and that you have to decide (a) if the
 
 We will look at some examples of multi-class / multi-label classification after introducting convolutional neural networks.  
 
-### Sequential neural networks with dense layers
+### Sequential neural networks with dense layers - numpy implementation
 
 These notes explain how to compute the gradients for neural networks consisting of multiple dense layers.  I will not go over the mathematical derivation of the backpropagation algorithm.  Fortunately, the gradients are computed automatically in Keras.
 
