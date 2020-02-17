@@ -252,7 +252,7 @@ My code is based on the code described in chapter 5 "Getting started with neural
   
   - [Colab notebook for classifying MNIST fashion items with convolutional layers and anlyzing model performance](https://colab.research.google.com/drive/1eI47U0vW_5ok6rVvNuenXS2EkTbqxcCV)
   
-   **Classification of cats and dogs**
+   **Transfer learning: classification of cats and dogs**
    
    based on Chapter 5 *Deep learning for computer vision* of the book *Deep learning with Python* by F. Chollet
    
@@ -268,7 +268,7 @@ My code is based on the code described in chapter 5 "Getting started with neural
   
   ---
   
-  !!! Revome the notebooks below? Redundant ? !!!
+  !!! Remove the notebooks below? Redundant ? !!!
   
  based on [Google ML Practicum: Image Classification](https://developers.google.com/machine-learning/practica/image-classification/)
     
