@@ -203,10 +203,7 @@ Image that you receive an image of a face and that you have to decide (a) if the
 
 *Sigmoid activation* functions are used in the output layer in multi-class / multi-label classification problems. The number of output neurons is equal to the number of classes, and each neuron uses the sigmoid activation function.  The *binary cross entropy loss* is used for each output neuron.
 
----
-
-
-**TO DO: clean up everything below**
+We will look at some examples of multi-class / multi-label classification after introducting convolutional neural networks.  
 
 ### Sequential neural networks with dense layers
 
@@ -215,6 +212,12 @@ These notes explain how to compute the gradients for neural networks consisting 
   - [Notes on forward propagation, backpropagation algorithm for computing partial derivatives wrt weights and biases](https://github.com/schneider128k/machine_learning_course/blob/master/slides/neural_networks.pdf)
   
   - [Code for creating sequential neural networks with dense layers and training them with backprop and mini-batch SGD](https://github.com/schneider128k/machine_learning_course/blob/master/code/neural_network.py); currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.
+
+---
+
+**TO DO: clean up everything below**
+
+---
 
 ### Deep learning for computer vision (convolutional neural networks)
 
