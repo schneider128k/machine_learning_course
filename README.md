@@ -214,7 +214,7 @@ We will look at some examples of multi-class / multi-label classification after 
 
 ---
 
-### Two simple methods for fitting overfitting: dropout and L1 / L2 regularization
+### Two simple methods for fighting overfitting: dropout and L1 / L2 regularization
 
 TO DO: create notebook
 
@@ -224,13 +224,13 @@ TO DO: create notebook
 
 These notes explain how to compute the gradients for neural networks consisting of multiple dense layers.  I will not go over the mathematical derivation of the backpropagation algorithm.  Fortunately, the gradients are computed automatically in Keras.
 
-My notes are mostly based on chapter 2 "How the backpropagation algorithm works" of the book [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/).  
+My notes are mostly based on chapter 2 "How the backpropagation algorithm works" of the book "[Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)".  
 
 - [Notes on forward propagation, backpropagation algorithm for computing partial derivatives wrt weights and biases](https://github.com/schneider128k/machine_learning_course/blob/master/slides/neural_networks.pdf)
 
 ###  Numpy implementation of backpropagation algorithm 
 
-My code is based on the code described in chapter 5 "Getting started with neural networks" of the book [Deep Learning and the Game of Go](https://www.manning.com/books/deep-learning-and-the-game-of-go).
+My code is based on the code described in chapter 5 "Getting started with neural networks" of the book "[Deep Learning and the Game of Go](https://www.manning.com/books/deep-learning-and-the-game-of-go)".
 
 - [Code for creating sequential neural networks with dense layers and training them with backprop and mini-batch SGD](https://github.com/schneider128k/machine_learning_course/blob/master/code/neural_network.py); currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.
 
