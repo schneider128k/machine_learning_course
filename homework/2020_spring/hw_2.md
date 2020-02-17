@@ -13,7 +13,7 @@ Use (a) three-dimensional plots as in [```three_dimensional_plotting.ipynb```](h
 
 **Problem 2**
 
-Extend the code for mini-batch gradient descent in the notebook [```linear_regression_gradient_descent.ipynb```](linear_regression_gradient_descent.ipynb) 
+Extend the code for mini-batch gradient descent in the notebook [```linear_regression_gradient_descent.ipynb```](https://colab.research.google.com/drive/1qBxfTPoNcSFvpwu1NDl1V6cHEqL3aQl-) 
 to the case n=2, that is, the model parameters are the two weights w1 and w2 and the bias term b.  (You can remove the code for batch-gradient descent and stochastic gradient descent.) Make sure that your code is vectorized.
 
 To solve this problem, you have to create data points that approximately lie on a 2D plane, display these points, and display the predictions of your model after tuning the parameters with gradient descent.
