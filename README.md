@@ -181,7 +181,7 @@ The *squared error loss* could be used, but it is much better to use the *binary
 
 The notebook below presents a simple elementary method for preprocessing text data so it can be input into a neural network.  We will discuss more advanced methods for preprocessing text later.
 
-This notebook also shows we can use a validation set to monitor the performance of the model and choose a good number of epochs to prevent overfitting.
+This notebook also shows how we can use a validation set to monitor the performance of the model and subsequently choose a good number of epochs to prevent overfitting.
 
 - [Notebook for classifying IMDB movie reviews with dense layers](https://colab.research.google.com/drive/1e1scwvXdgCEEdPX4szVuw_KHD_NlINTZ)
 
