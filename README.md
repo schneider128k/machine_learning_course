@@ -232,7 +232,9 @@ My notes are mostly based on chapter 2 "How the backpropagation algorithm works"
 
 My code is based on the code described in chapter 5 "Getting started with neural networks" of the book "[Deep Learning and the Game of Go](https://www.manning.com/books/deep-learning-and-the-game-of-go)".
 
-- [Code for creating sequential neural networks with dense layers and training them with backprop and mini-batch SGD](https://github.com/schneider128k/machine_learning_course/blob/master/code/neural_network.py); currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.
+- [Code for creating sequential neural networks with dense layers and training them with backprop and mini-batch SGD](https://colab.research.google.com/drive/1ZgQrZA0rvswPYdNnPIuJ9qsREGQGAJ7h); currently, code is limited to (1) mean squared error loss and (2) sigmoid activations.  
+
+You can also find implementations of neural networks from scratch in the book "[Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)" and also in the book "[Grokking Deep Learning](https://www.manning.com/books/grokking-deep-learning)".
 
 ---
 
