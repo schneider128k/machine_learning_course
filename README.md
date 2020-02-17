@@ -107,7 +107,7 @@ Let's see how we can solve the simplest case of linear regression in Keras.
 
 ### Keras datasets
 
-We are going to work with some simple datasets to start learning about neural network for computer vision. Two simple datasets are the MNIST digits dataset and the fashion items dataset. It is not really necessary to use high-performace input data pipelines to load such simple datasets. It sufficies to use [```tf.keras.datasets```](https://www.tensorflow.org/api_docs/python/tf/keras/datasets) instead of TensorFlow datasets. The collection ```tf.keras.datasets``` contains only a few simple datasets and provides an elementary way of loading them. 
+We are going to work with some simple datasets to start learning about neural network. The collection ```tf.keras.datasets``` contains only a few simple datasets and provides an elementary way of loading them. (Later, we will learn about TensorFlow datasets, which contains 100 datasets and provides a high-performace input data pipelines to load the datasets.)
 
 - [Notebook for loading and exploring the MNIST digits dataset](https://colab.research.google.com/drive/1HDZB0sEjhd0sdTFNCmJXvB8hYnE9KBM7)
 
