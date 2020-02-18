@@ -29,13 +29,15 @@ Undergraduate course on ML/AI at the University of Central Florida.
 
 ---
 
-### Python, numpy, and matplotlib ###
+### Python, NumPy, and matplotlib ###
 
 - [Python](https://colab.research.google.com/drive/1CdwvzRhFNIlhp1mWVWFXSXAsmRFWvASq)
 
 - [Style guide for Python code](https://www.python.org/dev/peps/pep-0008/)
 
-- [numpy](https://colab.research.google.com/drive/1oixeI3yWIKkjCyg7SVIV-1mXI3LUbCAN)
+- [NumPy](https://colab.research.google.com/drive/1oixeI3yWIKkjCyg7SVIV-1mXI3LUbCAN) 
+
+- [CuPy: a NumPy-compatible matrix library accelerated by CUDA](https://cupy.chainer.org/)
 
 - [matplotlib](https://colab.research.google.com/drive/1kKQ9sSFIrLlrZ0pW8nwjmLL9CUNUaSIC)
 
