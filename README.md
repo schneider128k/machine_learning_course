@@ -234,7 +234,7 @@ My notes are mostly based on chapter 2 "How the backpropagation algorithm works"
 
 My code is based on the code described in chapter 5 "Getting started with neural networks" of the book "[Deep Learning and the Game of Go](https://www.manning.com/books/deep-learning-and-the-game-of-go)".
 
-- [Code for creating sequential neural networks with dense layers and training them with backprop and mini-batch SGD](https://colab.research.google.com/drive/1ZgQrZA0rvswPYdNnPIuJ9qsREGQGAJ7h); currently, code is limited to (1) mean squared error loss and (2) sigmoid activations; the neural network learns slowly because the combination of sigmoid activation in the output layer and the mean squared error loss is suboptimial; ideally, we would use softmax activation together with categorical cross entropy loss.
+- [Code for creating sequential neural networks with dense layers and training them with backprop and mini-batch SGD](https://colab.research.google.com/drive/1ZgQrZA0rvswPYdNnPIuJ9qsREGQGAJ7h); currently, code is limited to (1) mean squared error loss and (2) sigmoid activations; the neural network learns rather slowly because the combination of sigmoid activation in the output layer and the mean squared error loss is suboptimial; ideally, we would use softmax activation together with categorical cross entropy loss; using CuPy on a GPU-instance instead of NumPy should speed-up training
 
 You can also find implementations of neural networks from scratch in the book "[Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)" and also in the book "[Grokking Deep Learning](https://www.manning.com/books/grokking-deep-learning)".
 
