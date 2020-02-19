@@ -204,6 +204,8 @@ The notes below explain the mathematics behind softmax activation and categorica
   
 - [Notebook for verifying formulas for the partial derivatives inside the gradient with symbolic differentiation](https://colab.research.google.com/drive/1G8u6w3FFhZyb0nWfparVvn77DSjHyxEW)
 
+- [Notebook for classifying Reuters newswires with dense layers and analyzing model performance](https://colab.research.google.com/drive/1e1scwvXdgCEEdPX4szVuw_KHD_NlINTZ)
+
 ---
 
 ### Multi-class / multi-label classification
