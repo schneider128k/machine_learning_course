@@ -190,7 +190,7 @@ The notebook below presents a simple elementary method for preprocessing text da
 
 This notebook also shows how we can use a validation set to monitor the performance of the model and subsequently choose a good number of epochs to prevent overfitting.
 
-- [Notebook for classifying IMDB movie reviews with dense layers](https://colab.research.google.com/drive/1e1scwvXdgCEEdPX4szVuw_KHD_NlINTZ)
+- [Notebook for classifying IMDB movie reviews with dense layers](https://colab.research.google.com/drive/1hUc_4HTtPQ2Xq0XXnokV4uoK84zmmvQR)
 
 ---
 
