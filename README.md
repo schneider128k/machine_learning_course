@@ -220,7 +220,9 @@ We will look at some examples of multi-class / multi-label classification after 
 
 ### Underfitting, overfitting, and two simple methods for fighting overfitting: dropout and L1 / L2 regularization
 
-- [Notebook for showing underfitting and overfitting](https://colab.research.google.com/drive/1MkVt17ADEVsoRxUg6z_cU2SsOJ9HJnme)
+- [Notebook for classifying movie reviews, demonstrating underfitting and overfitting](https://colab.research.google.com/drive/1MkVt17ADEVsoRxUg6z_cU2SsOJ9HJnme)
+
+- Notebook for classifying movie reviews, using regularization and dropout to combat overfitting (TO DO!!!)
 
 TO DO: add dropout and regularization
 
