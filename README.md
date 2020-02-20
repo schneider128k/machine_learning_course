@@ -222,9 +222,7 @@ We will look at some examples of multi-class / multi-label classification after 
 
 - [Notebook for classifying movie reviews, demonstrating underfitting and overfitting](https://colab.research.google.com/drive/1MkVt17ADEVsoRxUg6z_cU2SsOJ9HJnme)
 
-- Notebook for classifying movie reviews, using regularization and dropout to combat overfitting (TO DO!!!)
-
-TO DO: add dropout and regularization
+- [Notebook for classifying movie reviews, using regularization and dropout to combat overfitting](https://colab.research.google.com/drive/1OhaQjOI2L3TXDCuDefkZNWgIW120bXlB) (TO DO: add more details how regularization and dropout work)
 
 ---
 
