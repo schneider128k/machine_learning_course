@@ -18,7 +18,7 @@ Experiment with different values of ```mu``` and ```sigma```.
 
 **Problem 2**
 
-Use Keras to implement logistic regression. The loss should be the binary cross entropy loss. How well does the trained model separate the red and blue dots?  You can obtain the seperating line by extracting the weights from the dense layer using the function ```get_weights```. See [https://keras.io/layers/about-keras-layers/](https://keras.io/layers/about-keras-layers/).  Create a plot showing the random data, the line used to generate the data, and the separating line of the trained model.
+Use Keras to implement logistic regression. The loss should be the binary cross entropy loss. How well does the trained model separate the red and blue dots?  You can obtain the separating line determined by the model by extracting the weights from the dense layer using the function ```get_weights```. See [https://keras.io/layers/about-keras-layers/](https://keras.io/layers/about-keras-layers/).  Create a plot showing the random data, the true line used to generate the data, and the separating line of the trained model.
 
 **Problem 3**
 
