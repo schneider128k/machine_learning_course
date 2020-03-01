@@ -52,3 +52,7 @@ Create a plot showing the random data, the true line used to generate the data, 
 Use a heatmap to visualize the function defined by your trained model.
 
 You also have to compute the binary cross entropy loss and accuracy on the test set.
+
+---
+
+You have to post the links to your editable notebooks in Webcourses, save the notebooks in your GitHub course repo in the folder ```HW_3```.  Make sure that you follow the style guide for Python code.  Also, you should use text cells with markup headings to break up your notebooks into logical units. Always cite all sources used.
