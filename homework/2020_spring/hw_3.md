@@ -1,5 +1,7 @@
 **Homework 3**
 
+---
+
 **Problem 1**
 
 Implement the function ```get_random_data(w, b, mu, sigma, m)``` that generates random data for logisitic regression with two features features ```x_1``` and ```x_2```. This function should return the array ```data``` of shape ```(m, 2)``` and the array ```labels``` of shape ```(m, 1)```.
