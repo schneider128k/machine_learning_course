@@ -22,22 +22,24 @@ Experiment with different values of ```mu``` and ```sigma```.  Make sure that th
 
 Split the data/labels into a training set (80%) and a test set (20%).
 
-Links to the numpy documentation of the functions that can be used to draw samples accoriding to the uniform and normal distributions:
+Links to the numpy documentation of the functions that can be used to draw samples according to the uniform and normal distributions:
 
 - [Normal distribution](https://docs.scipy.org/doc/numpy-1.17.0/reference/random/generated/numpy.random.Generator.normal.html)
 - [Uniform distribution](https://docs.scipy.org/doc/numpy-1.17.0/reference/random/generated/numpy.random.Generator.uniform.html)
 
-You can learn more about the normal distribution on [https://en.wikipedia.org/wiki/Normal_distribution](https://en.wikipedia.org/wiki/Normal_distribution). To gain some intuition, it would be helpful to draw the Gaussian function for different parameters in a seperate notebook (that you do not have to submit).  Later in the semester, you will need to work with normal distribution to understand variational autoencoders.
+You can learn more about the normal distribution on [https://en.wikipedia.org/wiki/Normal_distribution](https://en.wikipedia.org/wiki/Normal_distribution). To gain some intuition, it would be helpful to plot the Gaussian function for different parameters ```mu``` and ```sigma``` in a seperate notebook (that you do not have to submit).  Later in the semester, you will need to work with normal distribution to understand variational autoencoders.
 
 ---
 
 **Problem 2**
 
-Use Keras to implement logistic regression with two features and apply it to the data generated in Problem 1. The loss should be the binary cross entropy loss. How well does the trained model separate the red and blue dots?  You can obtain the separating line determined by the model by extracting the weights from the dense layer using the function ```get_weights```. See [https://keras.io/layers/about-keras-layers/](https://keras.io/layers/about-keras-layers/).  
+Create a Keras to implement logistic regression with two features and train it with the data generated in Problem 1. The loss should be the binary cross entropy loss. 
 
-Create a plot showing the random data, the true line used to generate the data, and the separating line of the trained model.
+How well does the trained model separate the red and blue dots?  You can obtain the separating line determined by the model by extracting the weights from the dense layer using the function ```get_weights```. See [https://keras.io/layers/about-keras-layers/](https://keras.io/layers/about-keras-layers/).  
 
-Note that you have to carry out some simple steps to obtain the separating line from the model weights (the two weights and the bias term).  Make sure that you describe in detail in your notebook how you proceed to obtain the separating line.  Draw this line.
+Create a plot showing the random data, the true line used to generate the data, and the separating line of the trained model. Make sure that you describe in detail in your notebook how you proceed to obtain the separating line.
+
+Note that you have to carry out some simple steps to obtain the separating line from the model weights (the two weights and the bias term of the dense layer).  This is not immediately obvious.  It maybe helpful to take a look at the heatmap below.
 
 The trained model realizes function ```f : R^2 -> R``` that takes two features as input and outputs a number in the interval ```[0, 1]```. Use a heatmap to visualize this function.  
 
@@ -45,7 +47,9 @@ The trained model realizes function ```f : R^2 -> R``` that takes two features a
 
 **Problem 3**
 
-Use numpy to implement logistic regression from scratch. Look at the notes on logistic regression to figure out what the gradient is of the binary cross entropy loss with respect to ```w``` and ```b```. Note that you only have to implement stochastic gradient, that is, you do not have to write vectorized code for mini-batch gradient descent.
+Use numpy to implement a logistic regression model from scratch and train it with the data generated as in Problem 1.
+
+Hints: Look at the notes on logistic regression to figure out what the gradient is of the binary cross entropy loss with respect to ```w``` and ```b```. Note that you only have to implement stochastic gradient, that is, you do not have to write vectorized code for mini-batch gradient descent.
 
 Create a plot showing the random data, the true line used to generate the data, and the separating line of the trained model.
 
