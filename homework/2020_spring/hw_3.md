@@ -14,7 +14,7 @@ The entries of the arrays should be generated as follows.  For each row ```i in 
 
 Implement the function ```display_random_data``` that takes as input the above two arrays ```labels``` and ```data```. It should create scatter plot of the 2D points stored in ```data```. Use red dots to plot the points whose labels are 1 and blue dots to plot the points whose labels are 0. 
 
-You should seen the 2D points corresponding to different classes are approximately separated by the line ```y = w * x + b```, where ```w``` and ```b``` are the parameters that you used to generate the data.  Note that the smaller the parameter ```mu```, the closer the points are to this line. Also, the larger the parameter ```sigma```, the more points can be on the wrong side of this line.
+You should see that the 2D points (feature vectors) corresponding to different classes are approximately separated by the line ```y = w * x + b```, where ```w``` and ```b``` are the parameters that you used to generate the data.  Note that the smaller the parameter ```mu```, the closer the points are to this line. Also, the larger the parameter ```sigma```, the more points can be on the wrong side of this line.
 
 Experiment with different values of ```mu``` and ```sigma```.  Make sure that the parameter ```m``` is large enough so you have enough data points.
 
@@ -22,12 +22,20 @@ Split the data/labels into a training set (80%) and a test set (20%).
 
 **Problem 2**
 
-Use Keras to implement logistic regression with two features and apply it to the data generated in Problem 1. The loss should be the binary cross entropy loss. How well does the trained model separate the red and blue dots?  You can obtain the separating line determined by the model by extracting the weights from the dense layer using the function ```get_weights```. See [https://keras.io/layers/about-keras-layers/](https://keras.io/layers/about-keras-layers/).  Create a plot showing the random data, the true line used to generate the data, and the separating line of the trained model.
+Use Keras to implement logistic regression with two features and apply it to the data generated in Problem 1. The loss should be the binary cross entropy loss. How well does the trained model separate the red and blue dots?  You can obtain the separating line determined by the model by extracting the weights from the dense layer using the function ```get_weights```. See [https://keras.io/layers/about-keras-layers/](https://keras.io/layers/about-keras-layers/).  
 
-Note that you have to carry out some simple steps to obtain the separating line from the model weights (the two weights and the bias term).
+Create a plot showing the random data, the true line used to generate the data, and the separating line of the trained model.
+
+Note that you have to carry out some simple steps to obtain the separating line from the model weights (the two weights and the bias term).  Make sure that you describe in detail in your notebook how you proceed to obtain the separating line.  Draw this line.
+
+The trained model realizes function ```f : R^2 -> R``` that takes two features as input and outputs a number in the interval ```\[0,1\]```. Use a heatmap to visualize this function.  
 
 **Problem 3**
 
 Use numpy to implement logistic regression from scratch. Look at the notes on logistic regression to figure out what the gradient is of the binary cross entropy loss with respect to ```w``` and ```b```. Note that you only have to implement stochastic gradient, that is, you do not have to write vectorized code for mini-batch gradient descent.
+
+Create a plot showing the random data, the true line used to generate the data, and the separating line of the trained model.
+
+Use a heatmap to visualize the function defined by your trained model.
 
 You also have to compute the binary cross entropy loss and accuracy on the test set.
