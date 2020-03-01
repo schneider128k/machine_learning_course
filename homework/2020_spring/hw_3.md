@@ -10,13 +10,13 @@ The entries of the arrays should be generated as follows.  For each row ```i in 
 
 - Choose class label ```c=0``` with probability 1/2 and ```c=1``` with probability 1/2.  
 - Choose the first feature ```x_1``` uniformly at random in the interval ```[0, 1)```. 
-- Set the second feature ```x_2``` to be ```x_2 = w * x_1 + b + (-1)^c * n``` where the "noise" ```n``` is chosen according to the normal distribution with mean ```mu``` and standard deviation ```sigma```.
+- Set the second feature ```x_2``` to be ```x_2 = w * x_1 + b + (-1)^c * n```, where the "noise" ```n``` is chosen according to the normal distribution with mean ```mu``` and standard deviation ```sigma```.
 - The ith row of the array ```data``` consists of the features ```x_1``` and ```x_2```.
 - The ith entry of the vector ```labels``` is the class label ```c```.
 
 Implement the function ```display_random_data``` that takes as input the above two arrays ```labels``` and ```data```. It should create scatter plot of the 2D points stored in ```data```. Use red dots to plot the points whose labels are 1 and blue dots to plot the points whose labels are 0. 
 
-You should see that the 2D points (feature vectors) corresponding to different classes are approximately separated by the line ```y = w * x + b```, where ```w``` and ```b``` are the parameters that you used to generate the data.  Note that the smaller the parameter ```mu```, the closer the points are to this line. Also, the larger the parameter ```sigma```, the more points can be on the wrong side of this line.
+Hints: You should see that the 2D points (feature vectors) corresponding to different classes are approximately separated by the line ```y = w * x + b```, where ```w``` and ```b``` are the parameters that you used to generate the data.  Note that the smaller the parameter ```mu```, the closer the points are to this line. Also, the larger the parameter ```sigma```, the more points can be on the wrong side of this line.
 
 Experiment with different values of ```mu``` and ```sigma```.  Make sure that the parameter ```m``` is large enough so you have enough data points.
 
@@ -26,6 +26,8 @@ Links to the numpy documentation of the functions that can be used to draw sampl
 
 - [Normal distribution](https://docs.scipy.org/doc/numpy-1.17.0/reference/random/generated/numpy.random.Generator.normal.html)
 - [Uniform distribution](https://docs.scipy.org/doc/numpy-1.17.0/reference/random/generated/numpy.random.Generator.uniform.html)
+
+You can learn more about the normal distribution on [https://en.wikipedia.org/wiki/Normal_distribution](https://en.wikipedia.org/wiki/Normal_distribution). To gain some intuition, it would be helpful to draw the Gaussian function for different parameters in a seperate notebook (that you do not have to submit).  Later in the semester, you will need to work with normal distribution to understand variational autoencoders.
 
 ---
 
