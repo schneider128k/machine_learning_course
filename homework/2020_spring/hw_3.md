@@ -7,7 +7,7 @@ Implement the function ```get_random_data(w, b, mu, sigma, m)``` that generates 
 The entries of the arrays should be generated as follows.  For each row ```i in {0, 1, ..., m-1}```:
 
 - Choose class label ```c=0``` with probability 1/2 and ```c=1``` with probability 1/2.  
-- Choose the first feature ```x_1``` uniformly at random in the interval \[0, 1). 
+- Choose the first feature ```x_1``` uniformly at random in the interval ```[0, 1)```. 
 - Set the second feature ```x_2``` to be ```x_2 = w * x_1 + b + (-1)^c * n``` where the "noise" ```n``` is chosen according to the normal distribution with mean ```mu``` and standard deviation ```sigma```.
 - The ith row of the array ```data``` consists of the features ```x_1``` and ```x_2```.
 - The ith entry of the vector ```labels``` is the class label ```c```.
@@ -25,6 +25,7 @@ Links to the numpy documentation of the functions that can be used to draw sampl
 - [Normal distribution](https://docs.scipy.org/doc/numpy-1.17.0/reference/random/generated/numpy.random.Generator.normal.html)
 - [Uniform distribution](https://docs.scipy.org/doc/numpy-1.17.0/reference/random/generated/numpy.random.Generator.uniform.html)
 
+---
 
 **Problem 2**
 
@@ -34,8 +35,9 @@ Create a plot showing the random data, the true line used to generate the data, 
 
 Note that you have to carry out some simple steps to obtain the separating line from the model weights (the two weights and the bias term).  Make sure that you describe in detail in your notebook how you proceed to obtain the separating line.  Draw this line.
 
-The trained model realizes function ```f : R^2 -> R``` that takes two features as input and outputs a number in the interval ```\[0,1\]```. Use a heatmap to visualize this function.  
+The trained model realizes function ```f : R^2 -> R``` that takes two features as input and outputs a number in the interval ```[0, 1]```. Use a heatmap to visualize this function.  
 
+---
 
 **Problem 3**
 
