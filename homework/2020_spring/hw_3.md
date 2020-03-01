@@ -20,6 +20,12 @@ Experiment with different values of ```mu``` and ```sigma```.  Make sure that th
 
 Split the data/labels into a training set (80%) and a test set (20%).
 
+Links to the numpy documentation of the functions that can be used to draw samples accoriding to the uniform and normal distributions:
+
+- [Normal distribution](https://docs.scipy.org/doc/numpy-1.17.0/reference/random/generated/numpy.random.Generator.normal.html)
+- [Uniform distribution](https://docs.scipy.org/doc/numpy-1.17.0/reference/random/generated/numpy.random.Generator.uniform.html)
+
+
 **Problem 2**
 
 Use Keras to implement logistic regression with two features and apply it to the data generated in Problem 1. The loss should be the binary cross entropy loss. How well does the trained model separate the red and blue dots?  You can obtain the separating line determined by the model by extracting the weights from the dense layer using the function ```get_weights```. See [https://keras.io/layers/about-keras-layers/](https://keras.io/layers/about-keras-layers/).  
@@ -29,6 +35,7 @@ Create a plot showing the random data, the true line used to generate the data, 
 Note that you have to carry out some simple steps to obtain the separating line from the model weights (the two weights and the bias term).  Make sure that you describe in detail in your notebook how you proceed to obtain the separating line.  Draw this line.
 
 The trained model realizes function ```f : R^2 -> R``` that takes two features as input and outputs a number in the interval ```\[0,1\]```. Use a heatmap to visualize this function.  
+
 
 **Problem 3**
 
