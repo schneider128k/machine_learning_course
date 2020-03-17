@@ -248,7 +248,7 @@ You can also find implementations of neural networks from scratch in the book "[
 
   - [CNN slides](https://github.com/schneider128k/machine_learning_course/blob/master/slides/CNN_slides.pdf)
   
-The notebooks below implement simple convolutional neural networks for classifiing MNIST digits and fashion items
+The notebooks below implement simple convolutional neural networks for classifying MNIST digits and fashion items
 
   - [Colab notebook for classifying MNIST digits with convolutional layers and analyzing model performance](https://colab.research.google.com/drive/1HA-PoWkxgYa37McvUrA_n609jkKT5F7m)
   
@@ -261,6 +261,8 @@ The notebooks below implement simple convolutional neural networks for classifii
 ---
 
 ### Transfer learning: classification of cats and dogs
+
+**TO DO: change to TensorFlow 2.x and tf.keras**
    
    based on Chapter 5 *Deep learning for computer vision* of the book *Deep learning with Python* by F. Chollet
    
