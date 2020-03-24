@@ -256,10 +256,6 @@ The notebooks below implement simple convolutional neural networks for classifyi
 
 ---
 
-**TO DO: clean up everything below**
-
----
-
 ### Transfer learning: classification of cats and dogs
 
 **TO DO: change to TensorFlow 2.x and tf.keras**
@@ -288,8 +284,12 @@ The notebooks below implement simple convolutional neural networks for classifyi
   
   - [Colab notebook for fine-tuning Google's Inception v3 model](https://colab.research.google.com/drive/1uVLIUWdT7--b59vM7NaSHkB-qFcu30jU)
   
- ---
-  
+---
+
+**TO DO: clean up everything below**
+
+---
+
   **Visualizing what convnets learn**
   
   based on chapter 5 *Deep learning for computer vision* of the book *Deep learning with Python* by F. Chollet
