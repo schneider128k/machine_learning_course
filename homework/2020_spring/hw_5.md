@@ -8,12 +8,16 @@ Use a Colab notebook. Make sure that you organize the material logically by usin
 
 I suggest that you group everything into five categories:
 
-- General concepts (for instance, what is artificial intelligence, machine learning, deep learning)
+1. General concepts (for instance, what is artificial intelligence, machine learning, deep learning)
 
-- Building a model (for instance, here you can talk about the structure of a convent, what it components are etc.)
+2. Basic concepts (for instance, here you can talk about linear regression, logistic regression, gradients, gradient descent)
 
-- Comping a model (for instance, you can talk here about optimizers, learning rate etc.)
+3. Building a model (for instance, here you can talk about the structure of a convent, what it components are etc.)
 
-- Training a model (for instance, you can talk about overfitting/underfitting)
+4. Comping a model (for instance, you can talk here about optimizers, learning rate etc.)
 
-- Finetuning  a pretrained model (describe how you proceed)
+5. Training a model (for instance, you can talk about overfitting/underfitting)
+
+6. Finetuning  a pretrained model (describe how you proceed)
+
+Take this homework *very seriously*.  You have the opportunity to make up for lost point on previous homework assignments.  
