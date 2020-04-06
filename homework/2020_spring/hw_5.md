@@ -1,6 +1,6 @@
-## Homework 5
+### Homework 5
 
-*Problem 1*
+**Problem 1**
 
 Summarize and describe the different concepts/methods/algorithms that you have learned in this course.
 
