@@ -17,6 +17,8 @@ input matrix
  0  1  2  3  4 
  
  5  6  7  8  9
+ 
+ 0  1  2  3  4 
 
 a) indicates the very first position in which a 2 x 2 filter is placed in the above 5 x 5 input matrix
 
@@ -28,6 +30,8 @@ a) indicates the very first position in which a 2 x 2 filter is placed in the ab
  0  1  2  3  4 
 
  5  6  7  8  9
+ 
+ 0  1  2  3  4 
 
 b) indicates the very first position in which a 3 x 3 filter is placed in the above 5 x 5 input matrix
 
@@ -35,10 +39,12 @@ b) indicates the very first position in which a 3 x 3 filter is placed in the ab
 |0  1  2| 3  4 
 |       |
 |5  6  7| 8  9
+|       |
+|0  1  2| 3  4 
 +-------+
- 0  1  2  3  4 
-
  5  6  7  8  9
+ 
+ 0  1  2  3  4 
 ```
 
 
