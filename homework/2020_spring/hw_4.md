@@ -5,6 +5,8 @@
 Using only ```numpy```, implement the function ```conv2d```.  It takes as input ```input_mat``` and ```kernel_mat``` and outputs ```output_mat```.  All variables 
 are square matrices.  It should compute the convolution of ```input_mat``` with the kernel ```kernel_mat``` using valid padding.
 
+The size of the kernel matrix should be an odd number (so it has a clearly defined center; see lecture notes).
+
 **Problem 2**
 
 Using only ```numpy```, implement the function ```maxpooling2d```. It takes as input ```input_mat``` and ```s``` and outputs ```output_mat```.
