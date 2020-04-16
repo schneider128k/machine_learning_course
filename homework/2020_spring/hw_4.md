@@ -5,7 +5,42 @@
 Using only ```numpy```, implement the function ```conv2d```.  It takes as input ```input_mat``` and ```kernel_mat``` and outputs ```output_mat```.  All variables 
 are square matrices.  It should compute the convolution of ```input_mat``` with the kernel ```kernel_mat``` using valid padding.
 
-The size ```s``` of the kernel matrix should be an odd number (so it has a clearly defined center; see lecture notes). The height and width of the kernel matrix are both equal to ```s``` because we only consider square matrices.
+Note that the size ```s``` of the kernel matrix can also be an even number.  
+
+```
+input matrix
+
+ 0  1  2  3  4 
+
+ 5  6  7  8  9
+ 
+ 0  1  2  3  4 
+ 
+ 5  6  7  8  9
+
+a) indicates the very first position in which a 2 x 2 filter is placed in the above 5 x 5 input matrix
+
++----+
+|0  1| 2  3  4 
+|    |
+|5  6| 7  8  9
++----+
+ 0  1  2  3  4 
+
+ 5  6  7  8  9
+
+b) indicates the very first position in which a 3 x 3 filter is placed in the above 5 x 5 input matrix
+
++-------+
+|0  1  2| 3  4 
+|       |
+|5  6  7| 8  9
++-------+
+ 0  1  2  3  4 
+
+ 5  6  7  8  9
+```
+
 
 **Problem 2**
 
