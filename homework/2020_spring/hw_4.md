@@ -52,7 +52,8 @@ on ```input_mat``` using window of shape ```s``` times ```s```.
 
 Make sure that you throw appropriate custom exceptions indicating the problem when the operations in Problem 1 and Problem 2 cannot be performed. 
 
-The test cases are in [test_cases_for_problems_1_2_homework_4.ipynb](https://github.com/schneider128k/machine_learning_course/blob/master/homework/2020_spring/test_cases_for_problems_1_2_homework_4.ipynb).
+The test cases are in [test_cases_for_problems_1_2_homework_4.ipynb
+(https://colab.research.google.com/drive/1MIoNq4_xglLesBF1kdWJelP2CmdPuYbv).
 
 ---
 
